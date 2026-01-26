@@ -15,21 +15,21 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #fff5f3 0%, #ffe8e3 100%);
+            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
             padding: 20px;
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: white;
+            background: #ffffff;
             border-radius: 12px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
         
         .header {
-            background: linear-gradient(135deg, #E93C2F 0%, #D62F20 100%);
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
             color: white;
             padding: 40px 30px;
             text-align: center;
@@ -38,11 +38,21 @@
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            color: #ffffff;
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         
         .header p {
             font-size: 0.95em;
-            opacity: 0.95;
+            opacity: 1;
+            font-weight: 300;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            tracking: 1px;
+            color: #ffffff;
+            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
         }
         
         .content {
@@ -50,16 +60,16 @@
         }
         
         h2 {
-            color: #E93C2F;
+            color: #2c3e50;
             margin-top: 30px;
             margin-bottom: 15px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #E93C2F;
+            border-bottom: 2px solid #7f8c8d;
             font-size: 1.8em;
         }
         
         h3 {
-            color: #D62F20;
+            color: #34495e;
             margin-top: 20px;
             margin-bottom: 12px;
             font-size: 1.3em;
@@ -68,6 +78,7 @@
         p {
             margin-bottom: 15px;
             text-align: justify;
+            color: #555;
         }
         
         ul, ol {
@@ -89,7 +100,7 @@
         }
         
         table th {
-            background: #E93C2F;
+            background: #2c3e50;
             color: white;
             padding: 15px;
             text-align: left;
@@ -98,11 +109,11 @@
         
         table td {
             padding: 12px 15px;
-            border-bottom: 1px solid #e0e0e0;
+            border-bottom: 1px solid #bdc3c7;
         }
         
         table tr:hover {
-            background: #f9f9f9;
+            background: #ecf0f1;
         }
         
         table tr:last-child td {
@@ -120,42 +131,42 @@
         }
         
         .summary-box {
-            background: #FFF5F3;
-            border-left: 4px solid #E93C2F;
+            background: #ecf0f1;
+            border-left: 4px solid #7f8c8d;
             padding: 20px;
             margin: 20px 0;
             border-radius: 4px;
         }
         
         .summary-box strong {
-            color: #E93C2F;
+            color: #2c3e50;
         }
         
         .contact-box {
-            background: #fff3e0;
-            border-left: 4px solid #ff9800;
+            background: #ecf0f1;
+            border-left: 4px solid #7f8c8d;
             padding: 20px;
             margin: 20px 0;
             border-radius: 4px;
         }
         
         .contact-box strong {
-            color: #f57c00;
+            color: #2c3e50;
         }
         
         .divider {
             border: none;
             height: 1px;
-            background: linear-gradient(to right, transparent, #ddd, transparent);
+            background: linear-gradient(to right, transparent, #333, transparent);
             margin: 30px 0;
         }
         
         .footer {
-            background: #f5f7fa;
+            background: #ecf0f1;
             padding: 30px;
             text-align: center;
-            border-top: 1px solid #e0e0e0;
-            color: #666;
+            border-top: 1px solid #bdc3c7;
+            color: #555;
             font-size: 0.9em;
         }
         
@@ -165,23 +176,23 @@
         
         .metadata {
             font-size: 0.85em;
-            color: #999;
+            color: #7f8c8d;
             margin-bottom: 10px;
         }
         
         a {
-            color: #E93C2F;
+            color: #2c3e50;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         
         a:hover {
-            color: #D62F20;
+            color: #34495e;
             text-decoration: underline;
         }
         
         .section-number {
-            color: #E93C2F;
+            color: #2c3e50;
             font-weight: 600;
         }
         
@@ -223,7 +234,7 @@
     <div class="container">
         <div class="header">
             <h1>Privacy Policy</h1>
-            <p>Monely - Personal Expense Tracking</p>
+            <p>Monely - money manager</p>
         </div>
         
         <div class="content">
@@ -234,7 +245,7 @@
             </div>
             
             <h2>Introduction</h2>
-            <p>Monely is a personal expense tracking application. This Privacy Policy explains what data Monely collects, how it's used, and your privacy choices.</p>
+            <p>Monely is a money manager application. This Privacy Policy explains what data Monely collects, how it's used, and your privacy choices.</p>
             
             <hr class="divider">
             
@@ -495,7 +506,7 @@
         </div>
         
         <div class="footer">
-            <p><strong>Monely</strong> - Personal Expense Tracking</p>
+            <p><strong>Monely</strong> - money manager</p>
             <p>© 2026 Codeyard Studio. All rights reserved.</p>
             <p style="margin-top: 15px; font-size: 0.8em;">This privacy policy is effective as of January 26, 2026</p>
         </div>
