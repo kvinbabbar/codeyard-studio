@@ -15,21 +15,21 @@
             font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
             line-height: 1.6;
             color: #333;
-            background: linear-gradient(135deg, #f5f5f5 0%, #e8e8e8 100%);
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
             padding: 20px;
         }
         
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: #ffffff;
+            background: white;
             border-radius: 12px;
             box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
             overflow: hidden;
         }
         
         .header {
-            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
             padding: 40px 30px;
             text-align: center;
@@ -38,21 +38,11 @@
         .header h1 {
             font-size: 2.5em;
             margin-bottom: 10px;
-            font-weight: 700;
-            letter-spacing: -0.5px;
-            color: #ffffff;
-            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
         }
         
         .header p {
             font-size: 0.95em;
-            opacity: 1;
-            font-weight: 300;
-            letter-spacing: 0.5px;
-            text-transform: uppercase;
-            tracking: 1px;
-            color: #ffffff;
-            text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+            opacity: 0.95;
         }
         
         .content {
@@ -60,16 +50,16 @@
         }
         
         h2 {
-            color: #2c3e50;
+            color: #667eea;
             margin-top: 30px;
             margin-bottom: 15px;
             padding-bottom: 10px;
-            border-bottom: 2px solid #7f8c8d;
+            border-bottom: 2px solid #667eea;
             font-size: 1.8em;
         }
         
         h3 {
-            color: #34495e;
+            color: #764ba2;
             margin-top: 20px;
             margin-bottom: 12px;
             font-size: 1.3em;
@@ -78,7 +68,6 @@
         p {
             margin-bottom: 15px;
             text-align: justify;
-            color: #555;
         }
         
         ul, ol {
@@ -100,7 +89,7 @@
         }
         
         table th {
-            background: #2c3e50;
+            background: #667eea;
             color: white;
             padding: 15px;
             text-align: left;
@@ -109,11 +98,11 @@
         
         table td {
             padding: 12px 15px;
-            border-bottom: 1px solid #bdc3c7;
+            border-bottom: 1px solid #e0e0e0;
         }
         
         table tr:hover {
-            background: #ecf0f1;
+            background: #f9f9f9;
         }
         
         table tr:last-child td {
@@ -131,42 +120,42 @@
         }
         
         .summary-box {
-            background: #ecf0f1;
-            border-left: 4px solid #7f8c8d;
+            background: #f0f4ff;
+            border-left: 4px solid #667eea;
             padding: 20px;
             margin: 20px 0;
             border-radius: 4px;
         }
         
         .summary-box strong {
-            color: #2c3e50;
+            color: #667eea;
         }
         
         .contact-box {
-            background: #ecf0f1;
-            border-left: 4px solid #7f8c8d;
+            background: #fff3e0;
+            border-left: 4px solid #ff9800;
             padding: 20px;
             margin: 20px 0;
             border-radius: 4px;
         }
         
         .contact-box strong {
-            color: #2c3e50;
+            color: #f57c00;
         }
         
         .divider {
             border: none;
             height: 1px;
-            background: linear-gradient(to right, transparent, #333, transparent);
+            background: linear-gradient(to right, transparent, #ddd, transparent);
             margin: 30px 0;
         }
         
         .footer {
-            background: #ecf0f1;
+            background: #f5f7fa;
             padding: 30px;
             text-align: center;
-            border-top: 1px solid #bdc3c7;
-            color: #555;
+            border-top: 1px solid #e0e0e0;
+            color: #666;
             font-size: 0.9em;
         }
         
@@ -176,23 +165,23 @@
         
         .metadata {
             font-size: 0.85em;
-            color: #7f8c8d;
+            color: #999;
             margin-bottom: 10px;
         }
         
         a {
-            color: #2c3e50;
+            color: #667eea;
             text-decoration: none;
             transition: color 0.3s ease;
         }
         
         a:hover {
-            color: #34495e;
+            color: #764ba2;
             text-decoration: underline;
         }
         
         .section-number {
-            color: #2c3e50;
+            color: #667eea;
             font-weight: 600;
         }
         
@@ -234,7 +223,7 @@
     <div class="container">
         <div class="header">
             <h1>Privacy Policy</h1>
-            <p>Monely - money manager</p>
+            <p>Monely – Personal Expense Tracking</p>
         </div>
         
         <div class="content">
@@ -245,7 +234,8 @@
             </div>
             
             <h2>Introduction</h2>
-            <p>Monely is a money manager application. This Privacy Policy explains what data Monely collects, how it's used, and your privacy choices.</p>
+            <p>Monely is a personal expense tracking application. This Privacy Policy explains what data Monely collects, how it's used, and your privacy choices.</p>
+            <p>This app is designed to work globally and follows applicable privacy regulations including the GDPR (Europe), CCPA/CPRA (California), and Google Play & App Store privacy requirements. We collect the minimum data necessary to operate the app.</p>
             
             <hr class="divider">
             
@@ -308,12 +298,14 @@
             <div class="summary-box">
                 <strong>Summary:</strong> Firebase gets generic event names and category IDs only. <strong>Your amounts, notes, and descriptions are never sent.</strong>
             </div>
+            <p>Analytics collection may be disabled automatically for users in certain regions (such as the European Economic Area) until consent is provided through a consent form.</p>
             
             <h3>1.3 Data Sent to Google Mobile Ads</h3>
             <p>Google Ads receives:</p>
             <ul>
                 <li>Ad interactions (when you see/click ads)</li>
             </ul>
+            <p>We use non‑personalized ads by default. For users in regions that require consent, ads may be disabled or limited until consent is granted.</p>
             
             <hr class="divider">
             
@@ -390,7 +382,15 @@
             
             <hr class="divider">
             
-            <h2><span class="section-number">4.</span> Backup & Restore</h2>
+            <h2><span class="section-number">4.</span> Consent & Legal Basis</h2>
+            <p>Where required by law (such as in the European Economic Area and the UK), we request your consent before enabling analytics or advertising services. You may accept or decline consent at any time.</p>
+            <ul>
+                <li>Consent – for analytics and ads where legally required</li>
+                <li>Legitimate interests – app performance, crash reporting, and essential functionality</li>
+            </ul>
+            <hr class="divider">
+            
+            <h2><span class="section-number">5.</span> Backup & Restore</h2>
             <ul>
                 <li>Backup is <span class="highlight">optional and user-initiated</span></li>
                 <li>Only happens when you click "Backup Data"</li>
@@ -401,7 +401,7 @@
             
             <hr class="divider">
             
-            <h2><span class="section-number">5.</span> Data You Can Control</h2>
+            <h2><span class="section-number">6.</span> Data You Can Control</h2>
             
             <h3>Delete Your Data</h3>
             <ul>
@@ -425,7 +425,7 @@
             
             <hr class="divider">
             
-            <h2><span class="section-number">6.</span> Third-Party Services</h2>
+            <h2><span class="section-number">7.</span> Third-Party Services</h2>
             
             <h3>Google Firebase</h3>
             <ul>
@@ -446,7 +446,7 @@
             
             <hr class="divider">
             
-            <h2><span class="section-number">7.</span> What We Don't Do</h2>
+            <h2><span class="section-number">8.</span> What We Don't Do</h2>
             <ul>
                 <li><span class="xmark">✗</span> We don't sell your data</li>
                 <li><span class="xmark">✗</span> We don't sell user lists</li>
@@ -459,7 +459,11 @@
             
             <hr class="divider">
             
-            <h2><span class="section-number">8.</span> Security</h2>
+            <h2><span class="section-number">9.</span> Data Retention</h2>
+            <p>Expense data remains only on your device until you delete it. Analytics and advertising event data stored by our providers may be retained according to their standard retention policies. We do not maintain our own servers that store your financial data.</p>
+            <hr class="divider">
+            
+            <h2><span class="section-number">10.</span> Security</h2>
             <ul>
                 <li>All data stored locally uses device encryption</li>
                 <li>Backup/restore uses encrypted transmission</li>
@@ -469,12 +473,12 @@
             
             <hr class="divider">
             
-            <h2><span class="section-number">9.</span> Children (Under 13)</h2>
+            <h2><span class="section-number">11.</span> Children (Under 13)</h2>
             <p>This app is not intended for children under 13. We don't knowingly collect data from children under 13.</p>
             
             <hr class="divider">
             
-            <h2><span class="section-number">10.</span> Your Rights</h2>
+            <h2><span class="section-number">12.</span> Your Rights</h2>
             <p>You have the right to:</p>
             <ul>
                 <li>Access all your expense data anytime</li>
@@ -485,15 +489,17 @@
             
             <hr class="divider">
             
-            <h2><span class="section-number">11.</span> Changes to This Policy</h2>
+            <h2><span class="section-number">13.</span> Changes to This Policy</h2>
             <p>If we change this policy, the "Last Updated" date will change. Significant changes will be noted.</p>
             
             <hr class="divider">
             
-            <h2><span class="section-number">12.</span> Contact</h2>
+            <h2><span class="section-number">14.</span> Contact</h2>
             <p>Questions about this privacy policy?</p>
             <div class="contact-box">
+                <p><strong>Developer:</strong> CodeYard Studio</p>
                 <p><strong>Email:</strong> codeyard.studio@gmail.com</p>
+                <p><strong>Location:</strong> India (serving users worldwide)</p>
                 <p><strong>In-App:</strong> More > Help & Feedback</p>
             </div>
             
@@ -501,12 +507,12 @@
             
             <h2>Summary</h2>
             <div class="summary-box">
-                <p><strong>Monely is a local expense tracker with optional analytics.</strong> Your financial data stays on your device. Only generic usage events (not your amounts/notes) go to Firebase. Ads are served through Google. Everything is optional and controllable.</p>
+                <p><strong>Monely is a local expense tracker with optional analytics.</strong> Your financial data stays on your device. Only generic usage events (not your amounts/notes) go to Firebase. Ads are served through Google. Everything is optional, consent‑based where required, and fully controllable by you.</p>
             </div>
         </div>
         
         <div class="footer">
-            <p><strong>Monely</strong> - money manager</p>
+            <p><strong>Monely</strong> - Personal Expense Tracking</p>
             <p>© 2026 Codeyard Studio. All rights reserved.</p>
             <p style="margin-top: 15px; font-size: 0.8em;">This privacy policy is effective as of January 26, 2026</p>
         </div>
