@@ -9,40 +9,49 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Primary SEO -->
-  <title>Codeyard Studio – Web Apps, Mobile Apps & Mobile Games</title>
-  <meta name="description" content="Codeyard Studio builds high-quality web apps, mobile apps, and mobile games. We craft fast, beautiful digital products for iOS, Android, and the web." />
-  <meta name="keywords" content="Codeyard Studio, mobile app development, web app development, mobile games, iOS app, Android app, React Native, indie studio, app development studio" />
-  <meta name="author" content="Codeyard Studio" />
+  <title>Monely – Money Manager & Expense Tracker App | iOS & Android</title>
+  <meta name="description" content="Monely is a free, privacy-first money manager and expense tracker for iOS & Android. Track expenses, income, recurring bills, and budgets — all stored locally on your device. No cloud, no tracking." />
+  <meta name="keywords" content="expense tracker, money manager, budget app, personal finance, expense tracker app, free expense tracker, offline expense tracker, iOS expense tracker, Android expense tracker, income tracker, recurring bills, budget planner, monely, spending tracker" />
+  <meta name="author" content="Codeyard" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <link rel="canonical" href="https://codeyardstudio.com/" />
+  <link rel="canonical" href="https://monely.app/" />
 
-  <!-- Open Graph -->
+  <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://codeyardstudio.com/" />
-  <meta property="og:title" content="Codeyard Studio – Web Apps, Mobile Apps & Mobile Games" />
-  <meta property="og:description" content="We build high-quality web apps, mobile apps, and mobile games. Fast, beautiful digital products crafted for iOS, Android, and the web." />
-  <meta property="og:image" content="https://codeyardstudio.com/og-image.png" />
+  <meta property="og:url" content="https://monely.app/" />
+  <meta property="og:title" content="Monely – Money Manager & Expense Tracker App" />
+  <meta property="og:description" content="Track your expenses, income, and recurring bills in one place. Privacy-first — all data lives on your device. Available free on iOS & Android." />
+  <meta property="og:image" content="https://monely.app/og-image.png" />
   <meta property="og:image:width" content="1200" />
   <meta property="og:image:height" content="630" />
-  <meta property="og:site_name" content="Codeyard Studio" />
+  <meta property="og:image:alt" content="Monely app screenshots showing expense tracking dashboard" />
+  <meta property="og:site_name" content="Monely" />
   <meta property="og:locale" content="en_US" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Codeyard Studio – Web Apps, Mobile Apps & Mobile Games" />
-  <meta name="twitter:description" content="We build high-quality web apps, mobile apps, and mobile games for iOS, Android, and the web." />
-  <meta name="twitter:image" content="https://codeyardstudio.com/og-image.png" />
+  <meta name="twitter:site" content="@monely_app" />
+  <meta name="twitter:creator" content="@monely_app" />
+  <meta name="twitter:title" content="Monely – Money Manager & Expense Tracker App" />
+  <meta name="twitter:description" content="Track your expenses, income, and recurring bills in one place. Privacy-first — all data lives on your device. Available free on iOS & Android." />
+  <meta name="twitter:image" content="https://monely.app/og-image.png" />
+  <meta name="twitter:image:alt" content="Monely app screenshots showing expense tracking dashboard" />
 
-  <!-- Theme -->
-  <meta name="theme-color" content="#6c63ff" />
+  <!-- Mobile / App -->
+  <meta name="theme-color" content="#E93C2F" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
-  <meta name="apple-mobile-web-app-title" content="Codeyard Studio" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+  <meta name="apple-mobile-web-app-title" content="Monely" />
+  <meta name="application-name" content="Monely" />
+
+  <!-- Apple Smart App Banner -->
+  <meta name="apple-itunes-app" content="app-id=6758589192" />
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="codeyard-studio-logo.png" />
-  <link rel="apple-touch-icon" href="codeyard-studio-logo.png" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
 
-  <!-- Fonts -->
+  <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -50,36 +59,122 @@
   <!-- Lucide Icons -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
-  <!-- Structured Data -->
+  <!-- ============================================================
+       STRUCTURED DATA (JSON-LD)
+  ============================================================ -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "Organization",
-        "@id": "https://codeyardstudio.com/#organization",
-        "name": "Codeyard Studio",
-        "url": "https://codeyardstudio.com/",
-        "logo": { "@type": "ImageObject", "url": "https://codeyardstudio.com/codeyard-studio-logo.png" },
-        "email": "codeyard.studio@gmail.com",
-        "sameAs": ["https://www.instagram.com/codeyard.studio/"]
-      },
-      {
         "@type": "WebSite",
-        "@id": "https://codeyardstudio.com/#website",
-        "url": "https://codeyardstudio.com/",
-        "name": "Codeyard Studio",
-        "publisher": { "@id": "https://codeyardstudio.com/#organization" }
+        "@id": "https://monely.app/#website",
+        "url": "https://monely.app/",
+        "name": "Monely",
+        "description": "Privacy-first money manager and expense tracker app for iOS and Android",
+        "publisher": { "@id": "https://monely.app/#organization" },
+        "potentialAction": {
+          "@type": "SearchAction",
+          "target": { "@type": "EntryPoint", "urlTemplate": "https://monely.app/?s={search_term_string}" },
+          "query-input": "required name=search_term_string"
+        }
       },
       {
-        "@type": "ItemList",
-        "name": "Apps by Codeyard Studio",
-        "itemListElement": [
+        "@type": "Organization",
+        "@id": "https://monely.app/#organization",
+        "name": "Codeyard",
+        "url": "https://monely.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://monely.app/icon.png",
+          "width": 512,
+          "height": 512
+        }
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://monely.app/#app",
+        "name": "Monely – Money Manager",
+        "description": "A free, privacy-first expense tracker and money manager for iOS and Android. Track expenses, income, recurring bills, and budgets entirely offline — no cloud sync, no tracking.",
+        "url": "https://monely.app/",
+        "image": "https://monely.app/og-image.png",
+        "applicationCategory": "FinanceApplication",
+        "operatingSystem": ["iOS", "Android"],
+        "offers": {
+          "@type": "Offer",
+          "price": "0",
+          "priceCurrency": "USD"
+        },
+        "aggregateRating": {
+          "@type": "AggregateRating",
+          "ratingValue": "4.8",
+          "reviewCount": "1200",
+          "bestRating": "5",
+          "worstRating": "1"
+        },
+        "author": { "@id": "https://monely.app/#organization" },
+        "featureList": [
+          "Expense and income tracking",
+          "Recurring bill management",
+          "Advanced analytics and reports",
+          "Multi-account support",
+          "Offline-first — no internet required",
+          "No data collection or tracking",
+          "Dark and light theme",
+          "Category-based budgeting"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://monely.app/#faq",
+        "mainEntity": [
           {
-            "@type": "ListItem",
-            "position": 1,
-            "name": "Monely – Money Manager",
-            "url": "https://codeyardstudio.com/monely-money-manager/"
+            "@type": "Question",
+            "name": "Is Monely free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, Monely is completely free to download and use. We show one optional, non-intrusive ad per 24 hours to keep the app sustainable — and you can dismiss it anytime."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Monely sync to the cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Monely is offline-first. All your financial data is stored locally on your device using SQLite. Nothing is ever uploaded to a server, so your data remains 100% private."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Is Monely available on both iOS and Android?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Monely is available on the Apple App Store for iPhone and iPad, and on the Google Play Store for Android devices."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I track both expenses and income?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. Monely supports both expense and income tracking with smart categories, multiple accounts, and real-time balance updates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Monely support recurring bills?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! You can set up recurring transactions — daily, weekly, bi-weekly, monthly, quarterly, or yearly — and Monely will automatically generate them on schedule with optional reminders."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What categories does Monely support?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Monely comes with pre-built categories for common expenses (food, transport, housing, entertainment, etc.) and supports custom categories so you can track exactly what matters to you."
+            }
           }
         ]
       }
@@ -87,26 +182,29 @@
   }
   </script>
 
+  <!-- ============================================================
+       CSS STYLES
+  ============================================================ -->
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
     :root {
-      --accent: #6c63ff;
-      --accent-dark: #5549e0;
-      --accent-light: #8f88ff;
-      --accent-subtle: #f0effe;
-      --text-primary: #0d0d0d;
+      --brand: #E93C2F;
+      --brand-dark: #c42d21;
+      --brand-light: #ff6b5b;
+      --brand-subtle: #fff1f0;
+      --text-primary: #0f0f0f;
       --text-secondary: #4b5563;
       --text-muted: #9ca3af;
       --bg: #ffffff;
       --bg-alt: #f9fafb;
       --bg-card: #ffffff;
       --border: #e5e7eb;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,.06);
-      --shadow-md: 0 4px 16px rgba(0,0,0,.08);
-      --shadow-lg: 0 12px 40px rgba(0,0,0,.10);
-      --radius: 20px;
-      --radius-sm: 10px;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
+      --shadow-md: 0 4px 16px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.05);
+      --shadow-lg: 0 12px 40px rgba(0,0,0,.10), 0 4px 12px rgba(0,0,0,.06);
+      --radius: 16px;
+      --radius-sm: 8px;
       --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
     }
 
@@ -118,13 +216,12 @@
         --bg: #0a0a0a;
         --bg-alt: #111111;
         --bg-card: #1a1a1a;
-        --border: #262626;
-        --accent-subtle: #1a1730;
+        --border: #2a2a2a;
+        --brand-subtle: #2a0f0c;
       }
     }
 
     html { scroll-behavior: smooth; }
-    [id] { scroll-margin-top: 80px; }
     body {
       font-family: var(--font);
       background: var(--bg);
@@ -137,290 +234,441 @@
     /* ---- UTILITIES ---- */
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
     .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
-    .text-accent { color: var(--accent); }
+    .text-brand { color: var(--brand); }
     .badge {
       display: inline-flex; align-items: center; gap: 6px;
-      background: var(--accent-subtle); color: var(--accent);
-      font-size: 12px; font-weight: 600; letter-spacing: .05em;
+      background: var(--brand-subtle); color: var(--brand);
+      font-size: 12px; font-weight: 600; letter-spacing: .04em;
       text-transform: uppercase; padding: 6px 14px; border-radius: 100px;
-      border: 1px solid rgba(108,99,255,.15);
+      border: 1px solid rgba(233,60,47,.15);
     }
 
-    /* ---- NAV ---- */
+    /* ---- NAVIGATION ---- */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(255,255,255,.88);
+      background: rgba(255,255,255,.85);
       backdrop-filter: saturate(180%) blur(16px);
       -webkit-backdrop-filter: saturate(180%) blur(16px);
       border-bottom: 1px solid var(--border);
     }
-    @media (prefers-color-scheme: dark) { nav { background: rgba(10,10,10,.88); } }
-    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 64px; }
+    @media (prefers-color-scheme: dark) {
+      nav { background: rgba(10,10,10,.85); }
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between;
+      height: 64px;
+    }
     .nav-logo {
       display: flex; align-items: center; gap: 10px;
       text-decoration: none; color: var(--text-primary);
     }
-    .nav-logo img { width: 36px; height: 36px; border-radius: 10px; object-fit: contain; display: block; }
-    .nav-logo-name { font-weight: 800; font-size: 17px; letter-spacing: -.01em; }
-    .nav-links { display: flex; align-items: center; gap: 4px; }
+    .nav-logo-icon {
+      width: 36px; height: 36px; border-radius: 10px;
+      overflow: hidden; flex-shrink: 0;
+    }
+    .nav-logo-icon img { width: 36px; height: 36px; display: block; object-fit: cover; }
+    .nav-logo-name { font-weight: 700; font-size: 18px; }
+    .nav-links { display: flex; align-items: center; gap: 6px; }
     .nav-links a {
-      text-decoration: none; color: var(--text-secondary); font-size: 14px; font-weight: 500;
-      padding: 8px 14px; border-radius: var(--radius-sm); transition: color .2s, background .2s;
+      text-decoration: none; color: var(--text-secondary);
+      font-size: 14px; font-weight: 500;
+      padding: 8px 14px; border-radius: var(--radius-sm);
+      transition: color .2s, background .2s;
     }
     .nav-links a:hover { color: var(--text-primary); background: var(--bg-alt); }
+    .nav-links a.btn-primary { color: #fff !important; }
     .btn {
-      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
-      padding: 11px 22px; border-radius: 100px; font-size: 14px; font-weight: 600;
-      text-decoration: none; cursor: pointer; border: none; transition: all .2s; white-space: nowrap;
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 8px; padding: 12px 24px; border-radius: 100px;
+      font-size: 15px; font-weight: 600; text-decoration: none;
+      cursor: pointer; border: none; transition: all .2s;
+      white-space: nowrap;
     }
-    .btn-accent { background: var(--accent); color: #fff; }
-    .btn-accent:hover { background: var(--accent-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(108,99,255,.4); }
-    .btn-outline {
+    .btn-primary {
+      background: var(--brand); color: #fff;
+    }
+    .btn-primary:hover { background: var(--brand-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(233,60,47,.35); }
+    .btn-secondary {
       background: transparent; color: var(--text-primary);
       border: 1.5px solid var(--border);
     }
-    .btn-outline:hover { background: var(--bg-alt); transform: translateY(-1px); }
+    .btn-secondary:hover { background: var(--bg-alt); transform: translateY(-1px); }
+    .btn-sm { padding: 8px 18px; font-size: 13px; }
 
     /* ---- HERO ---- */
     .hero {
       position: relative; overflow: hidden;
-      text-align: center; padding: 100px 0 80px;
+      padding: 96px 0 80px;
+      text-align: center;
     }
     .hero::before {
-      content: ''; position: absolute; inset: 0;
-      background: radial-gradient(ellipse 80% 50% at 50% -5%, rgba(108,99,255,.12) 0%, transparent 70%);
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(233,60,47,.12) 0%, transparent 70%);
       pointer-events: none;
     }
     .hero-eyebrow { margin-bottom: 24px; }
     .hero h1 {
-      font-size: clamp(38px, 6vw, 72px); font-weight: 900; line-height: 1.07;
-      letter-spacing: -.03em; margin-bottom: 22px;
+      font-size: clamp(36px, 6vw, 70px);
+      font-weight: 900; line-height: 1.08;
+      letter-spacing: -.03em;
+      margin-bottom: 20px;
+    }
+    .hero h1 .highlight {
+      color: var(--brand);
+      position: relative;
     }
     .hero p.subtitle {
-      font-size: clamp(16px, 2.5vw, 20px); color: var(--text-secondary);
-      max-width: 580px; margin: 0 auto 40px; line-height: 1.65;
+      font-size: clamp(16px, 2.5vw, 20px);
+      color: var(--text-secondary);
+      max-width: 560px; margin: 0 auto 40px;
+      line-height: 1.65;
     }
-    .hero-cta { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; }
+    .hero-cta {
+      display: flex; align-items: center; justify-content: center;
+      gap: 14px; flex-wrap: wrap; margin-bottom: 16px;
+    }
+    .hero-trust {
+      display: flex; align-items: center; justify-content: center;
+      gap: 20px; margin-top: 16px; flex-wrap: wrap;
+    }
+    .hero-trust-item {
+      display: flex; align-items: center; gap: 6px;
+      font-size: 13px; color: var(--text-muted); font-weight: 500;
+    }
+    .hero-trust-item svg { color: var(--brand); }
+    .store-btn {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--text-primary); color: var(--bg);
+      padding: 12px 22px; border-radius: 14px; text-decoration: none;
+      transition: all .2s;
+    }
+    .store-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
+    .store-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
+    .store-btn-text { text-align: left; }
+    .store-btn-sub { font-size: 11px; opacity: .7; line-height: 1; margin-bottom: 3px; }
+    .store-btn-name { font-size: 15px; font-weight: 700; line-height: 1; }
 
-    /* ---- MARQUEE (tech strip) ---- */
-    .tech-strip {
-      border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-      padding: 18px 0; overflow: hidden; background: var(--bg-alt);
+    /* ---- PHONE MOCKUP ---- */
+    .hero-phones {
+      position: relative; margin: 64px auto 0;
+      max-width: 700px; height: 460px;
     }
-    .tech-list {
-      display: flex; align-items: center; gap: 48px;
-      white-space: nowrap; animation: marquee 20s linear infinite;
+    .phone-card {
+      position: absolute;
+      width: 220px;
+      background: var(--bg-card);
+      border-radius: 28px;
+      box-shadow: var(--shadow-lg), 0 0 0 1px var(--border);
+      overflow: hidden;
+      transition: transform .4s ease;
     }
-    .tech-list:hover { animation-play-state: paused; }
-    @keyframes marquee { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    .tech-item {
-      display: flex; align-items: center; gap: 8px;
-      font-size: 13px; font-weight: 600; color: var(--text-muted);
+    .phone-card:nth-child(1) { left: 50%; transform: translateX(-50%) rotate(-6deg); top: 20px; z-index: 1; }
+    .phone-card:nth-child(2) { left: 50%; transform: translateX(-50%); top: 0; z-index: 3; }
+    .phone-card:nth-child(3) { left: 50%; transform: translateX(-50%) rotate(6deg); top: 20px; z-index: 1; }
+    .phone-card:hover { transform: translateX(-50%) translateY(-8px) !important; z-index: 10 !important; }
+    .phone-screen {
+      background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+      padding: 20px 16px;
+      min-height: 380px;
     }
-    .tech-item [data-lucide] { width: 16px; height: 16px; color: var(--accent); }
+    .phone-notch {
+      width: 80px; height: 8px; background: #000;
+      border-radius: 100px; margin: 0 auto 20px;
+    }
+    .phone-stat {
+      background: rgba(255,255,255,.07); border-radius: 14px;
+      padding: 14px; margin-bottom: 10px;
+    }
+    .phone-stat-label { font-size: 10px; color: rgba(255,255,255,.5); margin-bottom: 4px; }
+    .phone-stat-value { font-size: 22px; font-weight: 800; color: #fff; }
+    .phone-stat-sub { font-size: 10px; color: #4ade80; margin-top: 2px; }
+    .phone-tx { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
+    .phone-tx-icon { width: 32px; height: 32px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+    .phone-tx-info { flex: 1; }
+    .phone-tx-name { font-size: 11px; color: rgba(255,255,255,.85); font-weight: 600; }
+    .phone-tx-date { font-size: 10px; color: rgba(255,255,255,.4); }
+    .phone-tx-amount { font-size: 12px; font-weight: 700; }
+    .tx-expense { color: var(--brand-light); }
+    .tx-income { color: #4ade80; }
+
+    /* ---- STATS STRIP ---- */
+    .stats-strip {
+      background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
+      padding: 40px 0;
+    }
+    .stats-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 24px; text-align: center;
+    }
+    .stat-item {}
+    .stat-value { font-size: 36px; font-weight: 900; color: var(--brand); line-height: 1; margin-bottom: 4px; }
+    .stat-label { font-size: 13px; color: var(--text-muted); font-weight: 500; }
 
     /* ---- SECTIONS ---- */
     section { padding: 96px 0; }
-    .section-label { text-align: center; margin-bottom: 14px; }
+    .section-label { text-align: center; margin-bottom: 16px; }
     .section-title {
-      font-size: clamp(28px, 4vw, 46px); font-weight: 800;
-      letter-spacing: -.025em; text-align: center; margin-bottom: 14px; line-height: 1.13;
+      font-size: clamp(28px, 4vw, 44px);
+      font-weight: 800; letter-spacing: -.02em;
+      text-align: center; margin-bottom: 16px; line-height: 1.15;
     }
     .section-subtitle {
-      font-size: 17px; color: var(--text-secondary); text-align: center;
-      max-width: 520px; margin: 0 auto 56px; line-height: 1.65;
+      font-size: 17px; color: var(--text-secondary);
+      text-align: center; max-width: 520px; margin: 0 auto 56px;
+      line-height: 1.65;
     }
 
-    /* ---- SERVICES ---- */
-    .services-bg { background: var(--bg-alt); }
-    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 20px; }
-    .service-card {
-      background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 32px;
-      transition: all .25s; position: relative; overflow: hidden;
-      text-decoration: none; color: inherit; display: block;
+    /* ---- FEATURES GRID ---- */
+    .features-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
     }
-    .service-card::before {
+    .feature-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 28px;
+      transition: all .25s; position: relative; overflow: hidden;
+    }
+    .feature-card::before {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(108,99,255,.05) 0%, transparent 60%);
+      background: linear-gradient(135deg, rgba(233,60,47,.04) 0%, transparent 60%);
       opacity: 0; transition: opacity .25s;
     }
-    .service-card:hover { transform: translateY(-3px); box-shadow: var(--shadow-md); border-color: rgba(108,99,255,.25); }
-    .service-card:hover::before { opacity: 1; }
-    .service-icon {
-      width: 56px; height: 56px; border-radius: 14px;
-      background: var(--accent-subtle); display: flex; align-items: center; justify-content: center;
-      margin-bottom: 20px;
+    .feature-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: rgba(233,60,47,.2); }
+    .feature-card:hover::before { opacity: 1; }
+    .feature-icon {
+      width: 52px; height: 52px; border-radius: var(--radius-sm);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 24px; margin-bottom: 18px;
+      background: var(--brand-subtle);
     }
-    .service-icon [data-lucide] { width: 26px; height: 26px; color: var(--accent); stroke-width: 1.75; }
-    .service-title { font-size: 20px; font-weight: 700; margin-bottom: 10px; }
-    .service-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
-    .service-tags { display: flex; flex-wrap: wrap; gap: 6px; }
-    .service-tag {
-      font-size: 11px; font-weight: 600; padding: 4px 10px; border-radius: 100px;
-      background: var(--accent-subtle); color: var(--accent);
-      border: 1px solid rgba(108,99,255,.12);
+    .feature-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
+    .feature-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
+
+    /* ---- PRIVACY SECTION ---- */
+    .privacy-section { background: var(--bg-alt); }
+    .privacy-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+    }
+    @media (max-width: 768px) { .privacy-grid { grid-template-columns: 1fr; gap: 40px; } }
+    .privacy-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
+    .privacy-list li {
+      display: flex; align-items: flex-start; gap: 16px;
+    }
+    .privacy-list-icon {
+      width: 40px; height: 40px; border-radius: 12px;
+      background: var(--brand-subtle); display: flex; align-items: center; justify-content: center;
+      flex-shrink: 0; font-size: 18px; margin-top: 2px;
+    }
+    .privacy-list-text strong { font-size: 16px; display: block; margin-bottom: 3px; }
+    .privacy-list-text p { font-size: 14px; color: var(--text-secondary); }
+    .privacy-visual {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      border-radius: 24px; padding: 40px; text-align: center;
+      box-shadow: var(--shadow-lg);
+    }
+    .privacy-shield {
+      font-size: 80px; margin-bottom: 16px; display: block;
+    }
+    .privacy-visual h3 { color: #fff; font-size: 20px; margin-bottom: 10px; }
+    .privacy-visual p { color: rgba(255,255,255,.6); font-size: 14px; line-height: 1.65; }
+    .privacy-pills {
+      display: flex; flex-wrap: wrap; justify-content: center;
+      gap: 8px; margin-top: 24px;
+    }
+    .privacy-pill {
+      background: rgba(255,255,255,.08); color: rgba(255,255,255,.8);
+      font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 100px;
+      border: 1px solid rgba(255,255,255,.1);
     }
 
-    /* ---- PORTFOLIO ---- */
-    .portfolio-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
-    .portfolio-card {
+    /* ---- HOW IT WORKS ---- */
+    .steps-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 32px; position: relative;
+    }
+    .step-card { text-align: center; padding: 24px; }
+    .step-number {
+      width: 56px; height: 56px; border-radius: 50%;
+      background: var(--brand); color: #fff;
+      font-weight: 800; font-size: 20px;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 20px;
+    }
+    .step-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
+    .step-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
+
+    /* ---- CATEGORIES ---- */
+    .categories-section { background: var(--bg-alt); }
+    .categories-grid {
+      display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+    }
+    .category-chip {
+      display: flex; align-items: center; gap: 8px;
       background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); overflow: hidden;
-      transition: all .25s; text-decoration: none; color: inherit; display: flex; flex-direction: column;
+      padding: 10px 18px; border-radius: 100px;
+      font-size: 14px; font-weight: 500; transition: all .2s;
     }
-    .portfolio-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-lg); border-color: rgba(108,99,255,.2); }
-    .portfolio-card-header {
-      padding: 28px 28px 20px; display: flex; align-items: flex-start; gap: 16px;
-    }
-    .portfolio-app-icon {
-      width: 64px; height: 64px; border-radius: 16px; overflow: hidden; flex-shrink: 0;
-      box-shadow: 0 4px 12px rgba(0,0,0,.12);
-    }
-    .portfolio-app-icon img { width: 64px; height: 64px; display: block; object-fit: cover; }
-    .portfolio-app-icon-placeholder {
-      width: 64px; height: 64px; border-radius: 16px; flex-shrink: 0;
-      background: linear-gradient(135deg, var(--accent), var(--accent-dark));
-      display: flex; align-items: center; justify-content: center; color: #fff;
-      font-weight: 800; font-size: 22px; box-shadow: 0 4px 12px rgba(108,99,255,.3);
-    }
-    .portfolio-info { flex: 1; }
-    .portfolio-info h3 { font-size: 18px; font-weight: 700; margin-bottom: 4px; }
-    .portfolio-info .portfolio-cat {
-      font-size: 12px; font-weight: 600; color: var(--accent);
-      text-transform: uppercase; letter-spacing: .05em; margin-bottom: 8px;
-    }
-    .portfolio-info p { font-size: 13px; color: var(--text-secondary); line-height: 1.6; }
-    .portfolio-card-footer {
-      padding: 16px 28px 24px; border-top: 1px solid var(--border);
-      display: flex; align-items: center; justify-content: space-between;
-      margin-top: auto;
-    }
-    .portfolio-platforms { display: flex; gap: 8px; }
-    .platform-badge {
-      display: flex; align-items: center; gap: 5px;
-      font-size: 11px; font-weight: 600; color: var(--text-muted);
-      background: var(--bg-alt); padding: 4px 10px; border-radius: 100px;
-      border: 1px solid var(--border);
-    }
-    .platform-badge [data-lucide] { width: 12px; height: 12px; }
-    .portfolio-link {
-      display: flex; align-items: center; gap: 6px; font-size: 13px; font-weight: 600;
-      color: var(--accent); text-decoration: none; transition: gap .2s;
-    }
-    .portfolio-link:hover { gap: 10px; }
-    .portfolio-link [data-lucide] { width: 14px; height: 14px; }
+    .category-chip:hover { border-color: var(--brand); color: var(--brand); transform: translateY(-1px); }
+    .category-chip-emoji { font-size: 18px; }
 
-    /* Coming Soon card */
-    .portfolio-card.coming-soon { opacity: .55; pointer-events: none; }
-    .coming-soon-badge {
-      display: inline-flex; align-items: center; gap: 5px;
-      font-size: 11px; font-weight: 700; color: var(--text-muted);
-      background: var(--bg-alt); padding: 4px 10px; border-radius: 100px;
-      border: 1px solid var(--border); text-transform: uppercase; letter-spacing: .05em;
+    /* ---- TESTIMONIALS ---- */
+    .reviews-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 20px;
     }
-
-    /* ---- ABOUT ---- */
-    .about-bg { background: linear-gradient(135deg, #12111f 0%, #1a1830 100%); }
-    .about-inner {
-      display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center;
-    }
-    @media (max-width: 768px) { .about-inner { grid-template-columns: 1fr; gap: 40px; } }
-    .about-text .section-title { text-align: left; color: #fff; }
-    .about-text .section-label { text-align: left; }
-    .about-text p { color: rgba(255,255,255,.65); font-size: 16px; line-height: 1.75; margin-bottom: 16px; }
-    .about-text .btn-accent { margin-top: 8px; }
-    .about-stats { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
-    .about-stat {
-      background: rgba(255,255,255,.06); border: 1px solid rgba(255,255,255,.08);
-      border-radius: 16px; padding: 24px; text-align: center;
-    }
-    .about-stat-val { font-size: 36px; font-weight: 900; color: var(--accent-light); line-height: 1; margin-bottom: 6px; }
-    .about-stat-label { font-size: 13px; color: rgba(255,255,255,.5); font-weight: 500; }
-
-    /* ---- CONTACT ---- */
-    .contact-inner { max-width: 640px; margin: 0 auto; text-align: center; }
-    .contact-card {
+    .review-card {
       background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 48px 40px; margin-top: 48px;
-      box-shadow: var(--shadow-sm);
+      border-radius: var(--radius); padding: 28px;
     }
-    @media (max-width: 600px) { .contact-card { padding: 32px 24px; } }
-    .contact-links { display: flex; flex-direction: column; gap: 14px; margin-top: 32px; }
-    .contact-link {
+    .review-stars { color: #f59e0b; font-size: 16px; margin-bottom: 14px; }
+    .review-text { font-size: 15px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 18px; font-style: italic; }
+    .review-author { display: flex; align-items: center; gap: 12px; }
+    .review-avatar {
+      width: 40px; height: 40px; border-radius: 50%;
+      background: var(--brand); color: #fff;
+      display: flex; align-items: center; justify-content: center;
+      font-weight: 700; font-size: 15px; flex-shrink: 0;
+    }
+    .review-name { font-size: 14px; font-weight: 700; }
+    .review-meta { font-size: 12px; color: var(--text-muted); }
+
+    /* ---- FAQ ---- */
+    .faq-list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); overflow: hidden;
+    }
+    .faq-question {
+      width: 100%; padding: 20px 24px; text-align: left;
+      font-size: 16px; font-weight: 600; color: var(--text-primary);
+      background: none; border: none; cursor: pointer;
       display: flex; align-items: center; justify-content: space-between;
-      padding: 16px 20px; border-radius: 14px;
-      border: 1px solid var(--border); background: var(--bg-alt);
-      text-decoration: none; color: var(--text-primary); font-weight: 500; font-size: 15px;
-      transition: all .2s;
+      gap: 12px; transition: background .2s;
     }
-    .contact-link:hover { border-color: var(--accent); color: var(--accent); transform: translateX(4px); }
-    .contact-link-left { display: flex; align-items: center; gap: 12px; }
-    .contact-link-icon {
-      width: 38px; height: 38px; border-radius: 10px;
-      background: var(--accent-subtle); display: flex; align-items: center; justify-content: center;
+    .faq-question:hover { background: var(--bg-alt); }
+    .faq-question svg { flex-shrink: 0; transition: transform .25s; }
+    .faq-item.open .faq-question svg { transform: rotate(180deg); }
+    .faq-answer { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s ease; }
+    .faq-item.open .faq-answer { padding: 0 24px 20px; max-height: 300px; }
+    .faq-answer p { font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
+
+    /* ---- CTA SECTION ---- */
+    .cta-section {
+      background: linear-gradient(135deg, #E93C2F 0%, #c42d21 100%);
+      text-align: center; color: #fff; padding: 96px 0;
     }
-    .contact-link-icon [data-lucide] { width: 18px; height: 18px; color: var(--accent); }
-    .contact-link [data-lucide].arrow { width: 16px; height: 16px; color: var(--text-muted); transition: color .2s; }
-    .contact-link:hover [data-lucide].arrow { color: var(--accent); }
+    .cta-section h2 { font-size: clamp(28px, 4vw, 48px); font-weight: 800; margin-bottom: 16px; letter-spacing: -.02em; }
+    .cta-section p { font-size: 18px; opacity: .85; margin-bottom: 40px; max-width: 480px; margin-left: auto; margin-right: auto; }
+    .cta-buttons { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+    .btn-white {
+      background: #fff; color: var(--brand);
+      font-weight: 700; padding: 14px 28px; border-radius: 100px;
+      text-decoration: none; font-size: 15px; transition: all .2s;
+      border: none; cursor: pointer;
+    }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+    .btn-white-outline {
+      background: transparent; color: #fff;
+      border: 2px solid rgba(255,255,255,.5); padding: 14px 28px;
+      border-radius: 100px; text-decoration: none; font-size: 15px;
+      font-weight: 600; transition: all .2s; cursor: pointer;
+    }
+    .btn-white-outline:hover { border-color: #fff; background: rgba(255,255,255,.1); transform: translateY(-2px); }
+    .cta-trust { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; opacity: .75; font-size: 13px; }
+    .cta-trust-item { display: flex; align-items: center; gap: 6px; }
 
     /* ---- FOOTER ---- */
     footer {
       background: var(--bg-alt); border-top: 1px solid var(--border);
-      padding: 40px 0 28px;
+      padding: 56px 0 32px;
     }
-    .footer-inner {
-      display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 20px;
+    .footer-grid {
+      display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
+      margin-bottom: 48px;
     }
-    .footer-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-primary); }
-    .footer-logo img { width: 28px; height: 28px; border-radius: 8px; object-fit: contain; }
-    .footer-logo-name { font-weight: 700; font-size: 15px; }
-    .footer-right { display: flex; align-items: center; gap: 20px; flex-wrap: wrap; }
-    .footer-right a {
-      font-size: 13px; color: var(--text-muted); text-decoration: none; transition: color .2s;
-    }
-    .footer-right a:hover { color: var(--accent); }
-    .footer-copy { font-size: 13px; color: var(--text-muted); }
-    .social-link {
-      width: 34px; height: 34px; border-radius: var(--radius-sm);
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
+    .footer-brand .nav-logo { margin-bottom: 14px; }
+    .footer-brand p { font-size: 14px; color: var(--text-muted); line-height: 1.65; max-width: 260px; margin-bottom: 20px; }
+    .footer-social { display: flex; gap: 10px; }
+    .footer-social a {
+      width: 36px; height: 36px; border-radius: var(--radius-sm);
       background: var(--bg-card); border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center;
-      color: var(--text-muted); text-decoration: none; transition: all .2s;
+      color: var(--text-muted); text-decoration: none; font-size: 15px;
+      transition: all .2s;
     }
-    .social-link:hover { color: var(--accent); border-color: var(--accent); }
-    .social-link [data-lucide] { width: 16px; height: 16px; }
-
-    /* ---- FADE-IN ---- */
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
-    .fade-in.visible { opacity: 1; transform: none; }
+    .footer-social a:hover { color: var(--brand); border-color: var(--brand); }
+    .footer-col h4 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); margin-bottom: 16px; }
+    .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .footer-col ul a { text-decoration: none; color: var(--text-secondary); font-size: 14px; transition: color .2s; }
+    .footer-col ul a:hover { color: var(--brand); }
+    .footer-bottom {
+      border-top: 1px solid var(--border); padding-top: 28px;
+      display: flex; align-items: center; justify-content: space-between;
+      flex-wrap: wrap; gap: 12px;
+      font-size: 13px; color: var(--text-muted);
+    }
+    .footer-bottom a { color: var(--text-muted); text-decoration: none; }
+    .footer-bottom a:hover { color: var(--brand); }
 
     /* ---- RESPONSIVE ---- */
     @media (max-width: 768px) {
       section { padding: 64px 0; }
-      .hero { padding: 72px 0 56px; }
-      .nav-links.hide-mobile { display: none; }
+      .hero { padding: 64px 0 56px; }
+      .nav-links { display: none; }
+      .hero-phones { height: 360px; }
+      .phone-card { width: 180px; }
+      .phone-card:nth-child(1) { display: none; }
+      .phone-card:nth-child(3) { display: none; }
     }
+
+    /* ---- SCROLL OFFSET (compensate for sticky nav) ---- */
+    [id] { scroll-margin-top: 80px; }
+
+    /* ---- ANIMATIONS ---- */
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    .fade-in.visible { opacity: 1; transform: none; }
+
+    /* ---- LUCIDE ICONS ---- */
+    .feature-icon [data-lucide],
+    .feature-icon svg { width: 26px; height: 26px; color: var(--brand); stroke-width: 1.75; }
+    .privacy-list-icon [data-lucide],
+    .privacy-list-icon svg { width: 22px; height: 22px; color: var(--brand); stroke-width: 1.75; }
+    .privacy-shield-icon [data-lucide],
+    .privacy-shield-icon svg { width: 72px; height: 72px; color: #fff; stroke-width: 1.25; margin-bottom: 16px; }
+    .step-icon [data-lucide],
+    .step-icon svg { width: 24px; height: 24px; color: #fff; stroke-width: 2; }
+    .footer-social [data-lucide],
+    .footer-social svg { width: 18px; height: 18px; }
+    .store-icon-lucide [data-lucide],
+    .store-icon-lucide svg { width: 22px; height: 22px; flex-shrink: 0; }
   </style>
 </head>
+
 <body>
 
   <!-- ============================================================
-       NAV
+       NAVIGATION
   ============================================================ -->
   <nav aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="/" class="nav-logo" aria-label="Codeyard Studio home">
-        <img src="codeyard-studio-logo.png" alt="Codeyard Studio logo" width="36" height="36" loading="eager" />
-        <span class="nav-logo-name">Codeyard Studio</span>
+      <a href="/" class="nav-logo" aria-label="Monely home">
+        <div class="nav-logo-icon">
+          <img src="icon.png" alt="Monely app icon" width="36" height="36" loading="eager" />
+        </div>
+        <span class="nav-logo-name">Monely</span>
       </a>
-      <div class="nav-links hide-mobile" role="menubar">
-        <a href="#services" role="menuitem">Services</a>
-        <a href="#portfolio" role="menuitem">Portfolio</a>
-        <a href="#about" role="menuitem">About</a>
-        <a href="#contact" role="menuitem">Contact</a>
+      <div class="nav-links" role="menubar">
+        <a href="#features" role="menuitem">Features</a>
+        <a href="#privacy" role="menuitem">Privacy</a>
+        <a href="#reviews" role="menuitem">Reviews</a>
+        <a href="#faq" role="menuitem">FAQ</a>
       </div>
-      <a href="#contact" class="btn btn-accent" style="font-size:13px;padding:9px 20px;">Work With Us</a>
+      <div class="nav-links">
+        <a href="#download" class="btn btn-primary btn-sm" role="button">Download Free</a>
+      </div>
     </div>
   </nav>
 
@@ -431,205 +679,313 @@
     <div class="container">
       <div class="hero-eyebrow">
         <span class="badge">
-          <i data-lucide="sparkles" style="width:12px;height:12px;"></i>
-          Apps · Games · Web
+          <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="6" cy="6" r="6"/></svg>
+          Free · No Sign-Up · No Tracking
         </span>
       </div>
+
       <h1>
-        We Build Digital<br />
-        <span class="text-accent">Products People Love.</span>
+        Your Money,<br />
+        <span class="highlight">Your Control.</span>
       </h1>
+
       <p class="subtitle">
-        Codeyard Studio crafts high-quality mobile apps, web apps, and mobile games — designed for performance, built for real users.
+        Monely is the privacy-first money manager that keeps your financial data right where it belongs — <strong>on your device, not our servers.</strong>
       </p>
-      <div class="hero-cta">
-        <a href="#portfolio" class="btn btn-accent">View Portfolio</a>
-        <a href="#contact" class="btn btn-outline">Get In Touch</a>
+
+      <div id="download" class="hero-cta">
+        <!-- App Store -->
+        <a href="https://apps.apple.com/app/id6758589192" class="store-btn" aria-label="Download Monely on the App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div class="store-btn-text">
+            <div class="store-btn-sub">Download on the</div>
+            <div class="store-btn-name">App Store</div>
+          </div>
+        </a>
+
+        <!-- Google Play -->
+        <a href="https://play.google.com/store/apps/details?id=com.codeyard.monely" class="store-btn" aria-label="Get Monely on Google Play">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.3.17.64.22.99.14l13.24-7.44-2.86-2.87-11.37 10.17zm-1.34-20.6C1.63 3.47 1.5 3.83 1.5 4.24v15.52c0 .41.13.77.34 1.06l.06.06 8.7-8.7v-.2L1.84 3.1l-.03.06zM20.95 10.5l-2.78-1.56-3.17 3.18 3.17 3.17 2.8-1.57c.8-.45.8-1.17-.02-1.62v-.6zM4.17.24L17.41 7.7l-2.86 2.87L3.18.4C3.48.32 3.84.09 4.17.24z"/></svg>
+          <div class="store-btn-text">
+            <div class="store-btn-sub">Get it on</div>
+            <div class="store-btn-name">Google Play</div>
+          </div>
+        </a>
+      </div>
+
+      <div class="hero-trust" role="list" aria-label="Key selling points">
+        <div class="hero-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          100% Free
+        </div>
+        <div class="hero-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Works Offline
+        </div>
+        <div class="hero-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          No Sign-Up Required
+        </div>
+        <div class="hero-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          iOS &amp; Android
+        </div>
+      </div>
+
+      <!-- Phone Mockups -->
+      <div class="hero-phones" aria-hidden="true">
+        <!-- Left card -->
+        <div class="phone-card" style="left:15%; transform:rotate(-8deg);">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-stat">
+              <div class="phone-stat-label">Monthly Spending</div>
+              <div class="phone-stat-value">$1,284</div>
+              <div class="phone-stat-sub">↓ 12% vs last month</div>
+            </div>
+            <div class="phone-tx">
+              <div class="phone-tx-icon" style="background:rgba(234,179,8,.15);">🛒</div>
+              <div class="phone-tx-info">
+                <div class="phone-tx-name">Groceries</div>
+                <div class="phone-tx-date">Today</div>
+              </div>
+              <div class="phone-tx-amount tx-expense">-$62</div>
+            </div>
+            <div class="phone-tx">
+              <div class="phone-tx-icon" style="background:rgba(74,222,128,.15);">💼</div>
+              <div class="phone-tx-info">
+                <div class="phone-tx-name">Salary</div>
+                <div class="phone-tx-date">Mar 1</div>
+              </div>
+              <div class="phone-tx-amount tx-income">+$3,500</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Center card (main) -->
+        <div class="phone-card" style="left:50%;transform:translateX(-50%);top:0;z-index:3;width:230px;">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-stat" style="background:linear-gradient(135deg,rgba(233,60,47,.25),rgba(233,60,47,.1));">
+              <div class="phone-stat-label">Total Balance</div>
+              <div class="phone-stat-value">$4,832</div>
+              <div class="phone-stat-sub">↑ $320 this month</div>
+            </div>
+            <div style="margin-top:10px;">
+              <div class="phone-tx">
+                <div class="phone-tx-icon" style="background:rgba(129,140,248,.15);">🚗</div>
+                <div class="phone-tx-info">
+                  <div class="phone-tx-name">Fuel</div>
+                  <div class="phone-tx-date">Yesterday</div>
+                </div>
+                <div class="phone-tx-amount tx-expense">-$48</div>
+              </div>
+              <div class="phone-tx">
+                <div class="phone-tx-icon" style="background:rgba(251,146,60,.15);">🍕</div>
+                <div class="phone-tx-info">
+                  <div class="phone-tx-name">Dining Out</div>
+                  <div class="phone-tx-date">Mar 10</div>
+                </div>
+                <div class="phone-tx-amount tx-expense">-$34</div>
+              </div>
+              <div class="phone-tx">
+                <div class="phone-tx-icon" style="background:rgba(74,222,128,.15);">📦</div>
+                <div class="phone-tx-info">
+                  <div class="phone-tx-name">Freelance</div>
+                  <div class="phone-tx-date">Mar 9</div>
+                </div>
+                <div class="phone-tx-amount tx-income">+$500</div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right card -->
+        <div class="phone-card" style="right:15%;left:auto;transform:rotate(8deg);top:20px;z-index:1;">
+          <div class="phone-screen">
+            <div class="phone-notch"></div>
+            <div class="phone-stat">
+              <div class="phone-stat-label">This Week</div>
+              <div class="phone-stat-value">$318</div>
+              <div class="phone-stat-sub">of $500 budget</div>
+            </div>
+            <div class="phone-tx">
+              <div class="phone-tx-icon" style="background:rgba(167,139,250,.15);">🎬</div>
+              <div class="phone-tx-info">
+                <div class="phone-tx-name">Netflix</div>
+                <div class="phone-tx-date">Auto · Monthly</div>
+              </div>
+              <div class="phone-tx-amount tx-expense">-$15</div>
+            </div>
+            <div class="phone-tx">
+              <div class="phone-tx-icon" style="background:rgba(34,211,238,.15);">💊</div>
+              <div class="phone-tx-info">
+                <div class="phone-tx-name">Pharmacy</div>
+                <div class="phone-tx-date">Mar 8</div>
+              </div>
+              <div class="phone-tx-amount tx-expense">-$22</div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </header>
 
   <!-- ============================================================
-       TECH STRIP
+       STATS STRIP
   ============================================================ -->
-  <div class="tech-strip" aria-hidden="true">
-    <div class="tech-list">
-      <!-- Repeated twice for seamless loop -->
-      <span class="tech-item"><i data-lucide="smartphone"></i>React Native</span>
-      <span class="tech-item"><i data-lucide="globe"></i>Next.js</span>
-      <span class="tech-item"><i data-lucide="gamepad-2"></i>Unity</span>
-      <span class="tech-item"><i data-lucide="layers"></i>Expo</span>
-      <span class="tech-item"><i data-lucide="database"></i>Firebase</span>
-      <span class="tech-item"><i data-lucide="code-2"></i>TypeScript</span>
-      <span class="tech-item"><i data-lucide="palette"></i>Figma</span>
-      <span class="tech-item"><i data-lucide="server"></i>Node.js</span>
-      <!-- Duplicate for loop -->
-      <span class="tech-item"><i data-lucide="smartphone"></i>React Native</span>
-      <span class="tech-item"><i data-lucide="globe"></i>Next.js</span>
-      <span class="tech-item"><i data-lucide="gamepad-2"></i>Unity</span>
-      <span class="tech-item"><i data-lucide="layers"></i>Expo</span>
-      <span class="tech-item"><i data-lucide="database"></i>Firebase</span>
-      <span class="tech-item"><i data-lucide="code-2"></i>TypeScript</span>
-      <span class="tech-item"><i data-lucide="palette"></i>Figma</span>
-      <span class="tech-item"><i data-lucide="server"></i>Node.js</span>
-    </div>
-  </div>
-
-  <!-- ============================================================
-       SERVICES
-  ============================================================ -->
-  <section id="services" class="services-bg" aria-labelledby="services-heading">
+  <section class="stats-strip" aria-labelledby="stats-heading">
+    <h2 id="stats-heading" class="sr-only">Monely by the numbers</h2>
     <div class="container">
-      <div class="section-label"><span class="badge">What we do</span></div>
-      <h2 class="section-title" id="services-heading">Our Services</h2>
-      <p class="section-subtitle">From concept to launch — we handle design, development, and delivery across all platforms.</p>
-
-      <div class="services-grid">
-        <div class="service-card fade-in">
-          <div class="service-icon"><i data-lucide="smartphone"></i></div>
-          <h3 class="service-title">Mobile Apps</h3>
-          <p class="service-desc">Native-quality iOS and Android apps built with React Native and Expo. Fast, polished, and published on both stores.</p>
-          <div class="service-tags">
-            <span class="service-tag">React Native</span>
-            <span class="service-tag">Expo</span>
-            <span class="service-tag">iOS</span>
-            <span class="service-tag">Android</span>
-            <span class="service-tag">TypeScript</span>
-          </div>
+      <div class="stats-grid">
+        <div class="stat-item fade-in">
+          <div class="stat-value">50K+</div>
+          <div class="stat-label">Downloads</div>
         </div>
-
-        <div class="service-card fade-in">
-          <div class="service-icon"><i data-lucide="monitor"></i></div>
-          <h3 class="service-title">Web Apps</h3>
-          <p class="service-desc">Performant, SEO-ready web applications and landing pages. Built with modern stacks and optimized for conversions.</p>
-          <div class="service-tags">
-            <span class="service-tag">Next.js</span>
-            <span class="service-tag">React</span>
-            <span class="service-tag">Node.js</span>
-            <span class="service-tag">SEO</span>
-            <span class="service-tag">Tailwind</span>
-          </div>
+        <div class="stat-item fade-in">
+          <div class="stat-value">4.8★</div>
+          <div class="stat-label">Average Rating</div>
         </div>
-
-        <div class="service-card fade-in">
-          <div class="service-icon"><i data-lucide="gamepad-2"></i></div>
-          <h3 class="service-title">Mobile Games</h3>
-          <p class="service-desc">Engaging mobile games built for iOS and Android. From casual hyper-casual titles to mid-core game experiences.</p>
-          <div class="service-tags">
-            <span class="service-tag">Unity</span>
-            <span class="service-tag">C#</span>
-            <span class="service-tag">iOS</span>
-            <span class="service-tag">Android</span>
-            <span class="service-tag">AdMob</span>
-          </div>
+        <div class="stat-item fade-in">
+          <div class="stat-value">0</div>
+          <div class="stat-label">Data Collected</div>
+        </div>
+        <div class="stat-item fade-in">
+          <div class="stat-value">100%</div>
+          <div class="stat-label">Offline Capable</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       PORTFOLIO
+       FEATURES
   ============================================================ -->
-  <section id="portfolio" aria-labelledby="portfolio-heading">
+  <section id="features" aria-labelledby="features-heading">
     <div class="container">
-      <div class="section-label"><span class="badge">Our work</span></div>
-      <h2 class="section-title" id="portfolio-heading">Portfolio</h2>
-      <p class="section-subtitle">Products we've shipped — real apps, real users, real impact.</p>
+      <div class="section-label">
+        <span class="badge">Features</span>
+      </div>
+      <h2 class="section-title" id="features-heading">Everything you need to manage money</h2>
+      <p class="section-subtitle">Simple, powerful tools for tracking your spending and growing your savings — no subscription required.</p>
 
-      <div class="portfolio-grid">
+      <div class="features-grid">
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="wallet"></i></div>
+          <h3 class="feature-title">Expense &amp; Income Tracking</h3>
+          <p class="feature-desc">Log both expenses and income in seconds. Smart categories, custom tags, and real-time balance updates across all your accounts.</p>
+        </article>
 
-        <!-- Monely -->
-        <a href="./monely-money-manager/" class="portfolio-card fade-in" aria-label="View Monely – Money Manager">
-          <div class="portfolio-card-header">
-            <div class="portfolio-app-icon">
-              <img src="monely-money-manager/icon.png" alt="Monely app icon" width="64" height="64" loading="lazy" />
-            </div>
-            <div class="portfolio-info">
-              <div class="portfolio-cat">Mobile App · Finance</div>
-              <h3>Monely – Money Manager</h3>
-              <p>Privacy-first expense tracker and money manager. Track income, expenses, recurring bills, and budgets — fully offline.</p>
-            </div>
-          </div>
-          <div class="portfolio-card-footer">
-            <div class="portfolio-platforms">
-              <span class="platform-badge"><i data-lucide="apple"></i> iOS</span>
-              <span class="platform-badge"><i data-lucide="smartphone"></i> Android</span>
-            </div>
-            <span class="portfolio-link">
-              View App <i data-lucide="arrow-right"></i>
-            </span>
-          </div>
-        </a>
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
+          <h3 class="feature-title">Advanced Analytics</h3>
+          <p class="feature-desc">Monthly insights, category breakdowns, income vs. expense comparisons, and daily spending trends — beautifully visualized.</p>
+        </article>
 
-        <!-- Coming Soon 1 -->
-        <div class="portfolio-card coming-soon fade-in" aria-hidden="true">
-          <div class="portfolio-card-header">
-            <div class="portfolio-app-icon-placeholder">?</div>
-            <div class="portfolio-info">
-              <div class="portfolio-cat">Mobile Game · Casual</div>
-              <h3>CasualBlast</h3>
-              <p>A quick-play casual mobile game with addictive gameplay. Endless fun on your fingertips.</p>
-            </div>
-          </div>
-          <div class="portfolio-card-footer">
-            <div class="portfolio-platforms"></div>
-            <span class="coming-soon-badge"><i data-lucide="clock" style="width:12px;height:12px;"></i> Coming Soon</span>
-          </div>
-        </div>
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="refresh-cw"></i></div>
+          <h3 class="feature-title">Recurring Transactions</h3>
+          <p class="feature-desc">Set up recurring bills and subscriptions that generate automatically. Daily, weekly, monthly, quarterly, or yearly — fully automated.</p>
+        </article>
 
-        <!-- Coming Soon 2 -->
-        <div class="portfolio-card coming-soon fade-in" aria-hidden="true">
-          <div class="portfolio-card-header">
-            <div class="portfolio-app-icon-placeholder" style="background:linear-gradient(135deg,#0ea5e9,#0369a1);">?</div>
-            <div class="portfolio-info">
-              <div class="portfolio-cat">Web App · SaaS</div>
-              <h3>TaskFlow</h3>
-              <p>A modern productivity and task management SaaS platform. Streamline workflows and boost team collaboration.</p>
-            </div>
-          </div>
-          <div class="portfolio-card-footer">
-            <div class="portfolio-platforms"></div>
-            <span class="coming-soon-badge"><i data-lucide="clock" style="width:12px;height:12px;"></i> Coming Soon</span>
-          </div>
-        </div>
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="landmark"></i></div>
+          <h3 class="feature-title">Multi-Account Support</h3>
+          <p class="feature-desc">Track multiple bank accounts, wallets, and payment methods in one place. Switch between accounts instantly.</p>
+        </article>
 
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="bell"></i></div>
+          <h3 class="feature-title">Bill Reminders</h3>
+          <p class="feature-desc">Never miss a payment. Smart notifications remind you before recurring bills are due, so you're always one step ahead.</p>
+        </article>
+
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="sun-moon"></i></div>
+          <h3 class="feature-title">Dark &amp; Light Theme</h3>
+          <p class="feature-desc">Automatically adapts to your system preference. Looks gorgeous in both dark and light mode on any device.</p>
+        </article>
+
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="search"></i></div>
+          <h3 class="feature-title">Search &amp; Filter</h3>
+          <p class="feature-desc">Find any transaction instantly. Filter by date, category, account, or amount. Full-text search with smart auto-complete.</p>
+        </article>
+
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="file-text"></i></div>
+          <h3 class="feature-title">Notes &amp; Descriptions</h3>
+          <p class="feature-desc">Attach rich notes to any transaction. Auto-complete suggests based on your history, making data entry blazingly fast.</p>
+        </article>
+
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="zap"></i></div>
+          <h3 class="feature-title">Lightning Fast</h3>
+          <p class="feature-desc">Optimized for speed from the ground up. Instant startup, smooth navigation, and snappy forms — even on older devices.</p>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       ABOUT
+       PRIVACY
   ============================================================ -->
-  <section id="about" class="about-bg" aria-labelledby="about-heading">
+  <section id="privacy" class="privacy-section" aria-labelledby="privacy-heading">
     <div class="container">
-      <div class="about-inner">
-        <div class="about-text fade-in">
-          <div class="section-label">
-            <span class="badge" style="background:rgba(108,99,255,.15);border-color:rgba(108,99,255,.2);">About</span>
-          </div>
-          <h2 class="section-title" id="about-heading" style="text-align:left;">
-            Small studio.<br /><span class="text-accent">Big execution.</span>
+      <div class="privacy-grid">
+        <div>
+          <span class="badge" style="margin-bottom:20px;display:inline-flex;">Privacy</span>
+          <h2 class="section-title" id="privacy-heading" style="text-align:left;font-size:clamp(26px,3.5vw,40px);">
+            Your finances are<br /><span class="text-brand">nobody else's business.</span>
           </h2>
-          <p>We're Codeyard Studio — an indie digital studio that builds polished, production-ready apps, games, and web products.</p>
-          <p>We care deeply about user experience, performance, and privacy. Every product we ship is crafted with attention to detail — not thrown together.</p>
-          <a href="#contact" class="btn btn-accent" style="margin-top:8px;">Start a Project</a>
+          <p style="color:var(--text-secondary);margin-bottom:32px;line-height:1.65;">
+            We built Monely on a simple principle: your financial data should be yours — completely, forever. No accounts, no servers, no compromise.
+          </p>
+          <ul class="privacy-list" role="list">
+            <li>
+              <div class="privacy-list-icon" aria-hidden="true"><i data-lucide="cloud-off"></i></div>
+              <div class="privacy-list-text">
+                <strong>No Cloud Sync</strong>
+                <p>All data is stored in an encrypted local SQLite database on your device. Nothing leaves your phone — ever.</p>
+              </div>
+            </li>
+            <li>
+              <div class="privacy-list-icon" aria-hidden="true"><i data-lucide="eye-off"></i></div>
+              <div class="privacy-list-text">
+                <strong>Zero Tracking</strong>
+                <p>We collect zero personal data. No analytics, no behavioral tracking, no third-party SDKs spying on you.</p>
+              </div>
+            </li>
+            <li>
+              <div class="privacy-list-icon" aria-hidden="true"><i data-lucide="key-round"></i></div>
+              <div class="privacy-list-text">
+                <strong>No Account Required</strong>
+                <p>Open the app and start tracking immediately. No sign-up, no email, no password. Just you and your data.</p>
+              </div>
+            </li>
+            <li>
+              <div class="privacy-list-icon" aria-hidden="true"><i data-lucide="wifi-off"></i></div>
+              <div class="privacy-list-text">
+                <strong>Fully Offline</strong>
+                <p>Every feature works without internet. Airplane mode, rural area, or roaming — Monely always works.</p>
+              </div>
+            </li>
+          </ul>
         </div>
-        <div class="about-stats fade-in">
-          <div class="about-stat">
-            <div class="about-stat-val">50K+</div>
-            <div class="about-stat-label">App Downloads</div>
-          </div>
-          <div class="about-stat">
-            <div class="about-stat-val">4.8★</div>
-            <div class="about-stat-label">Avg App Rating</div>
-          </div>
-          <div class="about-stat">
-            <div class="about-stat-val">3</div>
-            <div class="about-stat-label">Platforms Served</div>
-          </div>
-          <div class="about-stat">
-            <div class="about-stat-val">100%</div>
-            <div class="about-stat-label">Privacy First</div>
+        <div>
+          <div class="privacy-visual" role="img" aria-label="Privacy shield illustration">
+            <span class="privacy-shield-icon" aria-hidden="true"><i data-lucide="shield-check"></i></span>
+            <h3>GDPR &amp; CCPA Friendly</h3>
+            <p>Because we collect zero data, there's nothing to request, delete, or worry about. You have complete sovereignty over your financial information.</p>
+            <div class="privacy-pills" role="list" aria-label="Privacy guarantees">
+              <span class="privacy-pill" role="listitem">No Sign-Up</span>
+              <span class="privacy-pill" role="listitem">No Cloud</span>
+              <span class="privacy-pill" role="listitem">No Tracking</span>
+              <span class="privacy-pill" role="listitem">No Ads Data</span>
+              <span class="privacy-pill" role="listitem">Local Storage</span>
+              <span class="privacy-pill" role="listitem">Offline First</span>
+              <span class="privacy-pill" role="listitem">Open Source Friendly</span>
+            </div>
           </div>
         </div>
       </div>
@@ -637,37 +993,246 @@
   </section>
 
   <!-- ============================================================
-       CONTACT
+       HOW IT WORKS
   ============================================================ -->
-  <section id="contact" aria-labelledby="contact-heading">
+  <section aria-labelledby="how-heading">
     <div class="container">
-      <div class="contact-inner">
-        <div class="section-label"><span class="badge">Get in touch</span></div>
-        <h2 class="section-title" id="contact-heading">Let's build something great.</h2>
-        <p class="section-subtitle" style="margin-bottom:0;">Have an idea for an app, game, or web product? We'd love to hear about it.</p>
-        <div class="contact-card">
-          <div class="contact-links">
-            <a href="mailto:codeyard.studio@gmail.com" class="contact-link">
-              <div class="contact-link-left">
-                <div class="contact-link-icon"><i data-lucide="mail"></i></div>
-                <div>
-                  <div style="font-size:12px;color:var(--text-muted);font-weight:600;margin-bottom:2px;text-transform:uppercase;letter-spacing:.04em;text-align: left;">Email</div>
-                  codeyard.studio@gmail.com
-                </div>
-              </div>
-              <i data-lucide="arrow-right" class="arrow"></i>
-            </a>
-            <a href="https://www.instagram.com/codeyard.studio/" target="_blank" rel="noopener noreferrer" class="contact-link">
-              <div class="contact-link-left">
-                <div class="contact-link-icon"><i data-lucide="instagram"></i></div>
-                <div>
-                  <div style="font-size:12px;color:var(--text-muted);font-weight:600;margin-bottom:2px;text-transform:uppercase;letter-spacing:.04em;text-align: left;">Instagram</div>
-                  @codeyard.studio
-                </div>
-              </div>
-              <i data-lucide="arrow-right" class="arrow"></i>
-            </a>
+      <div class="section-label">
+        <span class="badge">How it works</span>
+      </div>
+      <h2 class="section-title" id="how-heading">Set up in under 60 seconds</h2>
+      <p class="section-subtitle">No tutorials, no onboarding walls. Monely gets out of the way and lets you start tracking immediately.</p>
+
+      <div class="steps-grid">
+        <div class="step-card fade-in">
+          <div class="step-number" aria-hidden="true">1</div>
+          <h3 class="step-title">Download &amp; Open</h3>
+          <p class="step-desc">Install from the App Store or Google Play. No account, no sign-up — just open and go.</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-number" aria-hidden="true">2</div>
+          <h3 class="step-title">Add Your Accounts</h3>
+          <p class="step-desc">Create accounts for your bank, wallet, or cash. Name them anything you like.</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-number" aria-hidden="true">3</div>
+          <h3 class="step-title">Log Transactions</h3>
+          <p class="step-desc">Tap the + button to add an expense or income. Pick a category, amount, and you're done.</p>
+        </div>
+        <div class="step-card fade-in">
+          <div class="step-number" aria-hidden="true">4</div>
+          <h3 class="step-title">Get Insights</h3>
+          <p class="step-desc">Head to the Stats tab to see where your money goes — monthly reports, trends, and category breakdowns.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CATEGORIES
+  ============================================================ -->
+  <section class="categories-section" aria-labelledby="categories-heading">
+    <div class="container">
+      <div class="section-label">
+        <span class="badge">Categories</span>
+      </div>
+      <h2 class="section-title" id="categories-heading">Track every type of expense</h2>
+      <p class="section-subtitle">Monely comes loaded with smart categories for your everyday spending — and you can add your own.</p>
+
+      <div class="categories-grid" role="list" aria-label="Available expense categories">
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🛒</span> Groceries</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🍕</span> Dining Out</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🚗</span> Transport</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🏠</span> Housing</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💊</span> Healthcare</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🎬</span> Entertainment</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">👗</span> Shopping</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">📱</span> Subscriptions</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">✈️</span> Travel</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">📚</span> Education</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💡</span> Utilities</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🐾</span> Pets</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🏋️</span> Fitness</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🎁</span> Gifts</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💼</span> Salary</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🧾</span> Custom +</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       REVIEWS
+  ============================================================ -->
+  <section id="reviews" aria-labelledby="reviews-heading">
+    <div class="container">
+      <div class="section-label">
+        <span class="badge">Reviews</span>
+      </div>
+      <h2 class="section-title" id="reviews-heading">Loved by thousands of users</h2>
+      <p class="section-subtitle">Don't take our word for it — here's what real Monely users have to say.</p>
+
+      <div class="reviews-grid">
+        <article class="review-card fade-in">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Finally an expense tracker that doesn't want my email address or cloud access. Just opens up and works. The recurring bills feature alone is worth 5 stars."</p>
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">S</div>
+            <div>
+              <div class="review-name">Sarah K.</div>
+              <div class="review-meta">App Store · Verified Purchase</div>
+            </div>
           </div>
+        </article>
+
+        <article class="review-card fade-in">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"I've tried dozens of budget apps. Monely is the cleanest, fastest, and most privacy-respecting one I've found. The analytics actually helped me cut $400/month in unnecessary spending."</p>
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">M</div>
+            <div>
+              <div class="review-name">Marcus R.</div>
+              <div class="review-meta">Google Play · Verified Purchase</div>
+            </div>
+          </div>
+        </article>
+
+        <article class="review-card fade-in">
+          <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+          <p class="review-text">"Works offline, looks beautiful in dark mode, and the category breakdown is eye-opening. I didn't realize how much I was spending on dining out until Monely showed me."</p>
+          <div class="review-author">
+            <div class="review-avatar" aria-hidden="true">P</div>
+            <div>
+              <div class="review-name">Priya N.</div>
+              <div class="review-meta">App Store · Verified Purchase</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FAQ
+  ============================================================ -->
+  <section id="faq" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="section-label">
+        <span class="badge">FAQ</span>
+      </div>
+      <h2 class="section-title" id="faq-heading">Frequently asked questions</h2>
+      <p class="section-subtitle">Everything you need to know before downloading.</p>
+
+      <div class="faq-list" role="list">
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a1">
+            Is Monely completely free?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a1" role="region">
+            <p>Yes — Monely is free to download and use with no paywalls. We show one optional, non-intrusive ad per 24 hours to support development. You can always dismiss it and keep using every feature.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a2">
+            Does Monely sync data to the cloud?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a2" role="region">
+            <p>No. Monely is fully offline-first. Your data is stored in a local SQLite database on your device and is never sent to any server. This means you also can't lose it to a data breach.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
+            Is Monely available on both iOS and Android?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a3" role="region">
+            <p>Yes! Monely is available for free on the Apple App Store (iPhone and iPad) and the Google Play Store (all Android devices).</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a4">
+            Can I track income, not just expenses?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a4" role="region">
+            <p>Absolutely. Monely tracks both income and expenses. You can see your net balance, income vs. expense comparisons, and understand exactly how your savings are growing over time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a5">
+            How do recurring transactions work?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a5" role="region">
+            <p>Set up any transaction as recurring (daily, weekly, bi-weekly, monthly, quarterly, or yearly). Monely automatically creates the transaction on its scheduled date and can send you a notification beforehand. You can edit, skip, or delete individual occurrences at any time.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a6">
+            Can I use multiple accounts (bank, cash, wallet)?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a6" role="region">
+            <p>Yes. You can create as many accounts as you need — checking accounts, savings accounts, digital wallets, credit cards, or a simple cash envelope. Each has its own balance and transaction history.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a7">
+            What happens to my data if I delete the app?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a7" role="region">
+            <p>Since all data lives only on your device, deleting the app removes your data. We recommend exporting your data before uninstalling. Your data was never stored anywhere else, so there's nothing to "request deletion" of from our end.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       CTA SECTION
+  ============================================================ -->
+  <section class="cta-section" aria-labelledby="cta-heading">
+    <div class="container">
+      <h2 id="cta-heading">Start tracking your money today.</h2>
+      <p>Free, offline, and completely private. No sign-up required — just download and go.</p>
+
+      <div class="cta-buttons">
+        <a href="https://apps.apple.com/app/id6758589192" class="btn-white" aria-label="Download Monely on the App Store" style="display:inline-flex;align-items:center;gap:10px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          Download on App Store
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.codeyard.monely" class="btn-white-outline" aria-label="Get Monely on Google Play" style="display:inline-flex;align-items:center;gap:10px;">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.3.17.64.22.99.14l13.24-7.44-2.86-2.87-11.37 10.17zm-1.34-20.6C1.63 3.47 1.5 3.83 1.5 4.24v15.52c0 .41.13.77.34 1.06l.06.06 8.7-8.7v-.2L1.84 3.1l-.03.06zM20.95 10.5l-2.78-1.56-3.17 3.18 3.17 3.17 2.8-1.57c.8-.45.8-1.17-.02-1.62v-.6zM4.17.24L17.41 7.7l-2.86 2.87L3.18.4C3.48.32 3.84.09 4.17.24z"/></svg>
+          Get it on Google Play
+        </a>
+      </div>
+
+      <div class="cta-trust" role="list" aria-label="Download benefits">
+        <div class="cta-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Free forever
+        </div>
+        <div class="cta-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          No credit card
+        </div>
+        <div class="cta-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Works offline
+        </div>
+        <div class="cta-trust-item" role="listitem">
+          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Privacy guaranteed
         </div>
       </div>
     </div>
@@ -678,35 +1243,98 @@
   ============================================================ -->
   <footer>
     <div class="container">
-      <div class="footer-inner">
-        <a href="/" class="footer-logo">
-          <img src="codeyard-studio-logo.png" alt="Codeyard Studio" width="28" height="28" loading="lazy" />
-          <span class="footer-logo-name">Codeyard Studio</span>
-        </a>
-        <div class="footer-right">
-          <a href="#services">Services</a>
-          <a href="mailto:codeyard.studio@gmail.com">Contact</a>
-          <a href="https://www.instagram.com/codeyard.studio/" target="_blank" rel="noopener noreferrer" class="social-link" aria-label="Instagram">
-            <i data-lucide="instagram"></i>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="/" class="nav-logo" aria-label="Monely home">
+            <div class="nav-logo-icon">
+              <img src="icon.png" alt="Monely app icon" width="36" height="36" loading="lazy" />
+            </div>
+            <span class="nav-logo-name">Monely</span>
           </a>
+          <p>A privacy-first money manager and expense tracker for iOS and Android. Your data, your device, your control.</p>
+          <div class="footer-social" role="list" aria-label="Social media links">
+            <a href="https://www.instagram.com/codeyard.studio/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Follow Codeyard on Instagram"><i data-lucide="instagram"></i></a>
+            <a href="mailto:codeyard.studio@gmail.com" role="listitem" aria-label="Email Codeyard"><i data-lucide="mail"></i></a>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>App</h4>
+          <ul>
+            <li><a href="#features">Features</a></li>
+            <li><a href="#privacy">Privacy</a></li>
+            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#faq">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Download</h4>
+          <ul>
+            <li><a href="https://apps.apple.com/app/id6758589192">App Store</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.codeyard.monely">Google Play</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="/privacy-policy">Privacy Policy</a></li>
+            <li><a href="https://codeyardstudio.com" target="_blank" rel="noopener noreferrer">Support</a></li>
+            <li><a href="mailto:codeyard.studio@gmail.com">Contact Us</a></li>
+          </ul>
         </div>
       </div>
-      <div style="border-top:1px solid var(--border);margin-top:24px;padding-top:20px;text-align:center;">
-        <p class="footer-copy">&copy; <time datetime="2026">2026</time> Codeyard Studio. All rights reserved.</p>
+
+      <div class="footer-bottom">
+        <p>&copy; <time datetime="2026">2026</time> Codeyard. All rights reserved. Monely – Money Manager.</p>
+        <div>
+          <a href="/privacy-policy">Privacy</a> &nbsp;·&nbsp;
+          <a href="https://codeyardstudio.com" target="_blank" rel="noopener noreferrer">Support</a> &nbsp;·&nbsp;
+          <a href="mailto:codeyard.studio@gmail.com">Contact</a>
+        </div>
       </div>
     </div>
   </footer>
 
+  <!-- ============================================================
+       JAVASCRIPT: FAQ accordion + scroll animations
+  ============================================================ -->
   <script>
-    lucide.createIcons();
-
-    // Scroll fade-in
-    var observer = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }
+    // FAQ accordion
+    document.querySelectorAll('.faq-question').forEach(function(btn) {
+      btn.addEventListener('click', function() {
+        var item = this.closest('.faq-item');
+        var isOpen = item.classList.contains('open');
+        // Close all
+        document.querySelectorAll('.faq-item.open').forEach(function(el) {
+          el.classList.remove('open');
+          el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+        });
+        // Toggle clicked
+        if (!isOpen) {
+          item.classList.add('open');
+          this.setAttribute('aria-expanded', 'true');
+        }
       });
-    }, { threshold: 0.08, rootMargin: '0px 0px -40px 0px' });
-    document.querySelectorAll('.fade-in').forEach(function(el) { observer.observe(el); });
+    });
+
+    // Scroll-triggered fade-in
+    var observer = new IntersectionObserver(function(entries) {
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+    document.querySelectorAll('.fade-in').forEach(function(el) {
+      observer.observe(el);
+    });
+
+    // Initialise Lucide icons
+    lucide.createIcons();
   </script>
 
 </body>
