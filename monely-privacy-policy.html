@@ -1,521 +1,741 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Monely</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
-            padding: 20px;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 0 auto;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .header {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            padding: 40px 30px;
-            text-align: center;
-        }
-        
-        .header h1 {
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        
-        .header p {
-            font-size: 0.95em;
-            opacity: 0.95;
-        }
-        
-        .content {
-            padding: 40px;
-        }
-        
-        h2 {
-            color: #667eea;
-            margin-top: 30px;
-            margin-bottom: 15px;
-            padding-bottom: 10px;
-            border-bottom: 2px solid #667eea;
-            font-size: 1.8em;
-        }
-        
-        h3 {
-            color: #764ba2;
-            margin-top: 20px;
-            margin-bottom: 12px;
-            font-size: 1.3em;
-        }
-        
-        p {
-            margin-bottom: 15px;
-            text-align: justify;
-        }
-        
-        ul, ol {
-            margin-left: 25px;
-            margin-bottom: 15px;
-        }
-        
-        li {
-            margin-bottom: 8px;
-        }
-        
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin: 15px 0;
-            border-radius: 8px;
-            overflow: hidden;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        table th {
-            background: #667eea;
-            color: white;
-            padding: 15px;
-            text-align: left;
-            font-weight: 600;
-        }
-        
-        table td {
-            padding: 12px 15px;
-            border-bottom: 1px solid #e0e0e0;
-        }
-        
-        table tr:hover {
-            background: #f9f9f9;
-        }
-        
-        table tr:last-child td {
-            border-bottom: none;
-        }
-        
-        .checkmark {
-            color: #4caf50;
-            font-weight: bold;
-        }
-        
-        .xmark {
-            color: #f44336;
-            font-weight: bold;
-        }
-        
-        .summary-box {
-            background: #f0f4ff;
-            border-left: 4px solid #667eea;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .summary-box strong {
-            color: #667eea;
-        }
-        
-        .contact-box {
-            background: #fff3e0;
-            border-left: 4px solid #ff9800;
-            padding: 20px;
-            margin: 20px 0;
-            border-radius: 4px;
-        }
-        
-        .contact-box strong {
-            color: #f57c00;
-        }
-        
-        .divider {
-            border: none;
-            height: 1px;
-            background: linear-gradient(to right, transparent, #ddd, transparent);
-            margin: 30px 0;
-        }
-        
-        .footer {
-            background: #f5f7fa;
-            padding: 30px;
-            text-align: center;
-            border-top: 1px solid #e0e0e0;
-            color: #666;
-            font-size: 0.9em;
-        }
-        
-        .footer p {
-            margin-bottom: 8px;
-        }
-        
-        .metadata {
-            font-size: 0.85em;
-            color: #999;
-            margin-bottom: 10px;
-        }
-        
-        a {
-            color: #667eea;
-            text-decoration: none;
-            transition: color 0.3s ease;
-        }
-        
-        a:hover {
-            color: #764ba2;
-            text-decoration: underline;
-        }
-        
-        .section-number {
-            color: #667eea;
-            font-weight: 600;
-        }
-        
-        .highlight {
-            background: #fff9c4;
-            padding: 2px 6px;
-            border-radius: 3px;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                margin: 0;
-                border-radius: 0;
-            }
-            
-            .content {
-                padding: 20px;
-            }
-            
-            .header {
-                padding: 30px 20px;
-            }
-            
-            .header h1 {
-                font-size: 1.8em;
-            }
-            
-            h2 {
-                font-size: 1.4em;
-            }
-            
-            h3 {
-                font-size: 1.1em;
-            }
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Monely - Money Manager</title>
+  <style>
+    :root {
+      --primary: #E93C2F;
+      --primary-light: #fff0ee;
+      --primary-border: #fac8c4;
+      --accent: #2563eb;
+      --text: #1a1a2e;
+      --text-muted: #6b7280;
+      --surface: #ffffff;
+      --bg: #f8f9fb;
+      --border: #e5e7eb;
+      --green: #16a34a;
+      --red: #dc2626;
+      --yellow-bg: #fefce8;
+      --yellow-border: #fde047;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    /* ── Hero Header ── */
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, #c0392b 100%);
+      color: #fff;
+      padding: 60px 24px 48px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 100px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 6vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+      white-space: normal;
+    }
+    .hero-sub {
+      font-size: 16px;
+      opacity: 0.88;
+      max-width: 480px;
+      margin: 0 auto 24px;
+      color: #fff0ee;
+    }
+    .hero-meta { font-size: 13px; opacity: 0.72; }
+
+    /* ── Layout ── */
+    .page {
+      max-width: 860px;
+      margin: 0 auto;
+      padding: 0 16px 80px;
+    }
+
+    /* ── TOC ── */
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 40px 0 0;
+      box-shadow: var(--shadow);
+    }
+    .toc-title {
+      font-size: 13px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.7px;
+      color: var(--text-muted);
+      margin-bottom: 14px;
+    }
+    .toc ol { padding-left: 20px; columns: 2; column-gap: 32px; }
+    .toc li { margin-bottom: 6px; break-inside: avoid; }
+    .toc a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; }
+    .toc a:hover { text-decoration: underline; }
+
+    /* ── Sections ── */
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 36px 32px;
+      margin-top: 24px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      scroll-margin-top: 20px;
+    }
+
+    .section-header {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin-bottom: 24px;
+      padding-bottom: 18px;
+      border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      width: 42px; height: 42px;
+      border-radius: 10px;
+      background: var(--primary-light);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+      flex-shrink: 0;
+    }
+    .section-title-wrap { flex: 1; }
+    .section-num {
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      color: var(--primary);
+      margin-bottom: 2px;
+    }
+    h2 { font-size: 20px; font-weight: 700; color: var(--text); line-height: 1.2; }
+    h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 24px 0 10px; }
+    h3:first-child { margin-top: 0; }
+    p { margin-bottom: 14px; color: #374151; }
+    p:last-child { margin-bottom: 0; }
+    ul, ol { padding-left: 20px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; color: #374151; }
+    code { font-family: monospace; background: #f3f4f6; border-radius: 4px; padding: 1px 6px; font-size: 13px; }
+
+    /* ── Callout boxes ── */
+    .callout {
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin: 18px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .callout-icon { font-size: 18px; line-height: 1.4; flex-shrink: 0; }
+    .callout-body { flex: 1; }
+    .callout.info    { background: #eff6ff; border: 1px solid #bfdbfe; }
+    .callout.success { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .callout.warning { background: var(--yellow-bg); border: 1px solid var(--yellow-border); }
+    .callout.neutral { background: #f9fafb; border: 1px solid var(--border); }
+
+    /* ── Table ── */
+    .table-wrap { overflow-x: auto; margin: 14px 0; border-radius: var(--radius-sm); border: 1px solid var(--border); }
+    table { width: 100%; border-collapse: collapse; font-size: 14px; }
+    thead th {
+      background: var(--primary);
+      color: #fff;
+      padding: 12px 16px;
+      text-align: left;
+      font-weight: 600;
+      white-space: nowrap;
+    }
+    tbody td { padding: 11px 16px; border-bottom: 1px solid var(--border); vertical-align: top; }
+    tbody tr:last-child td { border-bottom: none; }
+    tbody tr:nth-child(even) { background: #fafafa; }
+    tbody tr:hover { background: var(--primary-light); transition: background 0.15s; }
+
+    /* ── Check list ── */
+    .check-list { list-style: none; padding: 0; }
+    .check-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 7px 0;
+      border-bottom: 1px solid var(--border);
+      font-size: 14px;
+    }
+    .check-list li:last-child { border-bottom: none; }
+    .check-list .ico { font-size: 16px; line-height: 1.4; flex-shrink: 0; }
+
+    /* ── Contact grid ── */
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+    .contact-item {
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 14px 16px;
+    }
+    .contact-label {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.6px; color: var(--text-muted); margin-bottom: 4px;
+    }
+    .contact-value { font-size: 14px; font-weight: 600; color: var(--text); }
+    .contact-value a { color: var(--primary); text-decoration: none; }
+    .contact-value a:hover { text-decoration: underline; }
+
+    /* ── Summary card ── */
+    .summary-card {
+      background: linear-gradient(135deg, var(--primary) 0%, #c0392b 100%);
+      color: #fff;
+      border-radius: var(--radius);
+      padding: 32px;
+      margin-top: 32px;
+    }
+    .summary-card h3 { color: #fff; margin-top: 0; font-size: 18px; margin-bottom: 12px; }
+    .summary-card p  { color: rgba(255,255,255,0.88); margin-bottom: 0; font-size: 15px; }
+
+    /* ── Footer ── */
+    footer {
+      text-align: center;
+      color: var(--text-muted);
+      font-size: 13px;
+      margin-top: 48px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+    }
+    footer strong { color: var(--text); }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    @media (max-width: 640px) {
+      section { padding: 24px 18px 20px; }
+      .toc ol { columns: 1; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .hero { padding: 48px 16px 36px; }
+    }
+  </style>
 </head>
 <body>
-    <div class="container">
-        <div class="header">
-            <h1>Privacy Policy</h1>
-            <p>Monely – Expense Tracking</p>
-        </div>
-        
-        <div class="content">
-            <div class="metadata">
-                <strong>Last Updated:</strong> January 26, 2026<br>
-                <strong>Version:</strong> 1.0<br>
-                <strong>Effective Date:</strong> January 26, 2026
-            </div>
-            
-            <h2>Introduction</h2>
-            <p>Monely is a personal expense tracking application. This Privacy Policy explains what data Monely collects, how it's used, and your privacy choices.</p>
-            <p>This app is designed to work globally and follows applicable privacy regulations including the GDPR (Europe), CCPA/CPRA (California), and Google Play & App Store privacy requirements. We collect the minimum data necessary to operate the app.</p>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">1.</span> What Data We Collect</h2>
-            
-            <h3>1.1 Data Stored Locally On Your Device (Not Sent to Us)</h3>
-            <p>All your expense data stays on your device:</p>
-            <ul>
-                <li>Expenses (amount, category, date, description)</li>
-                <li>Accounts (names, balances)</li>
-                <li>Categories (custom categories you create)</li>
-            </ul>
-            <div class="summary-box">
-                <strong>⚠️ Important:</strong> This data is <strong>NOT</strong> sent anywhere unless you explicitly use backup/restore.
-            </div>
-            
-            <h3>1.2 Data Sent to Firebase (Google Analytics)</h3>
-            <p>When you use the app, Firebase Analytics tracks:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Action</th>
-                        <th>Data Sent</th>
-                        <th>Data NOT Sent</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Add expense</td>
-                        <td>Category ID</td>
-                        <td>Amount, notes, description</td>
-                    </tr>
-                    <tr>
-                        <td>Edit/Delete expense</td>
-                        <td>Event name</td>
-                        <td>Any personal details</td>
-                    </tr>
-                    <tr>
-                        <td>View stats</td>
-                        <td>Screen name</td>
-                        <td>No financial data</td>
-                    </tr>
-                    <tr>
-                        <td>Add/Edit account</td>
-                        <td>Event name</td>
-                        <td>Account name or balance</td>
-                    </tr>
-                    <tr>
-                        <td>Export/Backup</td>
-                        <td>Event name</td>
-                        <td>File contents</td>
-                    </tr>
-                    <tr>
-                        <td>Watch ad</td>
-                        <td>Event name</td>
-                        <td>No personal data</td>
-                    </tr>
-                </tbody>
-            </table>
-            <div class="summary-box">
-                <strong>Summary:</strong> Firebase gets generic event names and category IDs only. <strong>Your amounts, notes, and descriptions are never sent.</strong>
-            </div>
-            <p>Analytics collection may be disabled automatically for users in certain regions (such as the European Economic Area) until consent is provided through a consent form.</p>
-            
-            <h3>1.3 Data Sent to Google Mobile Ads</h3>
-            <p>Google Ads receives:</p>
-            <ul>
-                <li>Ad interactions (when you see/click ads)</li>
-            </ul>
-            <p>We use non‑personalized ads by default. For users in regions that require consent, ads may be disabled or limited until consent is granted.</p>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">2.</span> How Data is Used</h2>
-            
-            <h3>Firebase Analytics</h3>
-            <ul>
-                <li>Understand which features users use</li>
-                <li>Track app crashes and errors</li>
-                <li>Improve app performance</li>
-                <li>Control ads via Remote Config (see below)</li>
-            </ul>
-            
-            <h3>Google Mobile Ads</h3>
-            <ul>
-                <li>Display banner ads and video ads</li>
-                <li>Show "Watch Ad for Coins" button</li>
-                <li>Target ads to your interests</li>
-            </ul>
-            
-            <h3>Your Local Data</h3>
-            <ul>
-                <li>Only you can see and access it</li>
-                <li>Used to calculate statistics and summaries</li>
-                <li>Exported when you export CSV</li>
-            </ul>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">3.</span> Firebase Remote Config (Dynamic Feature Control)</h2>
-            <p>The app can enable/disable features from Firebase Console without updates:</p>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Feature</th>
-                        <th>What's Controlled</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>ads_enabled</td>
-                        <td>Turn all ads on/off</td>
-                    </tr>
-                    <tr>
-                        <td>interstitial_enabled</td>
-                        <td>Video ads during app use</td>
-                    </tr>
-                    <tr>
-                        <td>banner_enabled</td>
-                        <td>Bottom ads on screens</td>
-                    </tr>
-                    <tr>
-                        <td>rewarded_enabled</td>
-                        <td>"Watch Ad for Coins" button</td>
-                    </tr>
-                    <tr>
-                        <td>interstitial_cooldown_minutes</td>
-                        <td>How often ads show (default: 24 hours)</td>
-                    </tr>
-                    <tr>
-                        <td>analytics_enabled</td>
-                        <td>Track app usage</td>
-                    </tr>
-                    <tr>
-                        <td>category_management</td>
-                        <td>Manage expense categories</td>
-                    </tr>
-                    <tr>
-                        <td>account_management</td>
-                        <td>Manage accounts</td>
-                    </tr>
-                </tbody>
-            </table>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">4.</span> Consent & Legal Basis</h2>
-            <p>Where required by law (such as in the European Economic Area and the UK), we request your consent before enabling analytics or advertising services. You may accept or decline consent at any time.</p>
-            <ul>
-                <li>Consent – for analytics and ads where legally required</li>
-                <li>Legitimate interests – app performance, crash reporting, and essential functionality</li>
-            </ul>
-            <hr class="divider">
-            
-            <h2><span class="section-number">5.</span> Backup & Restore</h2>
-            <ul>
-                <li>Backup is <span class="highlight">optional and user-initiated</span></li>
-                <li>Only happens when you click "Backup Data"</li>
-                <li>Your encrypted expense data may be sent to your device's cloud storage</li>
-                <li>You control when to restore it</li>
-                <li>You can delete backups anytime</li>
-            </ul>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">6.</span> Data You Can Control</h2>
-            
-            <h3>Delete Your Data</h3>
-            <ul>
-                <li><span class="checkmark">✓</span> Delete individual expenses</li>
-                <li><span class="checkmark">✓</span> Delete accounts</li>
-                <li><span class="checkmark">✓</span> Delete categories</li>
-                <li><span class="checkmark">✓</span> Full reset via Settings</li>
-            </ul>
-            
-            <h3>Export Your Data</h3>
-            <ul>
-                <li><span class="checkmark">✓</span> Export all expenses as CSV</li>
-                <li><span class="checkmark">✓</span> View all your data anytime</li>
-            </ul>
-            
-            <h3>Turn Off Personalized Ads (Device Level)</h3>
-            <ul>
-                <li><strong>iOS:</strong> Settings > Privacy > Apple Advertising > Turn off Personalized Ads</li>
-                <li><strong>Android:</strong> Settings > Google > Data & Privacy > Ad Personalization > Turn off</li>
-            </ul>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">7.</span> Third-Party Services</h2>
-            
-            <h3>Google Firebase</h3>
-            <ul>
-                <li><strong>What:</strong> Analytics, crash reporting, feature control</li>
-                <li><strong>Why:</strong> Understand usage, fix bugs, manage ads</li>
-                <li><strong>Privacy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-            </ul>
-            
-            <h3>Google Mobile Ads</h3>
-            <ul>
-                <li><strong>What:</strong> Serve ads in the app</li>
-                <li><strong>Why:</strong> Revenue from ads</li>
-                <li><strong>Privacy:</strong> <a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></li>
-            </ul>
-            
-            <h3>Local Storage Only</h3>
-            <p>Your expense amounts, notes, and descriptions are <strong>never</strong> shared with any third party.</p>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">8.</span> What We Don't Do</h2>
-            <ul>
-                <li><span class="xmark">✗</span> We don't sell your data</li>
-                <li><span class="xmark">✗</span> We don't sell user lists</li>
-                <li><span class="xmark">✗</span> We don't track your location</li>
-                <li><span class="xmark">✗</span> We don't access your contacts</li>
-                <li><span class="xmark">✗</span> We don't read your messages</li>
-                <li><span class="xmark">✗</span> We don't require account creation</li>
-                <li><span class="xmark">✗</span> We don't require login</li>
-            </ul>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">9.</span> Data Retention</h2>
-            <p>Expense data remains only on your device until you delete it. Analytics and advertising event data stored by our providers may be retained according to their standard retention policies. We do not maintain our own servers that store your financial data.</p>
-            <hr class="divider">
-            
-            <h2><span class="section-number">10.</span> Security</h2>
-            <ul>
-                <li>All data stored locally uses device encryption</li>
-                <li>Backup/restore uses encrypted transmission</li>
-                <li>No passwords stored in the app</li>
-                <li>No login required (your data is only on your device)</li>
-            </ul>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">11.</span> Children (Under 13)</h2>
-            <p>This app is not intended for children under 13. We don't knowingly collect data from children under 13.</p>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">12.</span> Your Rights</h2>
-            <p>You have the right to:</p>
-            <ul>
-                <li>Access all your expense data anytime</li>
-                <li>Delete any data anytime</li>
-                <li>Export your data as CSV</li>
-                <li>Disable personalized ads (device settings)</li>
-            </ul>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">13.</span> Changes to This Policy</h2>
-            <p>If we change this policy, the "Last Updated" date will change. Significant changes will be noted.</p>
-            
-            <hr class="divider">
-            
-            <h2><span class="section-number">14.</span> Contact</h2>
-            <p>Questions about this privacy policy?</p>
-            <div class="contact-box">
-                <p><strong>Developer:</strong> CodeYard Studio</p>
-                <p><strong>Email:</strong> codeyard.studio@gmail.com</p>
-                <p><strong>Location:</strong> India (serving users worldwide)</p>
-                <p><strong>In-App:</strong> More > Help & Feedback</p>
-            </div>
-            
-            <hr class="divider">
-            
-            <h2>Summary</h2>
-            <div class="summary-box">
-                <p><strong>Monely is a local expense tracker with optional analytics.</strong> Your financial data stays on your device. Only generic usage events (not your amounts/notes) go to Firebase. Ads are served through Google. Everything is optional, consent‑based where required, and fully controllable by you.</p>
-            </div>
-        </div>
-        
-        <div class="footer">
-            <p><strong>Monely</strong> - Expense Tracking</p>
-            <p>© 2026 Codeyard Studio. All rights reserved.</p>
-            <p style="margin-top: 15px; font-size: 0.8em;">This privacy policy is effective as of January 26, 2026</p>
-        </div>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-badge">Legal · Privacy</div>
+  <h1>Privacy Policy</h1>
+  <p class="hero-sub">Monely – Money Manager – Personal Finance &amp; Expense Tracker</p>
+  <div class="hero-meta">
+    Last Updated: March 2, 2026 &nbsp;·&nbsp; Version 2.0.1 &nbsp;·&nbsp; Effective: March 2, 2026
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- TOC -->
+  <nav class="toc">
+    <div class="toc-title">Table of Contents</div>
+    <ol>
+      <li><a href="#s1">What Data We Collect</a></li>
+      <li><a href="#s2">How Data Is Used</a></li>
+      <li><a href="#s3">Local Storage &amp; SQLite</a></li>
+      <li><a href="#s4">Firebase Analytics &amp; Remote Config</a></li>
+      <li><a href="#s5">Advertising (Google Mobile Ads)</a></li>
+      <li><a href="#s6">Consent &amp; Legal Basis</a></li>
+      <li><a href="#s7">Backup, Export &amp; Restore</a></li>
+      <li><a href="#s8">Your Rights &amp; Controls</a></li>
+      <li><a href="#s9">Third-Party Services</a></li>
+      <li><a href="#s10">What We Never Do</a></li>
+      <li><a href="#s11">Data Retention</a></li>
+      <li><a href="#s12">Security</a></li>
+      <li><a href="#s13">Children</a></li>
+      <li><a href="#s14">Policy Changes</a></li>
+      <li><a href="#s15">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <!-- 1. WHAT DATA WE COLLECT -->
+  <section id="s1">
+    <div class="section-header">
+      <div class="section-icon">📋</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 1</div>
+        <h2>What Data We Collect</h2>
+      </div>
     </div>
+
+    <h3>Data That Stays On Your Device (We Never See It)</h3>
+    <p>All your financial data is stored <strong>locally in a SQLite database on your device</strong>. This includes:</p>
+    <ul>
+      <li><strong>Expenses</strong> – amount, category, account, date, note, description</li>
+      <li><strong>Income</strong> – amount, category, account, date, note, description</li>
+      <li><strong>Transfers</strong> – amount, from account, to account, date, note</li>
+      <li><strong>Recurring transactions</strong> – expense, income or transfer templates with frequency, start/end dates</li>
+      <li><strong>Recurring instances</strong> – generated occurrences of each recurring entry</li>
+      <li><strong>Budgets</strong> – category-based spending limits you set</li>
+      <li><strong>Accounts</strong> – wallet and card names you create (e.g. Cash, Bank, Credit Card)</li>
+      <li><strong>Categories</strong> – expense and income categories you manage</li>
+      <li><strong>App settings</strong> – selected currency, app theme preference</li>
+    </ul>
+    <div class="callout warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <strong>None of the above is ever sent to us or any server.</strong> It only leaves your device if <em>you</em> explicitly use the backup or export feature.
+      </div>
+    </div>
+
+    <h3>Data Sent to Firebase (Event Names Only)</h3>
+    <p>When you use the app, Firebase Analytics receives only generic event names — <strong>never your amounts, notes, or descriptions</strong>:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Action You Take</th><th>What Firebase Receives</th><th>What It Never Receives</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Add / edit / delete expense</td><td>Event name, category ID</td><td>Amount, note, description</td></tr>
+          <tr><td>Add / edit income</td><td>Event name</td><td>Amount, note, source</td></tr>
+          <tr><td>Add transfer between accounts</td><td>Event name</td><td>Amount, account names</td></tr>
+          <tr><td>Create / edit recurring transaction</td><td>Event name</td><td>Amount, schedule details</td></tr>
+          <tr><td>Create / edit budget</td><td>Event name</td><td>Budget amount, category name</td></tr>
+          <tr><td>Use search or filters</td><td>Event name</td><td>Search terms, filter values</td></tr>
+          <tr><td>View stats, Smart Insights, or charts</td><td>Screen name</td><td>No financial data</td></tr>
+          <tr><td>Create backup / export data</td><td>Event name</td><td>File contents, your data</td></tr>
+          <tr><td>Change currency or theme</td><td>Event name</td><td>Selected currency/theme</td></tr>
+          <tr><td>See or interact with an ad</td><td>Ad event name</td><td>No personal information</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h3>Data Sent to Google Mobile Ads</h3>
+    <p>When ads are displayed, Google Mobile Ads may receive device identifiers and ad interaction data to serve and measure ads. This is handled entirely by Google's SDK — we do not see or store any of this data. See <a href="#s5">Section 5</a> for full details.</p>
+  </section>
+
+  <!-- 2. HOW DATA IS USED -->
+  <section id="s2">
+    <div class="section-header">
+      <div class="section-icon">🎯</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 2</div>
+        <h2>How Data Is Used</h2>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Data Type</th><th>Purpose</th><th>Who Has Access</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Your financial data (expenses, income, transfers, budgets)</td>
+            <td>Display transactions, calculate totals, insights, budgets, Smart Insights card</td>
+            <td>Only you – device-local only</td>
+          </tr>
+          <tr>
+            <td>Firebase analytics events</td>
+            <td>Understand feature usage, identify crashes, improve the app</td>
+            <td>Google Firebase (anonymised)</td>
+          </tr>
+          <tr>
+            <td>Remote Config flags</td>
+            <td>Enable/disable features (ads, rate button, etc.) without an app update</td>
+            <td>Google Firebase</td>
+          </tr>
+          <tr>
+            <td>Ad interaction data</td>
+            <td>Serve relevant ads, measure ad performance</td>
+            <td>Google Mobile Ads</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 3. LOCAL STORAGE -->
+  <section id="s3">
+    <div class="section-header">
+      <div class="section-icon">🗄️</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 3</div>
+        <h2>Local Storage &amp; SQLite Database</h2>
+      </div>
+    </div>
+    <p>Monely stores all your data in a <strong>SQLite database on your device</strong> using <em>expo-sqlite</em>. The database tables include:</p>
+    <ul>
+      <li><strong>expenses</strong> – all expense and income transactions</li>
+      <li><strong>transfers</strong> – account-to-account transfers</li>
+      <li><strong>recurring_expenses</strong> – recurring transaction templates (expense, income, or transfer)</li>
+      <li><strong>recurring_instances</strong> – generated occurrences of each recurring entry</li>
+      <li><strong>budgets</strong> – your monthly category budgets and spending limits</li>
+      <li><strong>accounts</strong> – your financial accounts (Cash, Bank, Credit Card, etc.)</li>
+      <li><strong>categories</strong> – custom expense and income categories</li>
+    </ul>
+    <div class="callout success">
+      <span class="callout-icon">✅</span>
+      <div class="callout-body">
+        <strong>No account or login required.</strong> Your data is tied only to your device. Uninstalling the app removes all local data permanently.
+      </div>
+    </div>
+    <p>Your currency preference and app theme (light/dark) are stored in <strong>AsyncStorage</strong> — a device-local key-value store. No cloud sync occurs.</p>
+    <p>Currency can be set automatically based on your device locale or selected manually at any time from <strong>More → Currency Settings</strong>.</p>
+  </section>
+
+  <!-- 4. FIREBASE -->
+  <section id="s4">
+    <div class="section-header">
+      <div class="section-icon">🔥</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 4</div>
+        <h2>Firebase Analytics &amp; Remote Config</h2>
+      </div>
+    </div>
+
+    <h3>Firebase Analytics</h3>
+    <p>We use Google Firebase Analytics to understand how the app is used in aggregate and to identify crashes. Only <strong>event names and non-financial metadata</strong> are sent — your amounts, notes, and descriptions are never included.</p>
+    <p>Analytics may be automatically disabled for users in the EEA and UK until explicit consent is provided through the in-app Google UMP consent form.</p>
+
+    <h3>Firebase Remote Config</h3>
+    <p>Remote Config lets us adjust app behaviour (such as enabling or disabling features) without pushing an app update. The following flags are controlled remotely:</p>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Flag</th><th>What It Controls</th><th>Default</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>ads_enabled</code></td><td>Master switch — turns ALL ads on or off instantly</td><td>On</td></tr>
+          <tr><td><code>banner_enabled</code></td><td>Banner ads shown at the bottom of screens</td><td>On</td></tr>
+          <tr><td><code>rewarded_interstitial_enabled</code></td><td>Short video ads that may appear after saving a transaction</td><td>On</td></tr>
+          <tr><td><code>rewarded_interstitial_cooldown_minutes</code></td><td>Minimum gap between rewarded ads (default: 24 hours)</td><td>1440 min</td></tr>
+          <tr><td><code>analytics_enabled</code></td><td>Firebase Analytics event collection</td><td>On</td></tr>
+          <tr><td><code>rate_app_enabled</code></td><td>Show the "Rate This App" button in the app</td><td>Off</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout info">
+      <span class="callout-icon">ℹ️</span>
+      <div class="callout-body">Remote Config fetches are anonymous — no personal data is ever sent to retrieve these flags.</div>
+    </div>
+  </section>
+
+  <!-- 5. ADVERTISING -->
+  <section id="s5">
+    <div class="section-header">
+      <div class="section-icon">📣</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 5</div>
+        <h2>Advertising (Google Mobile Ads)</h2>
+      </div>
+    </div>
+    <p>Monely uses <strong>Google Mobile Ads (AdMob)</strong> to display two types of ads:</p>
+    <ul>
+      <li><strong>Banner ads</strong> – a small banner shown at the bottom of certain screens while you browse</li>
+      <li><strong>Rewarded interstitial ads</strong> – a short optional video ad that may appear after you save a transaction. A 24-hour cooldown prevents these from appearing too frequently.</li>
+    </ul>
+    <p>Ads are only shown when:</p>
+    <ul>
+      <li>You have an active internet connection</li>
+      <li>Ad consent has been provided (where required by applicable law)</li>
+      <li>The relevant Remote Config feature flag is enabled</li>
+    </ul>
+    <div class="callout warning">
+      <span class="callout-icon">⚠️</span>
+      <div class="callout-body">
+        <strong>Google Mobile Ads may collect device identifiers for ad targeting.</strong> This is governed entirely by Google's privacy policy, not ours. Non-personalised ads are used by default for users in consent-required regions.
+      </div>
+    </div>
+    <p>To opt out of personalised ads at the device level:</p>
+    <ul>
+      <li><strong>Android:</strong> Settings → Google → Ads → Reset advertising ID / Opt out of ads personalisation</li>
+      <li><strong>iOS:</strong> Settings → Privacy &amp; Security → Apple Advertising → Turn off Personalised Ads</li>
+    </ul>
+    <p>Google's full privacy policy: <a href="https://policies.google.com/privacy" target="_blank" rel="noopener">policies.google.com/privacy</a></p>
+  </section>
+
+  <!-- 6. CONSENT -->
+  <section id="s6">
+    <div class="section-header">
+      <div class="section-icon">✋</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 6</div>
+        <h2>Consent &amp; Legal Basis</h2>
+      </div>
+    </div>
+    <p>Where required by applicable privacy law (GDPR for EEA/UK users, CCPA for California users, and similar regulations), we request your explicit consent before enabling analytics or personalised advertising.</p>
+    <p>The in-app consent form is powered by <strong>Google's User Messaging Platform (UMP)</strong>. Your choices:</p>
+    <ul>
+      <li><strong>Accept:</strong> enables analytics and personalised ads</li>
+      <li><strong>Decline:</strong> disables analytics and personalised ads; limited (non-personalised) ads may still appear</li>
+    </ul>
+    <h3>Legal Bases</h3>
+    <ul>
+      <li><strong>Consent</strong> – analytics and personalised advertising (where legally required)</li>
+      <li><strong>Legitimate interests</strong> – app stability, crash detection, and essential functionality</li>
+    </ul>
+  </section>
+
+  <!-- 7. BACKUP / EXPORT -->
+  <section id="s7">
+    <div class="section-header">
+      <div class="section-icon">💾</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 7</div>
+        <h2>Backup, Export &amp; Restore</h2>
+      </div>
+    </div>
+
+    <h3>Creating a Backup (More → Backup &amp; Restore)</h3>
+    <p>Backup is entirely optional and user-initiated. When you tap <strong>Create Backup</strong>, the app:</p>
+    <ol>
+      <li>Gathers all your data (expenses, income, transfers, recurring transactions, budgets, accounts, categories) from the local SQLite database</li>
+      <li>Saves it as a <code>monely-backup-YYYY-MM-DD.json</code> file in your device's temporary cache</li>
+      <li>Opens the <strong>system share sheet</strong> so you can send it to Google Drive, iCloud, email, a file manager, WhatsApp, or any app you choose</li>
+    </ol>
+    <div class="callout success">
+      <span class="callout-icon">📤</span>
+      <div class="callout-body">
+        <strong>About the share sheet on Android &amp; iOS:</strong> Both platforms use the OS-level share sheet which lets you pick any installed app as the destination — Google Drive, Dropbox, Files, email, etc. We never receive the backup file; you control exactly where it goes.
+      </div>
+    </div>
+
+    <h3>Restoring a Backup</h3>
+    <p>Tap <strong>Restore Backup</strong> and select a previously created <code>.json</code> backup file. This replaces <em>all</em> current data. Create a fresh backup first if you want to preserve your existing records.</p>
+
+    <h3>Exporting Data (More → Export Data)</h3>
+    <p>Export your transaction history in two formats:</p>
+    <ul>
+      <li><strong>CSV</strong> – compatible with Excel, Google Sheets, Numbers, and other spreadsheet apps</li>
+      <li><strong>TXT</strong> – a formatted text report with monthly summaries, totals, and transaction lists</li>
+    </ul>
+    <p>You choose which types to include: expenses, income, transfers, recurring transactions, budgets, or all of them. The exported file is shared via the system share sheet — we never receive it.</p>
+  </section>
+
+  <!-- 8. YOUR RIGHTS -->
+  <section id="s8">
+    <div class="section-header">
+      <div class="section-icon">🔑</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 8</div>
+        <h2>Your Rights &amp; Controls</h2>
+      </div>
+    </div>
+
+    <h3>What You Can Do In the App</h3>
+    <ul class="check-list">
+      <li><span class="ico">✅</span> View all your financial data at any time</li>
+      <li><span class="ico">✅</span> Add, edit, or delete individual expenses, income, or transfers</li>
+      <li><span class="ico">✅</span> Search and filter transactions by date, account, category, or amount</li>
+      <li><span class="ico">✅</span> Create, edit, or delete recurring transaction templates and their instances</li>
+      <li><span class="ico">✅</span> Create, edit, or delete budgets</li>
+      <li><span class="ico">✅</span> Manage categories and accounts</li>
+      <li><span class="ico">✅</span> Reset all data via <strong>More → Reset Content</strong> (complete factory reset)</li>
+      <li><span class="ico">✅</span> Export all data as CSV or TXT at any time</li>
+      <li><span class="ico">✅</span> Back up your data and store it wherever you choose</li>
+      <li><span class="ico">✅</span> Change display currency at any time (<strong>More → Currency Settings</strong>)</li>
+      <li><span class="ico">✅</span> Switch between light and dark mode (<strong>More → Appearance</strong>)</li>
+    </ul>
+
+    <h3>GDPR / CCPA Rights</h3>
+    <p>Since we do not collect or store personal data on our servers, most rights (access, portability, deletion) can be exercised directly within the app. For data held by Firebase or Google Ads, you can:</p>
+    <ul>
+      <li>Email us at <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a> to request assistance</li>
+      <li>Manage Google data at <a href="https://myaccount.google.com/data-and-privacy" target="_blank" rel="noopener">myaccount.google.com</a></li>
+    </ul>
+  </section>
+
+  <!-- 9. THIRD-PARTY -->
+  <section id="s9">
+    <div class="section-header">
+      <div class="section-icon">🔗</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 9</div>
+        <h2>Third-Party Services</h2>
+      </div>
+    </div>
+    <div class="table-wrap">
+      <table>
+        <thead>
+          <tr><th>Service</th><th>What It Does in Monely</th><th>Data Shared</th><th>Privacy Policy</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>Firebase Analytics</strong></td>
+            <td>Usage analytics and crash reporting</td>
+            <td>Event names, category IDs (no amounts or notes)</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+          </tr>
+          <tr>
+            <td><strong>Firebase Remote Config</strong></td>
+            <td>Dynamic feature flags (ads, rate button, etc.)</td>
+            <td>Anonymous flag-fetch requests</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+          </tr>
+          <tr>
+            <td><strong>Google Mobile Ads (AdMob)</strong></td>
+            <td>Banner ads and rewarded interstitial ads</td>
+            <td>Device identifiers, ad interactions (managed by Google)</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+          </tr>
+          <tr>
+            <td><strong>Google UMP</strong></td>
+            <td>In-app GDPR/CCPA consent form</td>
+            <td>Consent status</td>
+            <td><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Link</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callout neutral">
+      <span class="callout-icon">🔒</span>
+      <div class="callout-body">Your expense amounts, notes, and descriptions are <strong>never shared with any third party</strong>.</div>
+    </div>
+  </section>
+
+  <!-- 10. WHAT WE NEVER DO -->
+  <section id="s10">
+    <div class="section-header">
+      <div class="section-icon">🚫</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 10</div>
+        <h2>What We Never Do</h2>
+      </div>
+    </div>
+    <ul class="check-list">
+      <li><span class="ico">❌</span> Sell your data to any third party — ever</li>
+      <li><span class="ico">❌</span> Share your financial data with advertisers</li>
+      <li><span class="ico">❌</span> Track your physical location</li>
+      <li><span class="ico">❌</span> Access your contacts, call logs, or messages</li>
+      <li><span class="ico">❌</span> Require account creation or login</li>
+      <li><span class="ico">❌</span> Store your financial data on our own servers</li>
+      <li><span class="ico">❌</span> Access your camera or microphone</li>
+      <li><span class="ico">❌</span> Send marketing emails or push notifications without your explicit permission</li>
+    </ul>
+  </section>
+
+  <!-- 11. DATA RETENTION -->
+  <section id="s11">
+    <div class="section-header">
+      <div class="section-icon">🗓️</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 11</div>
+        <h2>Data Retention</h2>
+      </div>
+    </div>
+    <p>Your financial data stays on your device for as long as the app is installed. Uninstalling Monely permanently deletes all local data.</p>
+    <p>Analytics event data in Firebase is subject to Google's standard retention policies (typically 14 months for event data). We have no control over that retention period.</p>
+    <p>We do not operate any server or database that retains your personal or financial information.</p>
+  </section>
+
+  <!-- 12. SECURITY -->
+  <section id="s12">
+    <div class="section-header">
+      <div class="section-icon">🛡️</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 12</div>
+        <h2>Security</h2>
+      </div>
+    </div>
+    <ul>
+      <li>Data is stored in the device's <strong>sandboxed app storage</strong>, protected by the operating system's file-system encryption</li>
+      <li>No passwords are stored — no login required</li>
+      <li>Backup files are shared directly to your chosen destination (e.g. Google Drive) and are not transmitted through any infrastructure we operate</li>
+      <li>All Firebase and Remote Config communications use <strong>HTTPS</strong></li>
+    </ul>
+    <div class="callout info">
+      <span class="callout-icon">💡</span>
+      <div class="callout-body">We recommend creating regular backups and storing them in a trusted cloud storage service to protect against device loss or damage.</div>
+    </div>
+  </section>
+
+  <!-- 13. CHILDREN -->
+  <section id="s13">
+    <div class="section-header">
+      <div class="section-icon">👶</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 13</div>
+        <h2>Children</h2>
+      </div>
+    </div>
+    <p>Monely is not directed at children under the age of 13 (or the applicable minimum age in your jurisdiction). We do not knowingly collect personal information from children. If you believe a child has used the app, please contact us at <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a>.</p>
+  </section>
+
+  <!-- 14. POLICY CHANGES -->
+  <section id="s14">
+    <div class="section-header">
+      <div class="section-icon">📝</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 14</div>
+        <h2>Policy Changes</h2>
+      </div>
+    </div>
+    <p>If we update this privacy policy, the "Last Updated" date at the top of this page will change. Significant changes that affect how your data is used will be communicated through an in-app notice or on our app store listing.</p>
+    <p>Continued use of Monely after a policy update constitutes acceptance of the revised policy.</p>
+  </section>
+
+  <!-- 15. CONTACT -->
+  <section id="s15">
+    <div class="section-header">
+      <div class="section-icon">📬</div>
+      <div class="section-title-wrap">
+        <div class="section-num">Section 15</div>
+        <h2>Contact Us</h2>
+      </div>
+    </div>
+    <p>Questions about this policy, data rights requests, or general support — reach us at:</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-label">Developer</div>
+        <div class="contact-value">CodeYard Studio</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Email</div>
+        <div class="contact-value"><a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Location</div>
+        <div class="contact-value">Serving users worldwide</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">In-App</div>
+        <div class="contact-value">More → Help &amp; FAQs → Email Support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUMMARY -->
+  <div class="summary-card">
+    <h3>📊 Plain-English Summary</h3>
+    <p>
+      Monely is a local-first expense tracker. <strong>Your financial data never leaves your device</strong> unless you choose to export or back it up. We use Firebase to understand how the app is used in aggregate (event names only — no amounts or notes) and Google Mobile Ads to display occasional ads that keep the app free. You are in full control: view, edit, delete, search, filter, or export everything from within the app at any time, with no account required.
+    </p>
+  </div>
+
+  <!-- FOOTER -->
+  <footer>
+    <p><strong>Monely</strong> – Personal Finance &amp; Expense Tracker</p>
+    <p>© 2026 CodeYard Studio. All rights reserved.</p>
+    <p style="margin-top:8px; font-size:12px; color:#9ca3af;">Privacy Policy v2.0 · Effective March 2, 2026</p>
+  </footer>
+
+</div>
 </body>
 </html>
