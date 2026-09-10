@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../assets/icon.jpeg" type="image/x-icon">
+  <link rel="shortcut icon" href="../assets/icon-180.png" type="image/png">
   <title>Get Trainix</title>
   <style>
     :root {
@@ -32,8 +32,7 @@
       height: 96px;
       border-radius: 22px;
       margin-bottom: 20px;
-      background: var(--card);
-      border: 1px solid var(--border);
+      box-shadow: 0 12px 40px rgba(59,130,246,.25);
     }
     h1 {
       font-size: 28px;
@@ -44,6 +43,8 @@
       color: var(--muted);
       font-size: 15px;
       margin-bottom: 32px;
+      max-width: 320px;
+      line-height: 1.5;
     }
     .btn {
       display: inline-block;
@@ -72,10 +73,9 @@
 </head>
 <body>
 
-  <!-- Replace src with your actual app icon URL -->
-  <img class="icon" src="../assets/icon.jpeg" alt="Trainix" />
+  <img class="icon" src="../assets/icon-180.png" alt="Trainix app icon" width="96" height="96" />
   <h1>Trainix</h1>
-  <p class="tagline">Your AI-Powered Workout Tracker</p>
+  <p class="tagline">Your fitness studio for workouts, nutrition &amp; habits</p>
 
   <div class="buttons" id="buttons">
     <p class="status" id="status">Detecting your device…</p>
@@ -103,7 +103,6 @@
 
       if (isIOS) {
         status.textContent = 'Redirecting to the App Store…';
-        // Try to open the app first, fall back to App Store
         var now = Date.now();
         window.location.href = SCHEME_URL;
         setTimeout(function () {
@@ -111,13 +110,11 @@
             window.location.href = IOS_URL;
           }
         }, 800);
-        // Show fallback link after delay
         setTimeout(function () {
           showBothLinks();
         }, 2000);
       } else if (isAndroid) {
         status.textContent = 'Redirecting to Google Play…';
-        // Try to open the app first via intent, fall back to Play Store
         window.location.href = 'intent://open#Intent;scheme=trainix;package=com.codeyard.trainix;S.browser_fallback_url=' + encodeURIComponent(ANDROID_URL) + ';end';
         setTimeout(function () {
           window.location.href = ANDROID_URL;
@@ -126,7 +123,6 @@
           showBothLinks();
         }, 2000);
       } else {
-        // Desktop or unknown — show both links
         showBothLinks();
       }
     })();
