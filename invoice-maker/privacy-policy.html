@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy – Invoice Maker</title>
+  <meta name="description" content="Invoice Maker Privacy Policy. 100% local data storage, no cloud sync, user-controlled backups." />
+  <link rel="canonical" href="https://codeyardstudio.com/invoice-maker/privacy-policy.html" />
+  <style>
+    :root {
+      --primary: #2563EB;
+      --primary-dark: #1d4ed8;
+      --primary-light: #eff6ff;
+      --primary-border: #bfdbfe;
+      --text: #1a1a2e;
+      --text-muted: #6b7280;
+      --surface: #ffffff;
+      --bg: #f8f9fb;
+      --border: #e5e7eb;
+      --green: #16a34a;
+      --radius: 12px;
+      --radius-sm: 8px;
+      --shadow: 0 4px 24px rgba(0,0,0,0.08);
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+      font-size: 15px;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #fff;
+      padding: max(48px, env(safe-area-inset-top, 0px) + 32px) 20px 40px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 100px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-size: clamp(28px, 6vw, 44px);
+      font-weight: 800;
+      letter-spacing: -0.5px;
+      margin-bottom: 10px;
+    }
+    .hero-sub { font-size: 15px; line-height: 1.5; opacity: 0.92; max-width: 520px; margin: 0 auto 20px; padding: 0 8px; }
+    .hero-meta { font-size: 13px; opacity: 0.72; }
+    .hero a { color: #fff; text-decoration: underline; }
+
+    .page { max-width: 860px; margin: 0 auto; padding: 0 16px 80px; }
+
+    .toc {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 24px 28px;
+      margin: 40px 0 0;
+      box-shadow: var(--shadow);
+    }
+    .toc-title {
+      font-size: 13px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.7px; color: var(--text-muted); margin-bottom: 14px;
+    }
+    .toc ol { padding-left: 20px; columns: 2; column-gap: 32px; }
+    .toc li { margin-bottom: 6px; break-inside: avoid; }
+    .toc a { color: var(--primary); text-decoration: none; font-size: 14px; font-weight: 500; }
+    .toc a:hover { text-decoration: underline; }
+
+    section {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px;
+      margin-top: 24px;
+      box-shadow: 0 1px 6px rgba(0,0,0,0.05);
+      scroll-margin-top: 20px;
+    }
+
+    .section-header {
+      display: flex; align-items: center; gap: 14px;
+      margin-bottom: 24px; padding-bottom: 18px; border-bottom: 1px solid var(--border);
+    }
+    .section-icon {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: var(--primary-light);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 20px; flex-shrink: 0;
+    }
+    .section-num {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.8px; color: var(--primary); margin-bottom: 2px;
+    }
+    h2 { font-size: 20px; font-weight: 700; color: var(--text); line-height: 1.2; }
+    h3 { font-size: 15px; font-weight: 700; color: var(--text); margin: 24px 0 10px; }
+    h3:first-child { margin-top: 0; }
+    p { margin-bottom: 14px; color: #374151; }
+    p:last-child { margin-bottom: 0; }
+    ul, ol { padding-left: 20px; margin-bottom: 14px; }
+    li { margin-bottom: 6px; color: #374151; }
+
+    .callout {
+      border-radius: var(--radius-sm);
+      padding: 16px 18px;
+      margin: 18px 0;
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .callout.success { background: #f0fdf4; border: 1px solid #bbf7d0; }
+    .callout.info { background: var(--primary-light); border: 1px solid var(--primary-border); }
+    .callout.warning { background: #fefce8; border: 1px solid #fde047; }
+
+    .check-list { list-style: none; padding: 0; }
+    .check-list li {
+      display: flex; align-items: flex-start; gap: 10px;
+      padding: 7px 0; border-bottom: 1px solid var(--border); font-size: 14px;
+    }
+    .check-list li:last-child { border-bottom: none; }
+
+    .contact-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; margin-top: 16px; }
+    .contact-item {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: 14px 16px;
+    }
+    .contact-label {
+      font-size: 11px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.6px; color: var(--text-muted); margin-bottom: 4px;
+    }
+    .contact-value { font-size: 14px; font-weight: 600; color: var(--text); }
+    .contact-value a { color: var(--primary); text-decoration: none; }
+    .contact-value a:hover { text-decoration: underline; }
+
+    .summary-card {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #fff; border-radius: var(--radius); padding: 32px; margin-top: 32px;
+    }
+    .summary-card h3 { color: #fff; margin-top: 0; font-size: 18px; margin-bottom: 12px; }
+    .summary-card p { color: rgba(255,255,255,0.88); margin-bottom: 0; font-size: 15px; }
+
+    footer {
+      text-align: center; color: var(--text-muted); font-size: 13px;
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--primary); text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+
+    @media (max-width: 640px) {
+      section { padding: 24px 18px; }
+      .toc ol { columns: 1; }
+      .contact-grid { grid-template-columns: 1fr; }
+      .hero { padding: max(40px, env(safe-area-inset-top, 0px) + 24px) 16px 32px; }
+      .hero-sub { font-size: 14px; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="hero-badge">Legal · Privacy</div>
+  <h1>Privacy Policy</h1>
+  <p class="hero-sub">Invoice Maker – Create Professional Invoices Offline</p>
+  <div class="hero-meta">
+    Last Updated: September 11, 2026 &nbsp;·&nbsp; Version 1.0.0 &nbsp;·&nbsp;
+    <a href="./">Back to Invoice Maker</a>
+  </div>
+</div>
+
+<div class="page">
+
+  <nav class="toc">
+    <div class="toc-title">Table of Contents</div>
+    <ol>
+      <li><a href="#s1">Overview</a></li>
+      <li><a href="#s2">Data Stored Locally</a></li>
+      <li><a href="#s3">What We Do Not Collect</a></li>
+      <li><a href="#s4">Backup &amp; Export</a></li>
+      <li><a href="#s5">Third-Party Services</a></li>
+      <li><a href="#s6">Your Rights</a></li>
+      <li><a href="#s7">Data Retention</a></li>
+      <li><a href="#s8">Security</a></li>
+      <li><a href="#s9">Children</a></li>
+      <li><a href="#s10">Policy Changes</a></li>
+      <li><a href="#s11">Contact Us</a></li>
+    </ol>
+  </nav>
+
+  <section id="s1">
+    <div class="section-header">
+      <div class="section-icon">📋</div>
+      <div>
+        <div class="section-num">Section 1</div>
+        <h2>Overview</h2>
+      </div>
+    </div>
+    <p>Invoice Maker ("the App") is developed by Codeyard ("we", "us", or "our"). This Privacy Policy explains how we handle your information when you use the App.</p>
+    <div class="callout success">
+      <span>✅</span>
+      <div><strong>The short version:</strong> Invoice Maker is 100% local. We do not collect, store, transmit, or have access to any of your business data. Your invoices, customers, and financial information never leave your device unless <em>you</em> explicitly choose to share or back them up.</div>
+    </div>
+    <p>By using Invoice Maker, you agree to the practices described in this policy. If you do not agree, please do not use the App.</p>
+  </section>
+
+  <section id="s2">
+    <div class="section-header">
+      <div class="section-icon">💾</div>
+      <div>
+        <div class="section-num">Section 2</div>
+        <h2>Data Stored Locally on Your Device</h2>
+      </div>
+    </div>
+    <p>All data you create in Invoice Maker is stored <strong>locally in a SQLite database on your device</strong>. This includes:</p>
+    <ul>
+      <li><strong>Business profiles</strong> – name, logo, address, payment details, invoice settings</li>
+      <li><strong>Customers</strong> – names, contact information, billing addresses</li>
+      <li><strong>Invoices &amp; estimates</strong> – line items, amounts, taxes, discounts, status, dates</li>
+      <li><strong>Recurring schedules</strong> – billing frequency, templates, generated invoices</li>
+      <li><strong>Expenses</strong> – amounts, categories, dates, descriptions</li>
+      <li><strong>Line item templates</strong> – reusable products and services</li>
+      <li><strong>App settings</strong> – theme preferences, currency, notification settings</li>
+    </ul>
+    <div class="callout warning">
+      <span>⚠️</span>
+      <div><strong>None of the above is ever sent to us or any server.</strong> We have no backend, no database, and no way to access your data.</div>
+    </div>
+  </section>
+
+  <section id="s3">
+    <div class="section-header">
+      <div class="section-icon">🚫</div>
+      <div>
+        <div class="section-num">Section 3</div>
+        <h2>What We Do Not Collect</h2>
+      </div>
+    </div>
+    <p>Invoice Maker is designed with privacy as a core principle. We do <strong>not</strong> collect:</p>
+    <ul class="check-list">
+      <li><span>✓</span> Personal information or account credentials (no sign-up required)</li>
+      <li><span>✓</span> Invoice, customer, or financial data</li>
+      <li><span>✓</span> Usage analytics or behavioral tracking</li>
+      <li><span>✓</span> Device identifiers for advertising</li>
+      <li><span>✓</span> Location data</li>
+      <li><span>✓</span> Crash reports sent to our servers</li>
+      <li><span>✓</span> Any data via cloud sync or remote servers</li>
+    </ul>
+    <p>Because we collect no personal data, GDPR and CCPA data subject requests (access, deletion, portability) do not apply — there is nothing for us to provide or delete. Your data exists only on your device.</p>
+  </section>
+
+  <section id="s4">
+    <div class="section-header">
+      <div class="section-icon">📤</div>
+      <div>
+        <div class="section-num">Section 4</div>
+        <h2>Backup &amp; Export (User-Controlled)</h2>
+      </div>
+    </div>
+    <p>Invoice Maker provides tools to export and back up your data. <strong>You are entirely in control of your backups:</strong></p>
+    <ul>
+      <li>Backups are created as files on your device</li>
+      <li>You choose where to save them (local storage, iCloud, Google Drive, etc.)</li>
+      <li>We never receive, store, or access your backup files</li>
+      <li>Restoring from a backup is performed locally on your device</li>
+      <li>Sharing a PDF invoice sends the file directly from your device to your chosen recipient — we are not involved</li>
+    </ul>
+    <div class="callout info">
+      <span>ℹ️</span>
+      <div><strong>Important:</strong> Because data is stored only on your device, deleting the App or losing your device without a backup will result in data loss. We strongly recommend creating regular backups using the in-app export feature.</div>
+    </div>
+  </section>
+
+  <section id="s5">
+    <div class="section-header">
+      <div class="section-icon">🔗</div>
+      <div>
+        <div class="section-num">Section 5</div>
+        <h2>Third-Party Services</h2>
+      </div>
+    </div>
+    <p>Invoice Maker does not integrate third-party analytics, advertising, or cloud storage SDKs that collect your data.</p>
+    <p>The App may use platform services provided by Apple (iOS) or Google (Android) for:</p>
+    <ul>
+      <li><strong>App Store / Play Store</strong> – for downloading and purchasing subscriptions (handled entirely by Apple/Google)</li>
+      <li><strong>Local notifications</strong> – for invoice due-date reminders (processed on-device)</li>
+      <li><strong>System share sheet</strong> – for sharing PDFs (you choose the destination)</li>
+    </ul>
+    <p>These platform services are governed by Apple's and Google's respective privacy policies, not ours.</p>
+  </section>
+
+  <section id="s6">
+    <div class="section-header">
+      <div class="section-icon">⚖️</div>
+      <div>
+        <div class="section-num">Section 6</div>
+        <h2>Your Rights</h2>
+      </div>
+    </div>
+    <p>Since all your data is stored locally on your device, you have complete control:</p>
+    <ul>
+      <li><strong>Access</strong> – all your data is visible within the App at all times</li>
+      <li><strong>Export</strong> – use the in-app backup/export feature to create a portable copy</li>
+      <li><strong>Delete</strong> – delete individual records in the App, or delete all data by uninstalling the App</li>
+      <li><strong>Portability</strong> – export your data to a file you can move to another device</li>
+    </ul>
+    <p>We cannot fulfill data access or deletion requests because we do not possess your data.</p>
+  </section>
+
+  <section id="s7">
+    <div class="section-header">
+      <div class="section-icon">🕐</div>
+      <div>
+        <div class="section-num">Section 7</div>
+        <h2>Data Retention</h2>
+      </div>
+    </div>
+    <p>Your data is retained on your device for as long as you use the App. We do not retain any copies. If you uninstall Invoice Maker, all local data is removed from your device (subject to your device's own backup policies, such as iCloud device backups).</p>
+  </section>
+
+  <section id="s8">
+    <div class="section-header">
+      <div class="section-icon">🔒</div>
+      <div>
+        <div class="section-num">Section 8</div>
+        <h2>Security</h2>
+      </div>
+    </div>
+    <p>Your data is protected by your device's operating system security (device encryption, passcode, biometric lock). Invoice Maker stores data in the App's sandboxed storage area, which other apps cannot access.</p>
+    <p>We recommend keeping your device updated and using a strong passcode or biometric lock to protect your business data.</p>
+  </section>
+
+  <section id="s9">
+    <div class="section-header">
+      <div class="section-icon">👶</div>
+      <div>
+        <div class="section-num">Section 9</div>
+        <h2>Children</h2>
+      </div>
+    </div>
+    <p>Invoice Maker is a business productivity app not directed at children under 13. We do not knowingly collect any information from anyone, including children.</p>
+  </section>
+
+  <section id="s10">
+    <div class="section-header">
+      <div class="section-icon">📝</div>
+      <div>
+        <div class="section-num">Section 10</div>
+        <h2>Policy Changes</h2>
+      </div>
+    </div>
+    <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated "Last Updated" date. Continued use of the App after changes constitutes acceptance of the updated policy.</p>
+  </section>
+
+  <section id="s11">
+    <div class="section-header">
+      <div class="section-icon">✉️</div>
+      <div>
+        <div class="section-num">Section 11</div>
+        <h2>Contact Us</h2>
+      </div>
+    </div>
+    <p>If you have questions about this Privacy Policy or Invoice Maker, please contact us:</p>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-label">Email</div>
+        <div class="contact-value"><a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a></div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">Support</div>
+        <div class="contact-value"><a href="support.html">Invoice Maker Support</a></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="summary-card">
+    <h3>Privacy in one sentence</h3>
+    <p>Invoice Maker stores everything on your device. We don't collect your data, we don't sync to the cloud, and your backups are entirely under your control.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 <strong>Codeyard</strong>. All rights reserved.</p>
+    <p style="margin-top:8px;">
+      <a href="./">Invoice Maker</a> &nbsp;·&nbsp;
+      <a href="terms-of-service.html">Terms of Service</a> &nbsp;·&nbsp;
+      <a href="support.html">Support</a>
+    </p>
+  </footer>
+
+</div>
+</body>
+</html>

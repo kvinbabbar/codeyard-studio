@@ -1,0 +1,19 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["TEAMID.com.invoicemaker.app"],
+        "components": [
+          {
+            "/": "/invoice-maker/*",
+            "comment": "Universal link placeholder for Invoice Maker app"
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": ["TEAMID.com.invoicemaker.app"]
+  }
+}
