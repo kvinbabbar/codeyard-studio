@@ -7,7 +7,7 @@
         "components": [
           {
             "/": "/invoice-maker/*",
-            "comment": "Universal link placeholder for Invoice Maker app"
+            "comment": "Universal link placeholder for Invoice Hub app"
           }
         ]
       }

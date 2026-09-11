@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-  <title>Invoice Maker – Create Professional Invoices Offline | iOS &amp; Android</title>
-  <meta name="description" content="Invoice Maker is a privacy-first invoicing app for iOS &amp; Android. Create invoices, estimates, and PDFs — all stored locally on your device. No cloud, no tracking." />
+  <title>Invoice Hub – Invoices & Estimates Offline | iOS &amp; Android</title>
+  <meta name="description" content="Invoice Hub is a privacy-first invoicing app for iOS &amp; Android. Create invoices, estimates, and PDFs — all stored locally on your device. No cloud, no tracking." />
   <meta name="keywords" content="invoice maker, invoice app, estimate app, PDF invoice, offline invoicing, small business invoicing, freelance invoice, recurring invoices, expense tracker, iOS invoice app, Android invoice app" />
   <meta name="author" content="Codeyard" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -14,21 +14,24 @@
 
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://codeyardstudio.com/invoice-maker/" />
-  <meta property="og:title" content="Invoice Maker – Create Professional Invoices Offline" />
-  <meta property="og:description" content="Create professional invoices and estimates offline. 100% local — your business data stays on your device." />
-  <meta property="og:site_name" content="Invoice Maker" />
+  <meta property="og:title" content="Invoice Hub – Invoices & Estimates Offline" />
+  <meta property="og:description" content="Invoices and estimates offline. 100% local — your business data stays on your device." />
+  <meta property="og:site_name" content="Invoice Hub" />
   <meta property="og:locale" content="en_US" />
 
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Invoice Maker – Create Professional Invoices Offline" />
-  <meta name="twitter:description" content="Create professional invoices and estimates offline. 100% local — your business data stays on your device." />
+  <meta name="twitter:title" content="Invoice Hub – Invoices & Estimates Offline" />
+  <meta property="og:image" content="https://codeyardstudio.com/invoice-maker/invoice-hub-logo.png" />
+  <meta name="twitter:image" content="https://codeyardstudio.com/invoice-maker/invoice-hub-logo.png" />
 
   <meta name="theme-color" content="#2563EB" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
-  <meta name="apple-mobile-web-app-title" content="Invoice Maker" />
-  <meta name="application-name" content="Invoice Maker" />
+  <meta name="apple-mobile-web-app-title" content="Invoice Hub" />
+  <meta name="application-name" content="Invoice Hub" />
 
+  <link rel="icon" type="image/png" href="invoice-hub-logo.png" />
+  <link rel="apple-touch-icon" href="invoice-hub-logo.png" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -42,7 +45,7 @@
         "@type": "WebSite",
         "@id": "https://codeyardstudio.com/invoice-maker/#website",
         "url": "https://codeyardstudio.com/invoice-maker/",
-        "name": "Invoice Maker",
+        "name": "Invoice Hub",
         "description": "Privacy-first invoicing app for iOS and Android",
         "publisher": { "@id": "https://codeyardstudio.com/invoice-maker/#organization" }
       },
@@ -56,7 +59,7 @@
       {
         "@type": "SoftwareApplication",
         "@id": "https://codeyardstudio.com/invoice-maker/#app",
-        "name": "Invoice Maker",
+        "name": "Invoice Hub",
         "description": "A privacy-first invoicing app for iOS and Android. Create invoices, estimates, and PDFs entirely offline — no cloud sync, no tracking.",
         "url": "https://codeyardstudio.com/invoice-maker/",
         "applicationCategory": "BusinessApplication",
@@ -84,10 +87,10 @@
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Does Invoice Maker sync to the cloud?",
+            "name": "Does Invoice Hub sync to the cloud?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Invoice Maker is 100% local. All your invoices, customers, and business data are stored on your device using SQLite. Nothing is ever uploaded to a server."
+              "text": "No. Invoice Hub is 100% local. All your invoices, customers, and business data are stored on your device using SQLite. Nothing is ever uploaded to a server."
             }
           },
           {
@@ -95,12 +98,12 @@
             "name": "Can I export invoices as PDF?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Invoice Maker lets you generate professional PDF invoices and share them directly via email, messaging apps, or any app on your device."
+              "text": "Yes. Invoice Hub lets you generate professional PDF invoices and share them directly via email, messaging apps, or any app on your device."
             }
           },
           {
             "@type": "Question",
-            "name": "Does Invoice Maker support multiple businesses?",
+            "name": "Does Invoice Hub support multiple businesses?",
             "acceptedAnswer": {
               "@type": "Answer",
               "text": "Yes. You can manage multiple businesses from a single app, each with its own logo, payment details, invoice settings, and customer list."
@@ -161,6 +164,8 @@
     .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
     .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
     .text-brand { color: var(--brand); }
+    .hero-logo { width: 96px; height: 96px; border-radius: 22px; margin: 0 auto 24px; display: block; box-shadow: 0 12px 40px rgba(37,99,235,.25); }
+    .hero-tagline { font-size: 22px; font-weight: 600; color: var(--brand); margin-bottom: 16px; letter-spacing: -.01em; }
     .badge {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--brand-subtle); color: var(--brand);
@@ -181,11 +186,10 @@
     .nav-logo { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--text-primary); }
     .nav-logo-icon {
       width: 36px; height: 36px; border-radius: 10px; flex-shrink: 0;
-      background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
-      display: flex; align-items: center; justify-content: center;
-      color: #fff; font-weight: 800; font-size: 14px;
-      box-shadow: 0 2px 8px rgba(37,99,235,.35);
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(37,99,235,.25);
     }
+    .nav-logo-icon img { width: 100%; height: 100%; display: block; object-fit: cover; }
     .nav-logo-name { font-weight: 700; font-size: 18px; }
     .nav-links { display: flex; align-items: center; gap: 6px; }
     .nav-links a {
@@ -413,9 +417,9 @@
 
   <nav aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="./" class="nav-logo" aria-label="Invoice Maker home">
-        <div class="nav-logo-icon" aria-hidden="true">IM</div>
-        <span class="nav-logo-name">Invoice Maker</span>
+      <a href="./" class="nav-logo" aria-label="Invoice Hub home">
+        <div class="nav-logo-icon" aria-hidden="true"><img src="invoice-hub-logo.png" alt="" width="36" height="36" /></div>
+        <span class="nav-logo-name">Invoice Hub</span>
       </a>
       <div class="nav-links hide-mobile" role="menubar">
         <a href="#features" role="menuitem">Features</a>
@@ -438,13 +442,13 @@
         </span>
       </div>
 
-      <h1>
-        Create professional invoices<br />
-        <span class="highlight">offline.</span>
-      </h1>
+      <img src="invoice-hub-logo.png" alt="" class="hero-logo" width="96" height="96" />
+
+      <h1>Invoice Hub</h1>
+      <p class="hero-tagline">Invoices &amp; Estimates Offline</p>
 
       <p class="subtitle">
-        Invoice Maker helps freelancers and small businesses create invoices, estimates, and PDFs — with all your data stored <strong>locally on your device, not our servers.</strong>
+        Invoice Hub helps freelancers and small businesses create invoices, estimates, and PDFs — with all your data stored <strong>locally on your device, not our servers.</strong>
       </p>
 
       <div id="download" class="hero-cta">
@@ -554,7 +558,7 @@
   </header>
 
   <section class="stats-strip" aria-labelledby="stats-heading">
-    <h2 id="stats-heading" class="sr-only">Invoice Maker highlights</h2>
+    <h2 id="stats-heading" class="sr-only">Invoice Hub highlights</h2>
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item fade-in">
@@ -605,7 +609,7 @@
         <article class="feature-card fade-in">
           <div class="feature-icon" aria-hidden="true"><i data-lucide="refresh-cw"></i></div>
           <h3 class="feature-title">Recurring Invoices</h3>
-          <p class="feature-desc">Set up recurring billing schedules for retainer clients. Invoice Maker generates invoices automatically on schedule.</p>
+          <p class="feature-desc">Set up recurring billing schedules for retainer clients. Invoice Hub generates invoices automatically on schedule.</p>
         </article>
 
         <article class="feature-card fade-in">
@@ -650,7 +654,7 @@
             Your business data is<br /><span class="text-brand">nobody else's business.</span>
           </h2>
           <p style="color:var(--text-secondary);margin-bottom:32px;line-height:1.65;">
-            We built Invoice Maker on a simple principle: your invoices, customers, and financial data belong to you — completely, forever. No accounts, no servers, no compromise.
+            We built Invoice Hub on a simple principle: your invoices, customers, and financial data belong to you — completely, forever. No accounts, no servers, no compromise.
           </p>
           <ul class="privacy-list" role="list">
             <li>
@@ -706,7 +710,7 @@
     <div class="container">
       <div class="section-label"><span class="badge">How it works</span></div>
       <h2 class="section-title" id="how-heading">Invoice in under 60 seconds</h2>
-      <p class="section-subtitle">No tutorials, no onboarding walls. Invoice Maker gets out of the way and lets you bill clients immediately.</p>
+      <p class="section-subtitle">No tutorials, no onboarding walls. Invoice Hub gets out of the way and lets you bill clients immediately.</p>
 
       <div class="steps-grid">
         <div class="step-card fade-in">
@@ -742,11 +746,11 @@
       <div class="faq-list" role="list">
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-a1">
-            Does Invoice Maker sync data to the cloud?
+            Does Invoice Hub sync data to the cloud?
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a1" role="region">
-            <p>No. Invoice Maker is 100% local. Your invoices, customers, and business data are stored in a SQLite database on your device and are never sent to any server.</p>
+            <p>No. Invoice Hub is 100% local. Your invoices, customers, and business data are stored in a SQLite database on your device and are never sent to any server.</p>
           </div>
         </div>
 
@@ -762,7 +766,7 @@
 
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
-            Does Invoice Maker support multiple businesses?
+            Does Invoice Hub support multiple businesses?
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a3" role="region">
@@ -782,11 +786,11 @@
 
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-a5">
-            Is Invoice Maker available on iOS and Android?
+            Is Invoice Hub available on iOS and Android?
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a5" role="region">
-            <p>Yes. Invoice Maker will be available on the Apple App Store and Google Play Store. Store links will be added here at launch.</p>
+            <p>Yes. Invoice Hub will be available on the Apple App Store and Google Play Store. Store links will be added here at launch.</p>
           </div>
         </div>
 
@@ -832,9 +836,9 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="./" class="nav-logo" aria-label="Invoice Maker home">
-            <div class="nav-logo-icon" aria-hidden="true">IM</div>
-            <span class="nav-logo-name">Invoice Maker</span>
+          <a href="./" class="nav-logo" aria-label="Invoice Hub home">
+            <div class="nav-logo-icon" aria-hidden="true"><img src="invoice-hub-logo.png" alt="" width="36" height="36" /></div>
+            <span class="nav-logo-name">Invoice Hub</span>
           </a>
           <p>A privacy-first invoicing app for iOS and Android. Your data, your device, your control.</p>
           <div class="footer-social" role="list" aria-label="Social links">
@@ -873,7 +877,7 @@
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <time datetime="2026">2026</time> Codeyard. All rights reserved. Invoice Maker.</p>
+        <p>&copy; <time datetime="2026">2026</time> Codeyard. All rights reserved. Invoice Hub.</p>
         <div>
           <a href="privacy-policy.html">Privacy</a> &nbsp;·&nbsp;
           <a href="terms-of-service.html">Terms</a> &nbsp;·&nbsp;
