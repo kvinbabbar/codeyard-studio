@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>WeddWise – Wedding Planner | Budget, Guests & Invitations</title>
+  <meta name="description" content="WeddWise is an offline-first wedding planner for iOS & Android. Budget, guests, vendors, checklist, and invitations — private on your device. Lifetime Premium, no subscriptions." />
+  <meta name="keywords" content="wedding planner app, wedding budget, guest list, RSVP tracker, wedding checklist, wedding invitations, offline wedding planner, WeddWise" />
+  <meta name="author" content="Codeyard Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://codeyardstudio.com/weddwise/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codeyardstudio.com/weddwise/" />
+  <meta property="og:title" content="WeddWise – Wedding Planner" />
+  <meta property="og:description" content="Plan your wedding with calm clarity. Budget, guests, vendors, invitations — stored privately on your device." />
+  <meta property="og:image" content="https://codeyardstudio.com/weddwise/icon.png" />
+  <meta property="og:site_name" content="WeddWise" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="WeddWise – Wedding Planner" />
+  <meta name="twitter:description" content="Offline-first wedding planner for budget, guests, vendors, and invitations." />
+  <meta name="twitter:image" content="https://codeyardstudio.com/weddwise/icon.png" />
+
+  <meta name="theme-color" content="#9B4D63" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="WeddWise" />
+  <meta name="application-name" content="WeddWise" />
+
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://codeyardstudio.com/weddwise/#website",
+        "url": "https://codeyardstudio.com/weddwise/",
+        "name": "WeddWise",
+        "description": "Offline-first wedding planner for iOS and Android",
+        "publisher": { "@id": "https://codeyardstudio.com/weddwise/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://codeyardstudio.com/weddwise/#organization",
+        "name": "Codeyard Studio",
+        "url": "https://codeyardstudio.com/",
+        "email": "codeyard.studio@gmail.com"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://codeyardstudio.com/weddwise/#app",
+        "name": "WeddWise",
+        "description": "Offline-first wedding planner for budget, guests, vendors, checklist, and invitations.",
+        "url": "https://codeyardstudio.com/weddwise/",
+        "image": "https://codeyardstudio.com/weddwise/icon.png",
+        "applicationCategory": "LifestyleApplication",
+        "operatingSystem": ["iOS", "Android"],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@id": "https://codeyardstudio.com/weddwise/#organization" },
+        "featureList": [
+          "Wedding budget and expenses",
+          "Guest list and RSVP tracking",
+          "Vendor and payment schedules",
+          "Checklist and timeline",
+          "Invitation templates",
+          "Offline-first local storage",
+          "Lifetime Premium — no subscriptions"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://codeyardstudio.com/weddwise/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is my wedding data stored in the cloud?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. WeddWise stores your wedding plans locally on your device using SQLite. You remain in control of your data."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need a subscription?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Free planning is available with limits. Premium is a one-time lifetime unlock — no recurring fees."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I export my plans?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Lifetime Premium includes PDF wedding summary export and CSV import/export for guest lists."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #9B4D63;
+      --brand-dark: #7F3B50;
+      --brand-light: #C98A9E;
+      --brand-soft: rgba(155, 77, 99, 0.10);
+      --ink: #1F1719;
+      --muted: #6F5C62;
+      --faint: #9A8A8F;
+      --line: rgba(31, 23, 25, 0.10);
+      --bg: #FFF9F8;
+      --bg-alt: #F7EEF0;
+      --surface: #FFFFFF;
+      --display: "Fraunces", Georgia, serif;
+      --body: "Outfit", system-ui, sans-serif;
+      --shadow: 0 18px 50px rgba(127, 59, 80, 0.12);
+      --radius: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: var(--brand-dark); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+
+    nav {
+      position: sticky; top: 0; z-index: 40;
+      background: rgba(255, 249, 248, 0.86);
+      backdrop-filter: blur(16px) saturate(160%);
+      -webkit-backdrop-filter: blur(16px) saturate(160%);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner {
+      display: flex; align-items: center; justify-content: space-between; height: 68px;
+    }
+    .brand {
+      display: flex; align-items: center; gap: 12px;
+      text-decoration: none; color: var(--ink);
+    }
+    .brand img {
+      width: 40px; height: 40px; border-radius: 12px;
+      box-shadow: 0 8px 22px rgba(155, 77, 99, 0.28);
+    }
+    .brand span {
+      font-family: var(--display); font-size: 26px; font-weight: 600; letter-spacing: -0.02em;
+    }
+    .nav-links { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+    .nav-links a {
+      text-decoration: none; color: var(--muted); font-weight: 500; font-size: 14px;
+      padding: 8px 12px; border-radius: 999px; transition: background .2s, color .2s;
+    }
+    .nav-links a:hover { color: var(--ink); background: var(--brand-soft); }
+
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+      padding: 13px 24px; border-radius: 999px; font-weight: 600; font-size: 15px;
+      text-decoration: none; border: none; cursor: pointer; transition: transform .2s, box-shadow .2s, background .2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color: #fff; box-shadow: 0 12px 28px rgba(155, 77, 99, 0.32);
+    }
+    .btn-primary:hover { transform: translateY(-1px); }
+    .btn-ghost {
+      background: rgba(255,255,255,.72); color: var(--ink); border: 1px solid var(--line);
+    }
+    .btn-ghost:hover { background: #fff; }
+
+    .hero {
+      position: relative; overflow: hidden;
+      min-height: min(88vh, 780px);
+      display: grid; place-items: center;
+      text-align: center; padding: 72px 0 80px;
+      background:
+        radial-gradient(ellipse 85% 65% at 50% -8%, rgba(201, 138, 158, 0.45), transparent 62%),
+        linear-gradient(180deg, #FBE6EC 0%, var(--bg) 52%, #F6E9E6 100%);
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: auto -18% -28% -18%; height: 48%;
+      background: radial-gradient(ellipse at center, rgba(155, 77, 99, 0.14), transparent 68%);
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; z-index: 1; max-width: 720px; }
+    .hero-logo {
+      width: min(148px, 38vw); height: auto; border-radius: 34px;
+      box-shadow: var(--shadow); margin: 0 auto 28px; display: block;
+      animation: rise 0.9s ease both;
+    }
+    .hero h1 {
+      font-family: var(--display); font-weight: 700;
+      font-size: clamp(52px, 10vw, 92px); line-height: 0.95;
+      letter-spacing: -0.035em; margin-bottom: 18px;
+      animation: rise 0.9s .08s ease both;
+    }
+    .hero p {
+      font-size: clamp(16px, 2.4vw, 19px); color: var(--muted);
+      max-width: 34em; margin: 0 auto 32px;
+      animation: rise 0.9s .16s ease both;
+    }
+    .cta-row {
+      display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;
+      animation: rise 0.9s .24s ease both;
+    }
+    .trust-row {
+      display: flex; gap: 18px; justify-content: center; flex-wrap: wrap;
+      margin-top: 28px; color: var(--faint); font-size: 13px; font-weight: 500;
+      animation: rise 0.9s .32s ease both;
+    }
+    .trust-row span { display: inline-flex; align-items: center; gap: 6px; }
+    .trust-row svg { width: 15px; height: 15px; color: var(--brand); }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(18px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    section { padding: 92px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--brand-soft); color: var(--brand-dark);
+      font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 999px; margin: 0 auto 16px;
+    }
+    .section-head { text-align: center; margin-bottom: 48px; }
+    .section-title {
+      font-family: var(--display); font-size: clamp(34px, 5vw, 48px);
+      font-weight: 600; letter-spacing: -0.02em; margin-bottom: 12px;
+    }
+    .section-sub {
+      color: var(--muted); max-width: 520px; margin: 0 auto; font-size: 16px;
+    }
+
+    .features {
+      display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px;
+    }
+    @media (max-width: 900px) { .features { grid-template-columns: 1fr; } }
+    .feature {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: var(--radius); padding: 28px 24px;
+      transition: transform .25s, box-shadow .25s, border-color .25s;
+    }
+    .feature:hover {
+      transform: translateY(-3px); box-shadow: var(--shadow);
+      border-color: rgba(155, 77, 99, 0.22);
+    }
+    .feature-icon {
+      width: 48px; height: 48px; border-radius: 14px;
+      display: grid; place-items: center; background: var(--brand-soft);
+      color: var(--brand); margin-bottom: 16px;
+    }
+    .feature-icon svg { width: 22px; height: 22px; }
+    .feature h3 {
+      font-family: var(--display); font-size: 26px; font-weight: 600; margin-bottom: 8px;
+    }
+    .feature p { color: var(--muted); font-size: 15px; }
+
+    .premium {
+      background:
+        linear-gradient(180deg, transparent, rgba(201, 138, 158, 0.22), transparent);
+    }
+    .split {
+      display: grid; grid-template-columns: 1.15fr 0.85fr; gap: 40px; align-items: center;
+    }
+    @media (max-width: 860px) { .split { grid-template-columns: 1fr; } }
+    .split h2 {
+      font-family: var(--display); font-size: clamp(34px, 5vw, 46px);
+      font-weight: 600; letter-spacing: -0.02em; margin-bottom: 14px;
+    }
+    .split p { color: var(--muted); margin-bottom: 12px; }
+    .pill-list { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 20px; }
+    .pill {
+      background: rgba(255,255,255,.75); border: 1px solid var(--line);
+      color: var(--ink); padding: 8px 14px; border-radius: 999px;
+      font-size: 13px; font-weight: 500;
+    }
+    .premium-card {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 24px; padding: 28px; box-shadow: var(--shadow);
+    }
+    .premium-card h3 {
+      font-family: var(--display); font-size: 28px; font-weight: 600; margin-bottom: 10px;
+    }
+    .premium-card p { color: var(--muted); font-size: 15px; }
+
+    .faq details {
+      background: var(--surface); border: 1px solid var(--line);
+      border-radius: 16px; padding: 18px 20px; margin-bottom: 10px;
+    }
+    .faq summary {
+      cursor: pointer; font-weight: 600; list-style: none;
+      display: flex; justify-content: space-between; gap: 12px; align-items: center;
+    }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; color: var(--brand); font-size: 20px; font-weight: 500; }
+    .faq details[open] summary::after { content: "–"; }
+    .faq p { color: var(--muted); margin-top: 12px; font-size: 15px; }
+
+    footer {
+      border-top: 1px solid var(--line); padding: 40px 0 56px;
+      color: var(--faint); font-size: 14px;
+    }
+    .footer-grid {
+      display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap;
+    }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { text-decoration: none; color: var(--muted); font-weight: 500; }
+    .footer-links a:hover { color: var(--ink); }
+
+    @media (max-width: 640px) {
+      .nav-links a:not(.btn) { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container nav-inner">
+      <a class="brand" href="./"><img src="icon.png" alt="" width="40" height="40" /><span>WeddWise</span></a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#premium">Premium</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary btn-sm" style="padding:8px 16px;font-size:13px;" href="support.html">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-inner">
+      <img class="hero-logo" src="icon.png" alt="WeddWise app icon" width="148" height="148" />
+      <h1>WeddWise</h1>
+      <p>Plan your wedding with calm clarity — budget, guests, vendors, checklist, and invitations, kept privately on your device.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#features">Explore features</a>
+        <a class="btn btn-ghost" href="#premium">Lifetime Premium</a>
+      </div>
+      <div class="trust-row">
+        <span><i data-lucide="wifi-off"></i> Offline-first</span>
+        <span><i data-lucide="shield-check"></i> Private on device</span>
+        <span><i data-lucide="sparkles"></i> No subscriptions</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">Features</div>
+        <h2 class="section-title">Everything for the journey</h2>
+        <p class="section-sub">Built for real wedding planning — focused, offline-first, and beautifully simple.</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="wallet"></i></div>
+          <h3>Budget &amp; expenses</h3>
+          <p>Track planned vs spent, categories, and remaining balance without spreadsheet chaos.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="users"></i></div>
+          <h3>Guests &amp; RSVP</h3>
+          <p>Organize sides, events, accommodation notes, and RSVP status in one place.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="store"></i></div>
+          <h3>Vendors &amp; payments</h3>
+          <p>Keep vendor contacts, due dates, and installment reminders under control.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="list-checks"></i></div>
+          <h3>Checklist &amp; timeline</h3>
+          <p>A calm path from today to the wedding day with tasks and milestones.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="mail"></i></div>
+          <h3>Invitations</h3>
+          <p>Pick a template, customize wording, preview, and share a polished card.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="lock"></i></div>
+          <h3>Private by design</h3>
+          <p>Your wedding data stays on your phone. No account required to start planning.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="premium" class="premium">
+    <div class="container split">
+      <div>
+        <div class="section-label" style="margin:0 0 16px;">Premium</div>
+        <h2>Lifetime Premium</h2>
+        <p>One purchase. Lifetime access. No subscriptions.</p>
+        <p>Unlock unlimited guests, vendors, expenses, and events; every invitation template; CSV tools; insights; PDF export; reminders; and an ad-free experience.</p>
+        <div class="pill-list">
+          <span class="pill">Unlimited planning</span>
+          <span class="pill">All templates</span>
+          <span class="pill">Export &amp; reminders</span>
+          <span class="pill">No ads</span>
+        </div>
+      </div>
+      <div class="premium-card">
+        <h3>Free to start</h3>
+        <p>Plan a real wedding on the free tier with generous caps, then upgrade when you need more room — or simply want a calmer, ad-free space.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label">FAQ</div>
+        <h2 class="section-title">Questions</h2>
+        <p class="section-sub">Quick answers about WeddWise.</p>
+      </div>
+      <details open>
+        <summary>Is my wedding data stored in the cloud?</summary>
+        <p>No. WeddWise stores your wedding plans locally on your device using SQLite. You remain in control of your data.</p>
+      </details>
+      <details>
+        <summary>Do I need a subscription?</summary>
+        <p>No. Free planning is available with limits. Premium is a one-time lifetime unlock — no recurring fees.</p>
+      </details>
+      <details>
+        <summary>Can I export my plans?</summary>
+        <p>Lifetime Premium includes PDF wedding summary export and CSV import/export for guest lists.</p>
+      </details>
+      <details>
+        <summary>Who made WeddWise?</summary>
+        <p>WeddWise is built by <a href="https://codeyardstudio.com/">Codeyard Studio</a>. Contact us anytime at <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a>.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>© <span id="y"></span> Codeyard Studio · WeddWise</div>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+        <a href="https://codeyardstudio.com/">Codeyard Studio</a>
+      </div>
+    </div>
+  </footer>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    if (window.lucide) lucide.createIcons();
+  </script>
+</body>
+</html>
