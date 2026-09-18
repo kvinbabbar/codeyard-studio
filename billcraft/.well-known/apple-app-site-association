@@ -6,8 +6,8 @@
         "appIDs": ["TEAMID.com.invoicemaker.app"],
         "components": [
           {
-            "/": "/invoice-maker/*",
-            "comment": "Universal link placeholder for Invoice Hub app"
+            "/": "/billcraft/*",
+            "comment": "Universal link placeholder for Billcraft: Invoice Maker"
           }
         ]
       }
