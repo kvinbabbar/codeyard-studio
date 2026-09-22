@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PDF Toolkit Support</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <meta name="description" content="PDF Toolkit support. FAQs and contact for the offline-first PDF app by Codeyard." />
+  <link rel="canonical" href="https://codeyardstudio.com/pdf-toolkit/support.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand: #E5484D;
+      --brand-dark: #C23B40;
+      --brand-subtle: #FCE8E9;
+      --text: #1a1a2e;
+      --text-secondary: #4b5563;
+      --text-muted: #9ca3af;
+      --surface: #ffffff;
+      --bg: #f8f9fb;
+      --border: #e5e7eb;
+      --radius: 16px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--font); background: var(--bg); color: var(--text); line-height: 1.6; -webkit-font-smoothing: antialiased; }
+    .hero {
+      background: linear-gradient(135deg, var(--brand), var(--brand-dark));
+      color: #fff; padding: max(48px, env(safe-area-inset-top, 0px) + 32px) 20px 40px; text-align: center;
+    }
+    .hero img { width: 72px; height: 72px; border-radius: 16px; margin-bottom: 16px; }
+    .hero h1 { font-size: clamp(28px, 5vw, 40px); font-weight: 800; margin-bottom: 8px; }
+    .hero p { opacity: 0.9; max-width: 480px; margin: 0 auto; }
+    .page { max-width: 720px; margin: 0 auto; padding: 32px 16px 80px; }
+    .card {
+      background: var(--surface); border: 1px solid var(--border); border-radius: var(--radius);
+      padding: 24px; margin-bottom: 16px;
+    }
+    .card h2 { font-size: 18px; margin-bottom: 8px; }
+    .card p, .card li { color: var(--text-secondary); font-size: 15px; }
+    .card ul { padding-left: 18px; margin-top: 8px; }
+    .card a { color: var(--brand); font-weight: 600; }
+    .faq-q { font-weight: 700; color: var(--text); margin-top: 16px; margin-bottom: 6px; }
+    .faq-q:first-child { margin-top: 0; }
+    .back { display: inline-block; margin-top: 8px; color: var(--brand); font-weight: 600; text-decoration: none; }
+    footer { text-align: center; padding: 24px; color: var(--text-muted); font-size: 13px; }
+    footer a { color: var(--brand); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <img src="icon.png" alt="PDF Toolkit icon" width="72" height="72" />
+    <h1>Support</h1>
+    <p>Help for PDF Toolkit — professional PDF tools that keep core processing on your device.</p>
+  </header>
+
+  <div class="page">
+    <div class="card">
+      <h2>Contact</h2>
+      <p>Email us anytime: <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a></p>
+      <p>Include your device model, OS version, and a short description of the issue. Please do <strong>not</strong> send confidential PDFs unless we specifically request a sanitized sample.</p>
+    </div>
+
+    <div class="card">
+      <h2>Frequently asked questions</h2>
+
+      <p class="faq-q">Do you upload my PDFs?</p>
+      <p>No. Core viewing, editing, scanning, OCR, compression, conversion, and organization run on your device. Codeyard does not operate a cloud PDF processing backend for your documents.</p>
+
+      <p class="faq-q">Why can’t I edit some text?</p>
+      <p>Structural text editing depends on how the PDF was built. When structural edit isn’t possible, use annotation tools (highlight, text notes, drawings, signatures) instead.</p>
+
+      <p class="faq-q">Does OCR work offline?</p>
+      <p>Core scanning and OCR processing happen on-device where supported. Language coverage depends on the platform engines available on your device.</p>
+
+      <p class="faq-q">How do backups work?</p>
+      <p>Create local backups from Settings. You control where those files are stored. We do not host your backups.</p>
+
+      <p class="faq-q">Purchases / Premium</p>
+      <p>Premium unlocks are handled through the App Store or Google Play (and RevenueCat for entitlement status). Billing and refunds follow the store’s policies. Purchase systems never receive your PDF contents.</p>
+    </div>
+
+    <div class="card">
+      <h2>Legal</h2>
+      <ul>
+        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+        <li><a href="terms-of-service.html">Terms of Service</a></li>
+        <li><a href="./">Product homepage</a></li>
+      </ul>
+      <a class="back" href="./">← Back to PDF Toolkit</a>
+    </div>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Codeyard · PDF Toolkit</p>
+  </footer>
+</body>
+</html>
