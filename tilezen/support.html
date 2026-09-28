@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support &ndash; TileZen</title>
+  <meta name="description" content="TileZen support page. Contact Codeyard Studio for help with the tile-matching puzzle game." />
+  <link rel="canonical" href="https://codeyardstudio.com/tilezen/support.html" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand: #6C63FF; --brand-dark: #5248D4; --brand-light: #8B84FF;
+      --ink: #252525; --muted: #8A8780; --faint: #B5B2AE;
+      --cream: #F7F5F0; --surface: #fff; --line: rgba(0,0,0,0.07);
+      --display: "Playfair Display", Georgia, serif;
+      --body: "Outfit", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--body); background: var(--cream); color: var(--ink); line-height: 1.7; font-size: 15px; -webkit-font-smoothing: antialiased; }
+    a { color: var(--brand-dark); }
+    .hero {
+      background: linear-gradient(145deg, #8B84FF 0%, #6C63FF 50%, #5248D4 100%);
+      color: #fff; text-align: center;
+      padding: max(52px, env(safe-area-inset-top) + 28px) 20px 44px;
+    }
+    .hero-badge { display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; background: rgba(255,255,255,.18); border: 1px solid rgba(255,255,255,.35); margin-bottom: 16px; }
+    .hero h1 { font-family: var(--display); font-size: clamp(30px, 6vw, 46px); font-weight: 700; margin-bottom: 10px; }
+    .hero p { opacity: .92; max-width: 520px; margin: 0 auto 12px; font-size: 16px; }
+    .hero-meta { font-size: 13px; opacity: .75; }
+    .hero a { color: rgba(255,255,255,.9); }
+    .page { max-width: 860px; margin: 0 auto; padding: 0 16px 80px; }
+    section { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 28px 32px; margin-top: 24px; box-shadow: 0 8px 30px rgba(108,99,255,0.05); }
+    section h2 { font-family: var(--display); font-size: 26px; font-weight: 700; margin-bottom: 14px; color: var(--ink); }
+    section p, section li { color: var(--muted); margin-bottom: 10px; line-height: 1.75; }
+    section ul { padding-left: 20px; margin-bottom: 10px; }
+    .email-link {
+      display: inline-flex; align-items: center; gap: 8px;
+      background: var(--brand); color: #fff; padding: 12px 22px; border-radius: 999px;
+      text-decoration: none; font-weight: 600; font-size: 15px; margin-top: 6px;
+      transition: opacity .2s, transform .2s;
+    }
+    .email-link:hover { opacity: .88; transform: translateY(-1px); }
+    details { border: 1px solid var(--line); border-radius: 12px; padding: 16px 20px; margin-bottom: 10px; }
+    summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; align-items: center; font-size: 15px; color: var(--ink); }
+    summary::-webkit-details-marker { display: none; }
+    summary::after { content: "+"; color: var(--brand); font-size: 20px; font-weight: 400; }
+    details[open] summary::after { content: "–"; }
+    details p { color: var(--muted); margin-top: 12px; font-size: 14px; line-height: 1.7; }
+    .links-row { display: flex; gap: 12px; flex-wrap: wrap; margin-top: 6px; }
+    .links-row a { text-decoration: none; font-weight: 500; color: var(--brand-dark); padding: 8px 16px; border: 1px solid var(--line); border-radius: 999px; background: var(--cream); font-size: 14px; transition: background .2s, color .2s; }
+    .links-row a:hover { background: var(--brand); color: #fff; border-color: var(--brand); }
+    footer { text-align: center; padding: 28px 16px 56px; color: var(--faint); font-size: 14px; }
+    footer a { margin: 0 10px; text-decoration: none; font-weight: 500; color: var(--muted); }
+    footer a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-badge">TileZen</div>
+    <h1>Support</h1>
+    <p>We are here to help with TileZen.</p>
+    <p class="hero-meta"><a href="./">Back to TileZen</a></p>
+  </header>
+
+  <div class="page">
+    <section>
+      <h2>Get in touch</h2>
+      <p>For any questions, bug reports, feedback, or help with your account, send us an email. We usually respond within 1&ndash;2 business days.</p>
+      <a class="email-link" href="mailto:codeyard.studio@gmail.com?subject=TileZen%20Support">
+        codeyard.studio@gmail.com
+      </a>
+    </section>
+
+    <section>
+      <h2>Common issues</h2>
+
+      <details open>
+        <summary>My progress was lost</summary>
+        <p>Game progress is saved locally on your device. If you reinstalled TileZen or cleared the app's data, the progress cannot be recovered from that device. We are working on a cloud backup feature for a future update. If this happened unexpectedly, please email us — we would love to help.</p>
+      </details>
+
+      <details>
+        <summary>Coins not received after purchase</summary>
+        <p>Wait a few seconds and restart the app — coins are sometimes delayed by a moment. If they are still missing, tap <strong>Restore Purchases</strong> in the Settings screen. If the issue persists, email us with your order ID (found in your App Store or Google Play receipt) and we will sort it out.</p>
+      </details>
+
+      <details>
+        <summary>The app is crashing</summary>
+        <p>Make sure you are running the latest version of TileZen from the App Store or Google Play. Restart your device and try launching again. If the crash continues, email us with your device model and iOS / Android version — we will investigate as quickly as possible.</p>
+      </details>
+
+      <details>
+        <summary>I found a bug or have a suggestion</summary>
+        <p>We genuinely love hearing from players! Please email us at <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a> with as much detail as you can. Your feedback directly shapes the next update.</p>
+      </details>
+
+      <details>
+        <summary>How do power-ups work?</summary>
+        <p><strong>Undo</strong> reverses your most recent tile move back onto the board. <strong>Shuffle</strong> rearranges all tiles currently on the board. <strong>Hint</strong> highlights a tile that can be matched. <strong>Extra Slot</strong> temporarily gives you one more space in your tray. Each power-up costs coins — earn them by completing levels or purchase them in the shop.</p>
+      </details>
+    </section>
+
+    <section>
+      <h2>Related</h2>
+      <div class="links-row">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="https://codeyardstudio.com/">Codeyard Studio</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <a href="./">TileZen</a>
+    <a href="https://codeyardstudio.com/">Codeyard Studio</a>
+  </footer>
+</body>
+</html>

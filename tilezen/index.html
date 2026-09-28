@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <title>TileZen – Casual Tile Matching Puzzle Game</title>
+  <meta name="description" content="TileZen is a calming casual tile-matching puzzle game for iOS and Android. Match tiles, clear the board, and journey through 5 themed worlds. Free to play, 65+ levels." />
+  <meta name="keywords" content="tile matching game, casual puzzle game, mobile game, TileZen, tile puzzle, match three, free mobile game, iOS game, Android game" />
+  <meta name="author" content="Codeyard Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://codeyardstudio.com/tilezen/" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codeyardstudio.com/tilezen/" />
+  <meta property="og:title" content="TileZen – Casual Tile Matching Puzzle Game" />
+  <meta property="og:description" content="Match tiles, clear the board, and stay zen. Journey through 5 themed worlds in this calming free-to-play puzzle game." />
+  <meta property="og:image" content="https://codeyardstudio.com/tilezen/icon.png" />
+  <meta property="og:site_name" content="TileZen" />
+  <meta property="og:locale" content="en_US" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="TileZen – Casual Tile Matching Puzzle Game" />
+  <meta name="twitter:description" content="A calming tile-matching puzzle game. Match three, clear the board, journey through 5 worlds. Free to play." />
+  <meta name="twitter:image" content="https://codeyardstudio.com/tilezen/icon.png" />
+
+  <meta name="theme-color" content="#6C63FF" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-title" content="TileZen" />
+  <meta name="application-name" content="TileZen" />
+
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://codeyardstudio.com/tilezen/#website",
+        "url": "https://codeyardstudio.com/tilezen/",
+        "name": "TileZen",
+        "description": "Casual tile-matching puzzle game for iOS and Android",
+        "publisher": { "@id": "https://codeyardstudio.com/tilezen/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://codeyardstudio.com/tilezen/#organization",
+        "name": "Codeyard Studio",
+        "url": "https://codeyardstudio.com/",
+        "email": "codeyard.studio@gmail.com"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://codeyardstudio.com/tilezen/#app",
+        "name": "TileZen",
+        "description": "A calming casual tile-matching puzzle game. Match tiles three at a time, clear the board, and journey through 5 themed worlds.",
+        "url": "https://codeyardstudio.com/tilezen/",
+        "image": "https://codeyardstudio.com/tilezen/icon.png",
+        "applicationCategory": "GameApplication",
+        "genre": "Puzzle",
+        "operatingSystem": ["iOS", "Android"],
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "author": { "@id": "https://codeyardstudio.com/tilezen/#organization" },
+        "featureList": ["65+ hand-crafted levels","5 themed worlds","Power-ups: Undo, Shuffle, Hint, Extra Slot","Fully offline","No account needed","Free to play"]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://codeyardstudio.com/tilezen/#faq",
+        "mainEntity": [
+          { "@type": "Question", "name": "Is TileZen free?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. TileZen is completely free to download and play. Earn coins in-game to use power-ups." } },
+          { "@type": "Question", "name": "Does TileZen need internet?", "acceptedAnswer": { "@type": "Answer", "text": "No. TileZen works fully offline. Your progress is saved on your device." } },
+          { "@type": "Question", "name": "How many levels are there?", "acceptedAnswer": { "@type": "Answer", "text": "TileZen features 65+ hand-crafted levels across 5 themed worlds, with more coming." } },
+          { "@type": "Question", "name": "What are the power-ups?", "acceptedAnswer": { "@type": "Answer", "text": "Undo reverses your last move, Shuffle rearranges the board, Hint highlights a valid tile, and Extra Slot gives you more tray space." } },
+          { "@type": "Question", "name": "Is there a time limit?", "acceptedAnswer": { "@type": "Answer", "text": "No. TileZen is designed to be calming — take all the time you need." } }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --brand: #6C63FF;
+      --brand-dark: #5248D4;
+      --brand-light: #8B84FF;
+      --brand-soft: rgba(108, 99, 255, 0.10);
+      --gold: #FFB86B;
+      --ink: #252525;
+      --muted: #8A8780;
+      --faint: #B5B2AE;
+      --line: rgba(0, 0, 0, 0.06);
+      --bg: #F7F5F0;
+      --bg-alt: #EDE9E0;
+      --surface: #FFFFFF;
+      --display: "Playfair Display", Georgia, serif;
+      --body: "Outfit", system-ui, sans-serif;
+      --shadow: 0 18px 50px rgba(108, 99, 255, 0.14);
+      --radius: 20px;
+    }
+
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: var(--body);
+      color: var(--ink);
+      background: var(--bg);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+    a { color: var(--brand-dark); }
+    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+
+    /* Nav */
+    nav {
+      position: sticky; top: 0; z-index: 40;
+      background: rgba(247, 245, 240, 0.88);
+      backdrop-filter: blur(16px) saturate(160%);
+      -webkit-backdrop-filter: blur(16px) saturate(160%);
+      border-bottom: 1px solid var(--line);
+    }
+    .nav-inner { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .brand { display: flex; align-items: center; gap: 12px; text-decoration: none; color: var(--ink); }
+    .brand img { width: 40px; height: 40px; border-radius: 12px; box-shadow: 0 8px 22px rgba(108,99,255,0.28); }
+    .brand span { font-family: var(--display); font-size: 24px; font-weight: 700; letter-spacing: -0.02em; }
+    .nav-links { display: flex; align-items: center; gap: 4px; flex-wrap: wrap; }
+    .nav-links a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: 14px; padding: 8px 12px; border-radius: 999px; transition: background .2s, color .2s; }
+    .nav-links a:hover { color: var(--ink); background: var(--brand-soft); }
+
+    /* Buttons */
+    .btn { display: inline-flex; align-items: center; justify-content: center; gap: 8px; padding: 13px 24px; border-radius: 999px; font-weight: 600; font-size: 15px; text-decoration: none; border: none; cursor: pointer; transition: transform .2s, box-shadow .2s; }
+    .btn-primary { background: linear-gradient(135deg, var(--brand), var(--brand-dark)); color: #fff !important; box-shadow: 0 12px 28px rgba(108,99,255,0.32); }
+    .btn-primary:hover { transform: translateY(-1px); box-shadow: 0 16px 36px rgba(108,99,255,0.40); }
+    .btn-ghost { background: rgba(255,255,255,.8); color: var(--ink); border: 1px solid var(--line); }
+    .btn-ghost:hover { background: #fff; }
+    .nav-links a.btn-primary { color: #fff !important; padding: 8px 16px; font-size: 13px; }
+
+    /* Hero */
+    .hero {
+      position: relative; overflow: hidden;
+      min-height: min(88vh, 800px);
+      display: grid; place-items: center;
+      text-align: center; padding: 72px 0 80px;
+      background:
+        radial-gradient(ellipse 80% 60% at 50% -5%, rgba(108,99,255,0.28), transparent 62%),
+        linear-gradient(180deg, #EDEAF7 0%, #F7F5F0 55%, #F5F0EA 100%);
+    }
+    .hero::after {
+      content: ""; position: absolute; inset: auto -18% -28% -18%; height: 48%;
+      background: radial-gradient(ellipse at center, rgba(108,99,255,0.10), transparent 70%);
+      pointer-events: none;
+    }
+    .hero-inner { position: relative; z-index: 1; max-width: 740px; }
+    .hero-logo {
+      width: min(148px, 38vw); height: auto; border-radius: 34px;
+      box-shadow: var(--shadow); margin: 0 auto 28px; display: block;
+      animation: rise 0.9s ease both;
+    }
+    .hero h1 {
+      font-family: var(--display); font-weight: 700;
+      font-size: clamp(52px, 10vw, 96px); line-height: 0.95;
+      letter-spacing: -0.035em; margin-bottom: 12px;
+      animation: rise 0.9s .08s ease both;
+      background: linear-gradient(135deg, #252525 0%, #5248D4 100%);
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .hero-tagline {
+      font-size: clamp(16px, 2.5vw, 22px); font-weight: 600; color: var(--brand);
+      letter-spacing: 0.04em; margin-bottom: 16px;
+      animation: rise 0.9s .12s ease both;
+    }
+    .hero p {
+      font-size: clamp(15px, 2.2vw, 18px); color: var(--muted);
+      max-width: 34em; margin: 0 auto 32px;
+      animation: rise 0.9s .16s ease both;
+    }
+    .cta-row { display: flex; gap: 12px; justify-content: center; flex-wrap: wrap; animation: rise 0.9s .24s ease both; }
+    .trust-row {
+      display: flex; gap: 20px; justify-content: center; flex-wrap: wrap;
+      margin-top: 28px; color: var(--faint); font-size: 13px; font-weight: 500;
+      animation: rise 0.9s .32s ease both;
+    }
+    .trust-row span { display: inline-flex; align-items: center; gap: 6px; }
+    .trust-row svg { width: 14px; height: 14px; color: var(--brand); }
+
+    @keyframes rise { from { opacity: 0; transform: translateY(18px); } to { opacity: 1; transform: translateY(0); } }
+
+    /* Sections */
+    section { padding: 92px 0; }
+    .section-label {
+      display: inline-flex; align-items: center; gap: 6px;
+      background: var(--brand-soft); color: var(--brand-dark);
+      font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase;
+      padding: 6px 14px; border-radius: 999px; margin: 0 auto 16px; width: fit-content;
+    }
+    .section-label svg { width: 13px; height: 13px; }
+    .section-head { text-align: center; margin-bottom: 52px; }
+    .section-title { font-family: var(--display); font-size: clamp(32px, 5vw, 48px); font-weight: 700; letter-spacing: -0.02em; margin-bottom: 12px; }
+    .section-sub { color: var(--muted); max-width: 520px; margin: 0 auto; font-size: 16px; }
+
+    /* Features */
+    .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; }
+    @media (max-width: 900px) { .features { grid-template-columns: repeat(2, 1fr); } }
+    @media (max-width: 580px) { .features { grid-template-columns: 1fr; } }
+    .feature { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 24px; transition: transform .25s, box-shadow .25s, border-color .25s; }
+    .feature:hover { transform: translateY(-3px); box-shadow: var(--shadow); border-color: rgba(108,99,255,0.20); }
+    .feature-icon { width: 48px; height: 48px; border-radius: 14px; display: grid; place-items: center; background: var(--brand-soft); color: var(--brand); margin-bottom: 16px; }
+    .feature-icon svg { width: 22px; height: 22px; }
+    .feature h3 { font-family: var(--display); font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+    .feature p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+    /* How to Play */
+    .how-bg { background: linear-gradient(180deg, transparent, rgba(108,99,255,0.05), transparent); }
+    .steps { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+    @media (max-width: 720px) { .steps { grid-template-columns: 1fr; } }
+    .step { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: 32px 24px; text-align: center; }
+    .step-number {
+      font-family: var(--display); font-size: 72px; font-weight: 700; line-height: 1; margin-bottom: 16px;
+      background: linear-gradient(135deg, var(--brand-light), var(--brand));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .step h3 { font-family: var(--display); font-size: 22px; font-weight: 600; margin-bottom: 10px; }
+    .step p { color: var(--muted); font-size: 15px; line-height: 1.6; }
+
+    /* FAQ */
+    .faq details { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; padding: 18px 20px; margin-bottom: 10px; }
+    .faq summary { cursor: pointer; font-weight: 600; list-style: none; display: flex; justify-content: space-between; gap: 12px; align-items: center; font-size: 16px; }
+    .faq summary::-webkit-details-marker { display: none; }
+    .faq summary::after { content: "+"; color: var(--brand); font-size: 22px; font-weight: 400; }
+    .faq details[open] summary::after { content: "–"; }
+    .faq p { color: var(--muted); margin-top: 12px; font-size: 15px; line-height: 1.65; }
+
+    /* Footer */
+    footer { border-top: 1px solid var(--line); padding: 40px 0 56px; color: var(--faint); font-size: 14px; }
+    .footer-grid { display: flex; justify-content: space-between; gap: 24px; flex-wrap: wrap; align-items: center; }
+    .footer-links { display: flex; gap: 16px; flex-wrap: wrap; }
+    .footer-links a { text-decoration: none; color: var(--muted); font-weight: 500; }
+    .footer-links a:hover { color: var(--ink); }
+
+    @media (max-width: 640px) { .nav-links a:not(.btn) { display: none; } }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="container nav-inner">
+      <a class="brand" href="./">
+        <img src="icon.png" alt="" width="40" height="40" />
+        <span>TileZen</span>
+      </a>
+      <div class="nav-links">
+        <a href="#features">Features</a>
+        <a href="#how-to-play">How to Play</a>
+        <a href="#faq">FAQ</a>
+        <a class="btn btn-primary" href="support.html">Support</a>
+      </div>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container hero-inner">
+      <img class="hero-logo" src="icon.png" alt="TileZen app icon" width="148" height="148" />
+      <h1>TileZen</h1>
+      <p class="hero-tagline">Match. Relax. Repeat.</p>
+      <p>A satisfying casual tile-matching puzzle — match three of a kind, clear the board, and keep your calm across 5 beautifully themed worlds.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#download">
+          <i data-lucide="smartphone"></i>
+          Download Free
+        </a>
+        <a class="btn btn-ghost" href="#features">Explore features</a>
+      </div>
+      <div class="trust-row">
+        <span><i data-lucide="layers"></i> 65+ Levels</span>
+        <span><i data-lucide="smile"></i> Free to Play</span>
+        <span><i data-lucide="shield-check"></i> No Account Needed</span>
+        <span><i data-lucide="wifi-off"></i> Offline Play</span>
+      </div>
+    </div>
+  </header>
+
+  <section id="features">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label"><i data-lucide="sparkles"></i> Features</div>
+        <h2 class="section-title">Everything you need to stay zen</h2>
+        <p class="section-sub">Built for calm, focused play — polished to feel great on any mobile device.</p>
+      </div>
+      <div class="features">
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="layers"></i></div>
+          <h3>5 Themed Worlds</h3>
+          <p>Journey through Arboretum, Bakery, Celestial Sky, Ocean Depths, and the Forgotten Temple — each with its own visual identity.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="brain"></i></div>
+          <h3>Satisfying Puzzles</h3>
+          <p>Match tiles three at a time from layered stacks — simple to learn, with real depth as boards grow more complex.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="trending-up"></i></div>
+          <h3>Progressive Challenge</h3>
+          <p>Each world introduces new board shapes, deeper tile stacks, and trickier formations — always at the right pace.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="zap"></i></div>
+          <h3>Power-ups</h3>
+          <p>Undo a move, shuffle the board, get a hint, or grab an extra tray slot when you need a hand.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="smartphone"></i></div>
+          <h3>Mobile-First Design</h3>
+          <p>Comfortable controls, generous tap targets, smooth animations, and careful haptic feedback — built for touch.</p>
+        </article>
+        <article class="feature">
+          <div class="feature-icon" aria-hidden="true"><i data-lucide="shield"></i></div>
+          <h3>Free to Play</h3>
+          <p>No account required. No mandatory login. Play instantly — your progress is saved right on your device.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-to-play" class="how-bg">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label"><i data-lucide="book-open"></i> How to Play</div>
+        <h2 class="section-title">Three steps to zen</h2>
+        <p class="section-sub">Pick up and play in seconds. The challenge unfolds naturally.</p>
+      </div>
+      <div class="steps">
+        <div class="step">
+          <div class="step-number">1</div>
+          <h3>Tap a Tile</h3>
+          <p>Select any accessible tile from the layered board to move it into your tray.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">2</div>
+          <h3>Match Three</h3>
+          <p>Collect three tiles of the same type — they vanish from your tray automatically.</p>
+        </div>
+        <div class="step">
+          <div class="step-number">3</div>
+          <h3>Clear the Board</h3>
+          <p>Remove every tile from the board to complete the level and move on.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="container">
+      <div class="section-head">
+        <div class="section-label"><i data-lucide="message-circle"></i> FAQ</div>
+        <h2 class="section-title">Questions</h2>
+        <p class="section-sub">Quick answers about TileZen.</p>
+      </div>
+      <details open>
+        <summary>Is TileZen free?</summary>
+        <p>Yes — TileZen is completely free to download and play. Earn coins in-game to use power-ups when you need them.</p>
+      </details>
+      <details>
+        <summary>Does TileZen need internet?</summary>
+        <p>No. TileZen works fully offline. All game progress is saved locally on your device — no Wi-Fi required.</p>
+      </details>
+      <details>
+        <summary>How many levels are there?</summary>
+        <p>TileZen features 65+ hand-crafted levels across 5 themed worlds, with more being added in future updates.</p>
+      </details>
+      <details>
+        <summary>What are the power-ups?</summary>
+        <p>Undo reverses your last tile move. Shuffle rearranges all board tiles. Hint highlights a good tile to tap. Extra Slot gives you more space in the tray when things get tight.</p>
+      </details>
+      <details>
+        <summary>Is there a time limit?</summary>
+        <p>No. TileZen is designed to be calming — take all the time you need. There's no clock, no pressure.</p>
+      </details>
+      <details>
+        <summary>Who made TileZen?</summary>
+        <p>TileZen is built by <a href="https://codeyardstudio.com/">Codeyard Studio</a>. Have a question or feedback? Reach us at <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a>.</p>
+      </details>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer-grid">
+      <div>&copy; <span id="y"></span> Codeyard Studio &middot; TileZen</div>
+      <div class="footer-links">
+        <a href="privacy-policy.html">Privacy Policy</a>
+        <a href="terms-of-service.html">Terms of Service</a>
+        <a href="support.html">Support</a>
+        <a href="https://codeyardstudio.com/">Codeyard Studio</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+    if (window.lucide) lucide.createIcons();
+  </script>
+</body>
+</html>

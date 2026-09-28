@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy &ndash; TileZen</title>
+  <meta name="description" content="TileZen Privacy Policy. Local game progress storage, optional ads, in-app purchases, and your privacy rights." />
+  <link rel="canonical" href="https://codeyardstudio.com/tilezen/privacy-policy.html" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --brand: #6C63FF; --brand-dark: #5248D4; --brand-light: #8B84FF;
+      --ink: #252525; --muted: #8A8780; --faint: #B5B2AE;
+      --cream: #F7F5F0; --surface: #fff; --line: rgba(0,0,0,0.07);
+      --display: "Playfair Display", Georgia, serif;
+      --body: "Outfit", system-ui, sans-serif;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: var(--body); background: var(--cream); color: var(--ink); line-height: 1.7; font-size: 15px; -webkit-font-smoothing: antialiased; }
+    a { color: var(--brand-dark); }
+    .hero {
+      background: linear-gradient(145deg, #8B84FF 0%, #6C63FF 50%, #5248D4 100%);
+      color: #fff; text-align: center;
+      padding: max(52px, env(safe-area-inset-top) + 28px) 20px 44px;
+    }
+    .hero-badge {
+      display: inline-block; padding: 4px 14px; border-radius: 999px; font-size: 12px; font-weight: 600;
+      letter-spacing: .06em; text-transform: uppercase; background: rgba(255,255,255,.18);
+      border: 1px solid rgba(255,255,255,.35); margin-bottom: 16px;
+    }
+    .hero h1 { font-family: var(--display); font-size: clamp(30px, 6vw, 46px); font-weight: 700; margin-bottom: 10px; }
+    .hero p { opacity: .92; max-width: 520px; margin: 0 auto 12px; font-size: 16px; }
+    .hero-meta { font-size: 13px; opacity: .75; }
+    .hero a { color: rgba(255,255,255,.9); }
+    .page { max-width: 860px; margin: 0 auto; padding: 0 16px 80px; }
+    .toc, section {
+      background: var(--surface); border: 1px solid var(--line); border-radius: 16px;
+      padding: 28px 32px; margin-top: 24px; box-shadow: 0 8px 30px rgba(108,99,255,0.05);
+    }
+    .toc-title { font-size: 11px; font-weight: 700; letter-spacing: .09em; text-transform: uppercase; color: var(--faint); margin-bottom: 12px; }
+    .toc ol { padding-left: 20px; }
+    .toc li { margin-bottom: 6px; }
+    .toc a { text-decoration: none; font-weight: 500; color: var(--brand-dark); }
+    .toc a:hover { text-decoration: underline; }
+    section h2 { font-family: var(--display); font-size: 26px; font-weight: 700; margin-bottom: 14px; color: var(--ink); }
+    section p, section li { color: var(--muted); margin-bottom: 10px; line-height: 1.75; }
+    section ul { padding-left: 20px; margin-bottom: 10px; }
+    section strong { color: var(--ink); }
+    footer { text-align: center; padding: 28px 16px 56px; color: var(--faint); font-size: 14px; }
+    footer a { margin: 0 10px; text-decoration: none; font-weight: 500; color: var(--muted); }
+    footer a:hover { color: var(--ink); }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <div class="hero-badge">TileZen</div>
+    <h1>Privacy Policy</h1>
+    <p>TileZen stores your game progress locally on your device. Here is what that means.</p>
+    <p class="hero-meta">Effective date: September 28, 2026 &middot; <a href="./">Back to TileZen</a></p>
+  </header>
+
+  <div class="page">
+    <nav class="toc" aria-label="Table of contents">
+      <div class="toc-title">Contents</div>
+      <ol>
+        <li><a href="#who">Who we are</a></li>
+        <li><a href="#data">What data we collect</a></li>
+        <li><a href="#local">Local storage</a></li>
+        <li><a href="#analytics">Analytics &amp; crash reporting</a></li>
+        <li><a href="#ads">Advertising</a></li>
+        <li><a href="#purchases">In-app purchases</a></li>
+        <li><a href="#permissions">Device permissions</a></li>
+        <li><a href="#sharing">Data sharing</a></li>
+        <li><a href="#children">Children</a></li>
+        <li><a href="#choices">Your choices</a></li>
+        <li><a href="#changes">Changes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ol>
+    </nav>
+
+    <section id="who">
+      <h2>1. Who we are</h2>
+      <p>TileZen is published by <strong>Codeyard Studio</strong> ("we", "us"). Contact: <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a>.</p>
+    </section>
+
+    <section id="data">
+      <h2>2. What data we collect</h2>
+      <p>TileZen is a local-first game. We do not require you to create an account. Game progress — including completed levels, coins, settings preferences, and power-up inventory — is stored locally on your device using AsyncStorage.</p>
+      <p>We do not collect your name, email address, or any personal identifying information through the game itself.</p>
+    </section>
+
+    <section id="local">
+      <h2>3. Local storage</h2>
+      <p>All game progress is stored on your device. If you uninstall TileZen or clear the app's data, your progress will be permanently deleted from that device. We do not sync any game data to our servers.</p>
+    </section>
+
+    <section id="analytics">
+      <h2>4. Analytics &amp; crash reporting</h2>
+      <p>We may collect anonymous crash reports and aggregated usage analytics through Apple App Store or Google Play platform tools to improve the quality of TileZen. This data is anonymised and not linked to you personally.</p>
+    </section>
+
+    <section id="ads">
+      <h2>5. Advertising</h2>
+      <p>The free version of TileZen may show ads served by third-party ad networks. Ad networks may use device identifiers to deliver relevant advertisements, subject to your device privacy settings and, on iOS, the App Tracking Transparency framework.</p>
+      <p>You can limit ad tracking in your device settings at any time.</p>
+    </section>
+
+    <section id="purchases">
+      <h2>6. In-app purchases</h2>
+      <p>Coins and power-ups can be purchased through the Apple App Store or Google Play. All payment transactions are handled by the respective platform. We do not receive or store your payment card details.</p>
+      <p>Purchase status may be stored locally on your device to unlock purchased content.</p>
+    </section>
+
+    <section id="permissions">
+      <h2>7. Device permissions</h2>
+      <ul>
+        <li><strong>Haptics</strong> — used for tactile gameplay feedback only. No data is collected.</li>
+        <li><strong>Audio</strong> — used for sound effects and music only. No data is collected.</li>
+        <li><strong>Internet</strong> — required only for serving ads in the free version.</li>
+      </ul>
+    </section>
+
+    <section id="sharing">
+      <h2>8. Data sharing</h2>
+      <p>We do not sell your personal information. Limited technical data may be processed by Apple and Google for app distribution, crash diagnostics, in-app purchases, and ad delivery, according to their respective privacy policies.</p>
+    </section>
+
+    <section id="children">
+      <h2>9. Children</h2>
+      <p>TileZen is a game rated for all ages. We do not knowingly collect personal information from children under 13 (or the minimum age required in your country). If you believe a child has provided personal data, please contact us so we can take appropriate action.</p>
+    </section>
+
+    <section id="choices">
+      <h2>10. Your choices</h2>
+      <ul>
+        <li>Disable haptics or sound in the app Settings.</li>
+        <li>Limit ad tracking using your device's privacy settings.</li>
+        <li>Uninstall TileZen to remove all locally stored game data from your device.</li>
+      </ul>
+    </section>
+
+    <section id="changes">
+      <h2>11. Changes</h2>
+      <p>We may update this Privacy Policy from time to time. Changes will be posted on this page with an updated effective date. Continued use of TileZen after changes constitutes your acceptance of the revised policy.</p>
+    </section>
+
+    <section id="contact">
+      <h2>12. Contact</h2>
+      <p>Questions or concerns about this policy: <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a>.</p>
+      <p>Related: <a href="terms-of-service.html">Terms of Service</a> &middot; <a href="support.html">Support</a>.</p>
+    </section>
+  </div>
+
+  <footer>
+    <a href="./">TileZen</a>
+    <a href="https://codeyardstudio.com/">Codeyard Studio</a>
+  </footer>
+</body>
+</html>
