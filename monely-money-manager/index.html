@@ -301,10 +301,22 @@
     .phone-stat-value { font-size: 24px; font-weight: 800; color: #fff; }
     .phone-stat-sub { font-size: 10.5px; color: #4ade80; margin-top: 3px; font-weight: 600; }
 
-    .account-chips { display: flex; gap: 5px; margin-bottom: 12px; overflow-x: auto; }
+    .account-chips {
+      display: flex;
+      gap: 6px;
+      margin-bottom: 12px;
+      overflow: hidden;
+    }
     .account-chip {
-      background: rgba(255,255,255,.1); border-radius: 100px; padding: 4px 9px;
-      font-size: 9.5px; font-weight: 600; white-space: nowrap; color: rgba(255,255,255,.85);
+      flex: 1;
+      text-align: center;
+      background: rgba(255,255,255,.1);
+      border-radius: 100px;
+      padding: 4px 6px;
+      font-size: 10px;
+      font-weight: 600;
+      white-space: nowrap;
+      color: rgba(255,255,255,.85);
     }
     .account-chip.active { background: var(--brand); color: #fff; }
 
@@ -767,8 +779,8 @@
               <div class="phone-stat-sub">↑ +$460 this month</div>
             </div>
             <div class="account-chips">
-              <span class="account-chip active">All ($5,280)</span>
-              <span class="account-chip">Bank ($3,650)</span>
+              <span class="account-chip active">All ($5.3k)</span>
+              <span class="account-chip">Bank ($3.6k)</span>
               <span class="account-chip">Cash ($430)</span>
             </div>
             <div>
