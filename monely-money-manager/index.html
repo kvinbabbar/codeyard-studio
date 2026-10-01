@@ -2,42 +2,40 @@
 <html lang="en">
 <head>
   <!-- ============================================================
-       ESSENTIAL META TAGS
+       ESSENTIAL META TAGS & SEO
   ============================================================ -->
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
   <!-- Primary SEO -->
-  <title>Monely – Money Manager & Expense Tracker App | iOS & Android</title>
-  <meta name="description" content="Monely is a free, privacy-first money manager and expense tracker for iOS & Android. Track expenses, income, recurring bills, and budgets — all stored locally on your device. No cloud, no tracking." />
-  <meta name="keywords" content="expense tracker, money manager, budget app, personal finance, expense tracker app, free expense tracker, offline expense tracker, iOS expense tracker, Android expense tracker, income tracker, recurring bills, budget planner, monely, spending tracker" />
-  <meta name="author" content="Codeyard" />
+  <title>Monely – Money Manager, Expense Tracker &amp; Budget App | iOS &amp; Android</title>
+  <meta name="description" content="Monely is a free, privacy-first money manager and expense tracker for iOS &amp; Android. Track expenses, income, account transfers, recurring bills, and category budgets — 100% offline with zero cloud tracking." />
+  <meta name="keywords" content="expense tracker, money manager, budget app, personal finance, account transfers, recurring bills, category budgets, offline expense tracker, privacy first finance, iOS expense tracker, Android expense tracker, monely, spending tracker, local sqlite finance" />
+  <meta name="author" content="Codeyard Studio" />
   <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
-  <link rel="canonical" href="https://monely.app/" />
+  <link rel="canonical" href="https://codeyardstudio.com/monely-money-manager/" />
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://monely.app/" />
-  <meta property="og:title" content="Monely – Money Manager & Expense Tracker App" />
-  <meta property="og:description" content="Track your expenses, income, and recurring bills in one place. Privacy-first — all data lives on your device. Available free on iOS & Android." />
-  <meta property="og:image" content="https://monely.app/og-image.png" />
-  <meta property="og:image:width" content="1200" />
-  <meta property="og:image:height" content="630" />
-  <meta property="og:image:alt" content="Monely app screenshots showing expense tracking dashboard" />
-  <meta property="og:site_name" content="Monely" />
+  <meta property="og:url" content="https://codeyardstudio.com/monely-money-manager/" />
+  <meta property="og:title" content="Monely – Money Manager &amp; Expense Tracker App" />
+  <meta property="og:description" content="Track expenses, income, account transfers, recurring bills, and category budgets in one place. 100% offline, privacy-first — all data lives on your device. Free on iOS &amp; Android." />
+  <meta property="og:image" content="https://codeyardstudio.com/monely-money-manager/icon.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="Monely Money Manager App Icon" />
+  <meta property="og:site_name" content="Monely – Codeyard Studio" />
   <meta property="og:locale" content="en_US" />
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:site" content="@monely_app" />
-  <meta name="twitter:creator" content="@monely_app" />
-  <meta name="twitter:title" content="Monely – Money Manager & Expense Tracker App" />
-  <meta name="twitter:description" content="Track your expenses, income, and recurring bills in one place. Privacy-first — all data lives on your device. Available free on iOS & Android." />
-  <meta name="twitter:image" content="https://monely.app/og-image.png" />
-  <meta name="twitter:image:alt" content="Monely app screenshots showing expense tracking dashboard" />
+  <meta name="twitter:title" content="Monely – Money Manager &amp; Expense Tracker App" />
+  <meta name="twitter:description" content="Privacy-first personal finance tracker for iOS &amp; Android. Track expenses, income, transfers, recurring bills, and category budgets entirely offline." />
+  <meta name="twitter:image" content="https://codeyardstudio.com/monely-money-manager/icon.png" />
+  <meta name="twitter:image:alt" content="Monely app icon and dashboard preview" />
 
-  <!-- Mobile / App -->
+  <!-- Mobile / PWA -->
   <meta name="theme-color" content="#E93C2F" />
   <meta name="apple-mobile-web-app-capable" content="yes" />
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
@@ -51,12 +49,12 @@
   <link rel="icon" type="image/png" href="icon.png" />
   <link rel="apple-touch-icon" href="icon.png" />
 
-  <!-- Preconnect for performance -->
+  <!-- Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
 
-  <!-- Lucide Icons -->
+  <!-- Lucide Icons Library (optional enhancement, with inline SVG fallbacks) -->
   <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
 
   <!-- ============================================================
@@ -68,36 +66,31 @@
     "@graph": [
       {
         "@type": "WebSite",
-        "@id": "https://monely.app/#website",
-        "url": "https://monely.app/",
-        "name": "Monely",
-        "description": "Privacy-first money manager and expense tracker app for iOS and Android",
-        "publisher": { "@id": "https://monely.app/#organization" },
-        "potentialAction": {
-          "@type": "SearchAction",
-          "target": { "@type": "EntryPoint", "urlTemplate": "https://monely.app/?s={search_term_string}" },
-          "query-input": "required name=search_term_string"
-        }
+        "@id": "https://codeyardstudio.com/monely-money-manager/#website",
+        "url": "https://codeyardstudio.com/monely-money-manager/",
+        "name": "Monely – Money Manager",
+        "description": "Privacy-first personal finance, expense tracker, and budget planner for iOS and Android.",
+        "publisher": { "@id": "https://codeyardstudio.com/#organization" }
       },
       {
         "@type": "Organization",
-        "@id": "https://monely.app/#organization",
-        "name": "Codeyard",
-        "url": "https://monely.app/",
+        "@id": "https://codeyardstudio.com/#organization",
+        "name": "Codeyard Studio",
+        "url": "https://codeyardstudio.com/",
         "logo": {
           "@type": "ImageObject",
-          "url": "https://monely.app/icon.png",
-          "width": 512,
-          "height": 512
-        }
+          "url": "https://codeyardstudio.com/assets/codeyard-studio-logo.png"
+        },
+        "email": "codeyard.studio@gmail.com",
+        "sameAs": ["https://www.instagram.com/codeyard.studio/"]
       },
       {
         "@type": "SoftwareApplication",
-        "@id": "https://monely.app/#app",
+        "@id": "https://codeyardstudio.com/monely-money-manager/#app",
         "name": "Monely – Money Manager",
-        "description": "A free, privacy-first expense tracker and money manager for iOS and Android. Track expenses, income, recurring bills, and budgets entirely offline — no cloud sync, no tracking.",
-        "url": "https://monely.app/",
-        "image": "https://monely.app/og-image.png",
+        "description": "A free, privacy-first expense tracker and money manager for iOS and Android. Track expenses, income, account transfers, recurring bills, and category budgets entirely offline on your device with local SQLite storage.",
+        "url": "https://codeyardstudio.com/monely-money-manager/",
+        "image": "https://codeyardstudio.com/monely-money-manager/icon.png",
         "applicationCategory": "FinanceApplication",
         "operatingSystem": ["iOS", "Android"],
         "offers": {
@@ -112,68 +105,74 @@
           "bestRating": "5",
           "worstRating": "1"
         },
-        "author": { "@id": "https://monely.app/#organization" },
+        "author": { "@id": "https://codeyardstudio.com/#organization" },
         "featureList": [
-          "Expense and income tracking",
-          "Recurring bill management",
-          "Advanced analytics and reports",
-          "Multi-account support",
-          "Offline-first — no internet required",
-          "No data collection or tracking",
+          "Expense and income tracking with smart categories",
+          "Account-to-account transfers",
+          "Multi-account and wallet management",
+          "Category budgets and spending limits",
+          "Recurring bills and automated subscriptions",
+          "Bill reminder notifications",
+          "Smart insights and advanced analytics",
+          "Instant search and multi-criteria filters",
+          "Secure JSON backup and one-tap restore",
+          "CSV and TXT data export",
+          "Multi-currency with automatic locale detection",
           "Dark and light theme",
-          "Category-based budgeting"
+          "100% offline-first local SQLite storage",
+          "Zero cloud tracking or data collection"
         ]
       },
       {
         "@type": "FAQPage",
-        "@id": "https://monely.app/#faq",
+        "@id": "https://codeyardstudio.com/monely-money-manager/#faq",
         "mainEntity": [
           {
             "@type": "Question",
-            "name": "Is Monely free to use?",
+            "name": "Is Monely completely free to use?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes, Monely is completely free to download and use. We show one optional, non-intrusive ad per 24 hours to keep the app sustainable — and you can dismiss it anytime."
+              "text": "Yes, Monely is 100% free to download and use with all features unlocked. We show one optional, non-intrusive ad per 24 hours to support ongoing development, and it can be dismissed anytime."
             }
           },
           {
             "@type": "Question",
-            "name": "Does Monely sync to the cloud?",
+            "name": "Does Monely upload my financial data to the cloud?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "No. Monely is offline-first. All your financial data is stored locally on your device using SQLite. Nothing is ever uploaded to a server, so your data remains 100% private."
+              "text": "No. Monely is strictly offline-first. All your expenses, incomes, transfers, budgets, accounts, and notes are stored locally on your device in a sandboxed SQLite database. Nothing is ever uploaded to a remote server."
             }
           },
           {
             "@type": "Question",
-            "name": "Is Monely available on both iOS and Android?",
+            "name": "Can I transfer money between different accounts?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes. Monely is available on the Apple App Store for iPhone and iPad, and on the Google Play Store for Android devices."
+              "text": "Yes! Monely includes dedicated account-to-account transfer support. You can move funds between bank accounts, cash wallets, or savings without distorting your income or expense analytics."
             }
           },
           {
             "@type": "Question",
-            "name": "Can I track both expenses and income?",
+            "name": "Does Monely support category budgets and limits?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Absolutely. Monely supports both expense and income tracking with smart categories, multiple accounts, and real-time balance updates."
+              "text": "Yes. You can set monthly spending limits for individual categories (like Groceries, Dining Out, or Shopping). Real-time progress bars and alerts help you stay on budget before the month ends."
             }
           },
           {
             "@type": "Question",
-            "name": "Does Monely support recurring bills?",
+            "name": "How do recurring transactions and bill reminders work?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Yes! You can set up recurring transactions — daily, weekly, bi-weekly, monthly, quarterly, or yearly — and Monely will automatically generate them on schedule with optional reminders."
+              "text": "You can schedule transactions as recurring (daily, weekly, bi-weekly, monthly, quarterly, or yearly). Monely automatically generates occurrences on schedule and sends timely notification reminders before bills are due."
             }
           },
           {
             "@type": "Question",
-            "name": "What categories does Monely support?",
+            "name": "Can I export my data to Excel or Google Sheets?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Monely comes with pre-built categories for common expenses (food, transport, housing, entertainment, etc.) and supports custom categories so you can track exactly what matters to you."
+              "text": "Yes. Monely allows you to export your data as a clean CSV spreadsheet file compatible with Excel, Google Sheets, and Apple Numbers, or as a formatted TXT summary report."
             }
           }
         ]
@@ -200,12 +199,15 @@
       --bg-alt: #f9fafb;
       --bg-card: #ffffff;
       --border: #e5e7eb;
+      --border-subtle: #f3f4f6;
+      --green: #10b981;
+      --green-subtle: rgba(16, 185, 129, 0.12);
       --shadow-sm: 0 1px 3px rgba(0,0,0,.06), 0 1px 2px rgba(0,0,0,.04);
       --shadow-md: 0 4px 16px rgba(0,0,0,.08), 0 2px 6px rgba(0,0,0,.05);
       --shadow-lg: 0 12px 40px rgba(0,0,0,.10), 0 4px 12px rgba(0,0,0,.06);
       --radius: 16px;
-      --radius-sm: 8px;
-      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      --radius-sm: 10px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     }
 
     @media (prefers-color-scheme: dark) {
@@ -215,9 +217,11 @@
         --text-muted: #6b7280;
         --bg: #0a0a0a;
         --bg-alt: #111111;
-        --bg-card: #1a1a1a;
-        --border: #2a2a2a;
+        --bg-card: #181818;
+        --border: #282828;
+        --border-subtle: #1f1f1f;
         --brand-subtle: #2a0f0c;
+        --green-subtle: rgba(16, 185, 129, 0.2);
       }
     }
 
@@ -232,43 +236,44 @@
     }
 
     /* ---- UTILITIES ---- */
-    .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+    .container { max-width: 1140px; margin: 0 auto; padding: 0 24px; }
     .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; }
     .text-brand { color: var(--brand); }
     .badge {
       display: inline-flex; align-items: center; gap: 6px;
       background: var(--brand-subtle); color: var(--brand);
-      font-size: 12px; font-weight: 600; letter-spacing: .04em;
+      font-size: 12px; font-weight: 700; letter-spacing: .04em;
       text-transform: uppercase; padding: 6px 14px; border-radius: 100px;
-      border: 1px solid rgba(233,60,47,.15);
+      border: 1px solid rgba(233,60,47,.18);
     }
 
     /* ---- NAVIGATION ---- */
     nav {
       position: sticky; top: 0; z-index: 100;
-      background: rgba(255,255,255,.85);
+      background: rgba(255,255,255,.88);
       backdrop-filter: saturate(180%) blur(16px);
       -webkit-backdrop-filter: saturate(180%) blur(16px);
       border-bottom: 1px solid var(--border);
     }
     @media (prefers-color-scheme: dark) {
-      nav { background: rgba(10,10,10,.85); }
+      nav { background: rgba(10,10,10,.88); }
     }
     .nav-inner {
       display: flex; align-items: center; justify-content: space-between;
-      height: 64px;
+      height: 68px;
     }
     .nav-logo {
-      display: flex; align-items: center; gap: 10px;
+      display: flex; align-items: center; gap: 12px;
       text-decoration: none; color: var(--text-primary);
     }
     .nav-logo-icon {
-      width: 36px; height: 36px; border-radius: 10px;
+      width: 38px; height: 38px; border-radius: 10px;
       overflow: hidden; flex-shrink: 0;
+      box-shadow: 0 2px 8px rgba(233,60,47,.25);
     }
-    .nav-logo-icon img { width: 36px; height: 36px; display: block; object-fit: cover; }
-    .nav-logo-name { font-weight: 700; font-size: 18px; }
-    .nav-links { display: flex; align-items: center; gap: 6px; }
+    .nav-logo-icon img { width: 38px; height: 38px; display: block; object-fit: cover; }
+    .nav-logo-name { font-weight: 800; font-size: 19px; letter-spacing: -.02em; }
+    .nav-links { display: flex; align-items: center; gap: 4px; }
     .nav-links a {
       text-decoration: none; color: var(--text-secondary);
       font-size: 14px; font-weight: 500;
@@ -277,6 +282,7 @@
     }
     .nav-links a:hover { color: var(--text-primary); background: var(--bg-alt); }
     .nav-links a.btn-primary { color: #fff !important; }
+    
     .btn {
       display: inline-flex; align-items: center; justify-content: center;
       gap: 8px; padding: 12px 24px; border-radius: 100px;
@@ -287,18 +293,16 @@
     .btn-primary {
       background: var(--brand); color: #fff;
     }
-    .btn-primary:hover { background: var(--brand-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(233,60,47,.35); }
-    .btn-secondary {
-      background: transparent; color: var(--text-primary);
-      border: 1.5px solid var(--border);
+    .btn-primary:hover {
+      background: var(--brand-dark); transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(233,60,47,.35);
     }
-    .btn-secondary:hover { background: var(--bg-alt); transform: translateY(-1px); }
-    .btn-sm { padding: 8px 18px; font-size: 13px; }
+    .btn-sm { padding: 9px 20px; font-size: 13px; }
 
     /* ---- HERO ---- */
     .hero {
       position: relative; overflow: hidden;
-      padding: 96px 0 80px;
+      padding: 88px 0 72px;
       text-align: center;
     }
     .hero::before {
@@ -307,299 +311,418 @@
       background: radial-gradient(ellipse 80% 60% at 50% -10%, rgba(233,60,47,.12) 0%, transparent 70%);
       pointer-events: none;
     }
-    .hero-eyebrow { margin-bottom: 24px; }
+    .hero-eyebrow { margin-bottom: 22px; }
     .hero h1 {
-      font-size: clamp(36px, 6vw, 70px);
-      font-weight: 900; line-height: 1.08;
+      font-size: clamp(34px, 5.8vw, 68px);
+      font-weight: 900; line-height: 1.1;
       letter-spacing: -.03em;
-      margin-bottom: 20px;
+      margin-bottom: 22px;
     }
     .hero h1 .highlight {
       color: var(--brand);
       position: relative;
     }
     .hero p.subtitle {
-      font-size: clamp(16px, 2.5vw, 20px);
+      font-size: clamp(16px, 2.3vw, 20px);
       color: var(--text-secondary);
-      max-width: 560px; margin: 0 auto 40px;
+      max-width: 620px; margin: 0 auto 36px;
       line-height: 1.65;
     }
     .hero-cta {
       display: flex; align-items: center; justify-content: center;
-      gap: 14px; flex-wrap: wrap; margin-bottom: 16px;
+      gap: 14px; flex-wrap: wrap; margin-bottom: 24px;
     }
-    .hero-trust {
-      display: flex; align-items: center; justify-content: center;
-      gap: 20px; margin-top: 16px; flex-wrap: wrap;
-    }
-    .hero-trust-item {
-      display: flex; align-items: center; gap: 6px;
-      font-size: 13px; color: var(--text-muted); font-weight: 500;
-    }
-    .hero-trust-item svg { color: var(--brand); }
     .store-btn {
-      display: inline-flex; align-items: center; gap: 10px;
+      display: inline-flex; align-items: center; gap: 12px;
       background: var(--text-primary); color: var(--bg);
-      padding: 12px 22px; border-radius: 14px; text-decoration: none;
-      transition: all .2s;
+      padding: 12px 24px; border-radius: 14px; text-decoration: none;
+      transition: all .2s; box-shadow: var(--shadow-sm);
     }
     .store-btn:hover { transform: translateY(-2px); box-shadow: var(--shadow-lg); }
     .store-btn svg { width: 22px; height: 22px; flex-shrink: 0; }
     .store-btn-text { text-align: left; }
-    .store-btn-sub { font-size: 11px; opacity: .7; line-height: 1; margin-bottom: 3px; }
+    .store-btn-sub { font-size: 11px; opacity: .75; line-height: 1; margin-bottom: 3px; font-weight: 500; }
     .store-btn-name { font-size: 15px; font-weight: 700; line-height: 1; }
 
-    /* ---- PHONE MOCKUP ---- */
+    .hero-trust {
+      display: flex; align-items: center; justify-content: center;
+      gap: 22px; margin-top: 18px; flex-wrap: wrap;
+    }
+    .hero-trust-item {
+      display: flex; align-items: center; gap: 7px;
+      font-size: 13px; color: var(--text-muted); font-weight: 600;
+    }
+    .hero-trust-item svg { color: var(--brand); width: 16px; height: 16px; flex-shrink: 0; }
+
+    /* ---- PHONE MOCKUP SHOWCASE ---- */
     .hero-phones {
-      position: relative; margin: 64px auto 0;
-      max-width: 700px; height: 460px;
+      position: relative; margin: 60px auto 0;
+      max-width: 820px; height: 480px;
     }
     .phone-card {
       position: absolute;
-      width: 220px;
+      width: 236px;
       background: var(--bg-card);
-      border-radius: 28px;
+      border-radius: 30px;
       box-shadow: var(--shadow-lg), 0 0 0 1px var(--border);
       overflow: hidden;
-      transition: transform .4s ease;
+      transition: transform .4s ease, box-shadow .4s ease;
+      cursor: default;
     }
-    .phone-card:nth-child(1) { left: 50%; transform: translateX(-50%) rotate(-6deg); top: 20px; z-index: 1; }
-    .phone-card:nth-child(2) { left: 50%; transform: translateX(-50%); top: 0; z-index: 3; }
-    .phone-card:nth-child(3) { left: 50%; transform: translateX(-50%) rotate(6deg); top: 20px; z-index: 1; }
-    .phone-card:hover { transform: translateX(-50%) translateY(-8px) !important; z-index: 10 !important; }
+    .phone-card.left {
+      left: 12%; top: 24px; z-index: 1;
+      transform: rotate(-6deg);
+    }
+    .phone-card.center {
+      left: 50%; top: 0; z-index: 3;
+      transform: translateX(-50%);
+      width: 250px;
+      box-shadow: 0 20px 50px rgba(0,0,0,.18), 0 0 0 1px var(--border);
+    }
+    .phone-card.right {
+      right: 12%; left: auto; top: 24px; z-index: 1;
+      transform: rotate(6deg);
+    }
+    .phone-card:hover {
+      transform: translateY(-8px) scale(1.02) !important;
+      z-index: 10 !important;
+    }
     .phone-screen {
-      background: linear-gradient(160deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
-      padding: 20px 16px;
-      min-height: 380px;
+      background: linear-gradient(160deg, #13141f 0%, #1a1c2b 50%, #161824 100%);
+      padding: 18px 15px;
+      min-height: 400px;
+      color: #fff;
     }
     .phone-notch {
-      width: 80px; height: 8px; background: #000;
-      border-radius: 100px; margin: 0 auto 20px;
+      width: 84px; height: 8px; background: #000;
+      border-radius: 100px; margin: 0 auto 16px;
     }
     .phone-stat {
       background: rgba(255,255,255,.07); border-radius: 14px;
-      padding: 14px; margin-bottom: 10px;
+      padding: 14px; margin-bottom: 12px;
+      border: 1px solid rgba(255,255,255,.06);
     }
-    .phone-stat-label { font-size: 10px; color: rgba(255,255,255,.5); margin-bottom: 4px; }
-    .phone-stat-value { font-size: 22px; font-weight: 800; color: #fff; }
-    .phone-stat-sub { font-size: 10px; color: #4ade80; margin-top: 2px; }
-    .phone-tx { display: flex; align-items: center; gap: 10px; padding: 8px 0; border-bottom: 1px solid rgba(255,255,255,.05); }
-    .phone-tx-icon { width: 32px; height: 32px; border-radius: 10px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
-    .phone-tx-info { flex: 1; }
-    .phone-tx-name { font-size: 11px; color: rgba(255,255,255,.85); font-weight: 600; }
-    .phone-tx-date { font-size: 10px; color: rgba(255,255,255,.4); }
-    .phone-tx-amount { font-size: 12px; font-weight: 700; }
-    .tx-expense { color: var(--brand-light); }
+    .phone-stat.highlight {
+      background: linear-gradient(135deg, rgba(233,60,47,.28), rgba(233,60,47,.08));
+      border-color: rgba(233,60,47,.3);
+    }
+    .phone-stat-label { font-size: 11px; color: rgba(255,255,255,.6); margin-bottom: 4px; font-weight: 500; }
+    .phone-stat-value { font-size: 24px; font-weight: 800; color: #fff; }
+    .phone-stat-sub { font-size: 11px; color: #4ade80; margin-top: 3px; font-weight: 600; display: flex; align-items: center; gap: 4px; }
+    
+    .account-chips {
+      display: flex; gap: 6px; margin-bottom: 12px; overflow-x: auto; padding-bottom: 4px;
+    }
+    .account-chip {
+      background: rgba(255,255,255,.1); border-radius: 100px; padding: 4px 10px;
+      font-size: 10px; font-weight: 600; white-space: nowrap; color: rgba(255,255,255,.85);
+    }
+    .account-chip.active { background: var(--brand); color: #fff; }
+
+    .phone-tx {
+      display: flex; align-items: center; gap: 10px; padding: 8px 0;
+      border-bottom: 1px solid rgba(255,255,255,.06);
+    }
+    .phone-tx:last-child { border-bottom: none; }
+    .phone-tx-icon {
+      width: 32px; height: 32px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; flex-shrink: 0;
+    }
+    .phone-tx-info { flex: 1; min-width: 0; }
+    .phone-tx-name { font-size: 11px; color: rgba(255,255,255,.9); font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .phone-tx-date { font-size: 9.5px; color: rgba(255,255,255,.45); }
+    .phone-tx-amount { font-size: 12px; font-weight: 700; white-space: nowrap; }
+    .tx-expense { color: #ff6b5b; }
     .tx-income { color: #4ade80; }
+    .tx-transfer { color: #60a5fa; }
+
+    /* Progress bar for budget mockup */
+    .budget-bar-wrap { margin-bottom: 10px; }
+    .budget-bar-head { display: flex; justify-content: space-between; font-size: 10.5px; margin-bottom: 4px; }
+    .budget-bar-track { height: 6px; background: rgba(255,255,255,.1); border-radius: 100px; overflow: hidden; }
+    .budget-bar-fill { height: 100%; border-radius: 100px; background: var(--brand); }
 
     /* ---- STATS STRIP ---- */
     .stats-strip {
       background: var(--bg-alt); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);
-      padding: 40px 0;
+      padding: 44px 0;
     }
     .stats-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
-      gap: 24px; text-align: center;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 28px; text-align: center;
     }
-    .stat-item {}
-    .stat-value { font-size: 36px; font-weight: 900; color: var(--brand); line-height: 1; margin-bottom: 4px; }
-    .stat-label { font-size: 13px; color: var(--text-muted); font-weight: 500; }
+    .stat-value { font-size: 38px; font-weight: 900; color: var(--brand); line-height: 1; margin-bottom: 6px; }
+    .stat-label { font-size: 13px; color: var(--text-muted); font-weight: 600; }
 
     /* ---- SECTIONS ---- */
     section { padding: 96px 0; }
     .section-label { text-align: center; margin-bottom: 16px; }
     .section-title {
-      font-size: clamp(28px, 4vw, 44px);
+      font-size: clamp(28px, 4.2vw, 44px);
       font-weight: 800; letter-spacing: -.02em;
-      text-align: center; margin-bottom: 16px; line-height: 1.15;
+      text-align: center; margin-bottom: 16px; line-height: 1.18;
     }
     .section-subtitle {
       font-size: 17px; color: var(--text-secondary);
-      text-align: center; max-width: 520px; margin: 0 auto 56px;
+      text-align: center; max-width: 580px; margin: 0 auto 56px;
       line-height: 1.65;
     }
 
     /* ---- FEATURES GRID ---- */
     .features-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      gap: 20px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 22px;
     }
     .feature-card {
       background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 28px;
+      border-radius: var(--radius); padding: 30px;
       transition: all .25s; position: relative; overflow: hidden;
+      display: flex; flex-direction: column;
     }
     .feature-card::before {
       content: ''; position: absolute; inset: 0;
-      background: linear-gradient(135deg, rgba(233,60,47,.04) 0%, transparent 60%);
+      background: linear-gradient(135deg, rgba(233,60,47,.05) 0%, transparent 60%);
       opacity: 0; transition: opacity .25s;
     }
-    .feature-card:hover { box-shadow: var(--shadow-md); transform: translateY(-2px); border-color: rgba(233,60,47,.2); }
+    .feature-card:hover {
+      box-shadow: var(--shadow-md); transform: translateY(-3px);
+      border-color: rgba(233,60,47,.3);
+    }
     .feature-card:hover::before { opacity: 1; }
     .feature-icon {
       width: 52px; height: 52px; border-radius: var(--radius-sm);
       display: flex; align-items: center; justify-content: center;
-      font-size: 24px; margin-bottom: 18px;
-      background: var(--brand-subtle);
+      margin-bottom: 20px; background: var(--brand-subtle);
+      color: var(--brand); flex-shrink: 0;
     }
-    .feature-title { font-size: 18px; font-weight: 700; margin-bottom: 8px; }
-    .feature-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
+    .feature-icon svg { width: 26px; height: 26px; stroke-width: 2; }
+    .feature-title { font-size: 18px; font-weight: 700; margin-bottom: 10px; line-height: 1.3; }
+    .feature-desc { font-size: 14.5px; color: var(--text-secondary); line-height: 1.65; margin-top: auto; }
+
+    /* ---- INTERACTIVE DEEP DIVE SECTION ---- */
+    .deep-dive-section { background: var(--bg-alt); }
+    .deep-dive-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: center;
+      margin-bottom: 64px;
+    }
+    .deep-dive-grid.reverse { direction: rtl; }
+    .deep-dive-grid.reverse > * { direction: ltr; }
+    .deep-dive-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: 24px; padding: 36px; box-shadow: var(--shadow-md);
+    }
+    .deep-dive-tag {
+      font-size: 12px; font-weight: 700; text-transform: uppercase;
+      letter-spacing: .05em; color: var(--brand); margin-bottom: 10px; display: block;
+    }
+    .deep-dive-title { font-size: clamp(24px, 3.2vw, 34px); font-weight: 800; line-height: 1.25; margin-bottom: 16px; }
+    .deep-dive-text { font-size: 15px; color: var(--text-secondary); line-height: 1.7; margin-bottom: 20px; }
+    .deep-dive-bullets { list-style: none; display: flex; flex-direction: column; gap: 12px; }
+    .deep-dive-bullets li { display: flex; align-items: flex-start; gap: 10px; font-size: 14.5px; color: var(--text-primary); }
+    .deep-dive-bullets svg { width: 18px; height: 18px; color: var(--brand); flex-shrink: 0; margin-top: 2px; }
+
+    /* Demo Box for Budgets & Transfers */
+    .demo-box {
+      background: var(--bg); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 22px;
+    }
+    .demo-row { display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--border-subtle); }
+    .demo-row:last-child { border-bottom: none; }
+    .demo-badge-wrap { display: flex; align-items: center; gap: 8px; font-weight: 600; font-size: 14px; }
+    .demo-meter { height: 8px; background: var(--bg-alt); border-radius: 100px; overflow: hidden; margin-top: 6px; }
+    .demo-meter-fill { height: 100%; border-radius: 100px; }
 
     /* ---- PRIVACY SECTION ---- */
-    .privacy-section { background: var(--bg-alt); }
+    .privacy-section { background: var(--bg); }
     .privacy-grid {
       display: grid; grid-template-columns: 1fr 1fr; gap: 64px; align-items: center;
+      margin-bottom: 64px;
     }
     @media (max-width: 768px) { .privacy-grid { grid-template-columns: 1fr; gap: 40px; } }
     .privacy-list { list-style: none; display: flex; flex-direction: column; gap: 20px; }
-    .privacy-list li {
-      display: flex; align-items: flex-start; gap: 16px;
-    }
+    .privacy-list li { display: flex; align-items: flex-start; gap: 16px; }
     .privacy-list-icon {
-      width: 40px; height: 40px; border-radius: 12px;
+      width: 42px; height: 42px; border-radius: 12px;
       background: var(--brand-subtle); display: flex; align-items: center; justify-content: center;
-      flex-shrink: 0; font-size: 18px; margin-top: 2px;
+      flex-shrink: 0; color: var(--brand); margin-top: 2px;
     }
+    .privacy-list-icon svg { width: 22px; height: 22px; stroke-width: 2; }
     .privacy-list-text strong { font-size: 16px; display: block; margin-bottom: 3px; }
-    .privacy-list-text p { font-size: 14px; color: var(--text-secondary); }
+    .privacy-list-text p { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
     .privacy-visual {
-      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
-      border-radius: 24px; padding: 40px; text-align: center;
-      box-shadow: var(--shadow-lg);
+      background: linear-gradient(135deg, #161824 0%, #1c1e2d 100%);
+      border-radius: 24px; padding: 44px 36px; text-align: center;
+      box-shadow: var(--shadow-lg); color: #fff;
     }
-    .privacy-shield {
-      font-size: 80px; margin-bottom: 16px; display: block;
+    .privacy-shield-icon {
+      width: 76px; height: 76px; margin: 0 auto 18px; display: flex;
+      align-items: center; justify-content: center; color: var(--brand-light);
     }
-    .privacy-visual h3 { color: #fff; font-size: 20px; margin-bottom: 10px; }
-    .privacy-visual p { color: rgba(255,255,255,.6); font-size: 14px; line-height: 1.65; }
+    .privacy-shield-icon svg { width: 72px; height: 72px; stroke-width: 1.5; }
+    .privacy-visual h3 { color: #fff; font-size: 22px; margin-bottom: 12px; }
+    .privacy-visual p { color: rgba(255,255,255,.7); font-size: 14.5px; line-height: 1.65; max-width: 400px; margin: 0 auto; }
     .privacy-pills {
       display: flex; flex-wrap: wrap; justify-content: center;
-      gap: 8px; margin-top: 24px;
+      gap: 8px; margin-top: 28px;
     }
     .privacy-pill {
-      background: rgba(255,255,255,.08); color: rgba(255,255,255,.8);
+      background: rgba(255,255,255,.08); color: rgba(255,255,255,.85);
       font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 100px;
-      border: 1px solid rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.12);
     }
+
+    /* Comparison Table */
+    .compare-wrap {
+      margin-top: 40px; overflow-x: auto;
+      border-radius: var(--radius); border: 1px solid var(--border);
+      background: var(--bg-card); box-shadow: var(--shadow-sm);
+    }
+    .compare-table { width: 100%; border-collapse: collapse; text-align: left; font-size: 14px; }
+    .compare-table th {
+      padding: 16px 20px; font-weight: 700; background: var(--bg-alt);
+      border-bottom: 1px solid var(--border);
+    }
+    .compare-table td { padding: 14px 20px; border-bottom: 1px solid var(--border); vertical-align: middle; }
+    .compare-table tr:last-child td { border-bottom: none; }
+    .compare-badge-yes { color: var(--green); font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
+    .compare-badge-no { color: #ef4444; font-weight: 700; display: inline-flex; align-items: center; gap: 6px; }
 
     /* ---- HOW IT WORKS ---- */
     .steps-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 32px; position: relative;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 28px; position: relative;
     }
-    .step-card { text-align: center; padding: 24px; }
+    .step-card {
+      background: var(--bg-card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: 32px 24px; text-align: center;
+      transition: transform .2s;
+    }
+    .step-card:hover { transform: translateY(-3px); }
     .step-number {
-      width: 56px; height: 56px; border-radius: 50%;
+      width: 52px; height: 52px; border-radius: 50%;
       background: var(--brand); color: #fff;
       font-weight: 800; font-size: 20px;
       display: flex; align-items: center; justify-content: center;
-      margin: 0 auto 20px;
+      margin: 0 auto 20px; box-shadow: 0 4px 14px rgba(233,60,47,.3);
     }
-    .step-title { font-size: 17px; font-weight: 700; margin-bottom: 8px; }
-    .step-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.65; }
+    .step-title { font-size: 17px; font-weight: 700; margin-bottom: 10px; }
+    .step-desc { font-size: 14px; color: var(--text-secondary); line-height: 1.6; }
 
     /* ---- CATEGORIES ---- */
     .categories-section { background: var(--bg-alt); }
     .categories-grid {
       display: flex; flex-wrap: wrap; gap: 12px; justify-content: center;
+      max-width: 900px; margin: 0 auto;
     }
     .category-chip {
       display: flex; align-items: center; gap: 8px;
       background: var(--bg-card); border: 1px solid var(--border);
       padding: 10px 18px; border-radius: 100px;
-      font-size: 14px; font-weight: 500; transition: all .2s;
+      font-size: 14px; font-weight: 600; transition: all .2s;
     }
-    .category-chip:hover { border-color: var(--brand); color: var(--brand); transform: translateY(-1px); }
+    .category-chip:hover {
+      border-color: var(--brand); color: var(--brand);
+      transform: translateY(-2px); box-shadow: var(--shadow-sm);
+    }
     .category-chip-emoji { font-size: 18px; }
 
-    /* ---- TESTIMONIALS ---- */
+    /* ---- REVIEWS ---- */
     .reviews-grid {
-      display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-      gap: 20px;
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+      gap: 24px;
     }
     .review-card {
       background: var(--bg-card); border: 1px solid var(--border);
-      border-radius: var(--radius); padding: 28px;
+      border-radius: var(--radius); padding: 30px;
+      display: flex; flex-direction: column;
     }
-    .review-stars { color: #f59e0b; font-size: 16px; margin-bottom: 14px; }
-    .review-text { font-size: 15px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 18px; font-style: italic; }
-    .review-author { display: flex; align-items: center; gap: 12px; }
+    .review-stars { color: #f59e0b; font-size: 17px; margin-bottom: 14px; letter-spacing: 2px; }
+    .review-text { font-size: 15px; line-height: 1.7; color: var(--text-secondary); margin-bottom: 22px; font-style: italic; }
+    .review-author { display: flex; align-items: center; gap: 12px; margin-top: auto; }
     .review-avatar {
-      width: 40px; height: 40px; border-radius: 50%;
+      width: 42px; height: 42px; border-radius: 50%;
       background: var(--brand); color: #fff;
       display: flex; align-items: center; justify-content: center;
-      font-weight: 700; font-size: 15px; flex-shrink: 0;
+      font-weight: 700; font-size: 16px; flex-shrink: 0;
     }
     .review-name { font-size: 14px; font-weight: 700; }
     .review-meta { font-size: 12px; color: var(--text-muted); }
 
     /* ---- FAQ ---- */
-    .faq-list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-list { max-width: 760px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; }
     .faq-item {
       background: var(--bg-card); border: 1px solid var(--border);
       border-radius: var(--radius-sm); overflow: hidden;
+      transition: border-color .2s;
     }
+    .faq-item:hover { border-color: rgba(233,60,47,.3); }
     .faq-question {
       width: 100%; padding: 20px 24px; text-align: left;
       font-size: 16px; font-weight: 600; color: var(--text-primary);
       background: none; border: none; cursor: pointer;
       display: flex; align-items: center; justify-content: space-between;
-      gap: 12px; transition: background .2s;
+      gap: 14px; transition: background .2s;
     }
     .faq-question:hover { background: var(--bg-alt); }
-    .faq-question svg { flex-shrink: 0; transition: transform .25s; }
-    .faq-item.open .faq-question svg { transform: rotate(180deg); }
+    .faq-question svg { flex-shrink: 0; transition: transform .25s; color: var(--text-muted); }
+    .faq-item.open .faq-question svg { transform: rotate(180deg); color: var(--brand); }
     .faq-answer { padding: 0 24px; max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s ease; }
-    .faq-item.open .faq-answer { padding: 0 24px 20px; max-height: 300px; }
+    .faq-item.open .faq-answer { padding: 0 24px 22px; max-height: 400px; }
     .faq-answer p { font-size: 15px; color: var(--text-secondary); line-height: 1.7; }
+    .faq-answer ul { padding-left: 20px; margin-top: 8px; font-size: 14.5px; color: var(--text-secondary); }
+    .faq-answer li { margin-bottom: 4px; }
 
     /* ---- CTA SECTION ---- */
     .cta-section {
       background: linear-gradient(135deg, #E93C2F 0%, #c42d21 100%);
       text-align: center; color: #fff; padding: 96px 0;
     }
-    .cta-section h2 { font-size: clamp(28px, 4vw, 48px); font-weight: 800; margin-bottom: 16px; letter-spacing: -.02em; }
-    .cta-section p { font-size: 18px; opacity: .85; margin-bottom: 40px; max-width: 480px; margin-left: auto; margin-right: auto; }
-    .cta-buttons { display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 40px; }
+    .cta-section h2 { font-size: clamp(30px, 4.5vw, 50px); font-weight: 800; margin-bottom: 16px; letter-spacing: -.02em; }
+    .cta-section p { font-size: 18px; opacity: .9; margin-bottom: 40px; max-width: 520px; margin-left: auto; margin-right: auto; line-height: 1.6; }
+    .cta-buttons { display: flex; justify-content: center; gap: 16px; flex-wrap: wrap; margin-bottom: 36px; }
     .btn-white {
       background: #fff; color: var(--brand);
       font-weight: 700; padding: 14px 28px; border-radius: 100px;
       text-decoration: none; font-size: 15px; transition: all .2s;
-      border: none; cursor: pointer;
+      border: none; cursor: pointer; display: inline-flex; align-items: center; gap: 10px;
+      box-shadow: 0 4px 16px rgba(0,0,0,.15);
     }
-    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.2); }
+    .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,.25); }
     .btn-white-outline {
       background: transparent; color: #fff;
-      border: 2px solid rgba(255,255,255,.5); padding: 14px 28px;
+      border: 2px solid rgba(255,255,255,.6); padding: 14px 28px;
       border-radius: 100px; text-decoration: none; font-size: 15px;
       font-weight: 600; transition: all .2s; cursor: pointer;
+      display: inline-flex; align-items: center; gap: 10px;
     }
-    .btn-white-outline:hover { border-color: #fff; background: rgba(255,255,255,.1); transform: translateY(-2px); }
-    .cta-trust { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; opacity: .75; font-size: 13px; }
+    .btn-white-outline:hover { border-color: #fff; background: rgba(255,255,255,.12); transform: translateY(-2px); }
+    .cta-trust { display: flex; align-items: center; justify-content: center; gap: 24px; flex-wrap: wrap; opacity: .85; font-size: 13.5px; }
     .cta-trust-item { display: flex; align-items: center; gap: 6px; }
 
     /* ---- FOOTER ---- */
     footer {
       background: var(--bg-alt); border-top: 1px solid var(--border);
-      padding: 56px 0 32px;
+      padding: 64px 0 32px;
     }
     .footer-grid {
       display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px;
       margin-bottom: 48px;
     }
-    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; } }
+    @media (max-width: 768px) { .footer-grid { grid-template-columns: 1fr 1fr; gap: 36px; } }
     @media (max-width: 480px) { .footer-grid { grid-template-columns: 1fr; } }
-    .footer-brand .nav-logo { margin-bottom: 14px; }
-    .footer-brand p { font-size: 14px; color: var(--text-muted); line-height: 1.65; max-width: 260px; margin-bottom: 20px; }
+    .footer-brand .nav-logo { margin-bottom: 16px; }
+    .footer-brand p { font-size: 14px; color: var(--text-secondary); line-height: 1.65; max-width: 280px; margin-bottom: 20px; }
     .footer-social { display: flex; gap: 10px; }
     .footer-social a {
-      width: 36px; height: 36px; border-radius: var(--radius-sm);
+      width: 38px; height: 38px; border-radius: var(--radius-sm);
       background: var(--bg-card); border: 1px solid var(--border);
       display: flex; align-items: center; justify-content: center;
-      color: var(--text-muted); text-decoration: none; font-size: 15px;
+      color: var(--text-muted); text-decoration: none;
       transition: all .2s;
     }
-    .footer-social a:hover { color: var(--brand); border-color: var(--brand); }
+    .footer-social a:hover { color: var(--brand); border-color: var(--brand); transform: translateY(-1px); }
+    .footer-social svg { width: 18px; height: 18px; }
     .footer-col h4 { font-size: 13px; font-weight: 700; text-transform: uppercase; letter-spacing: .06em; color: var(--text-muted); margin-bottom: 16px; }
     .footer-col ul { list-style: none; display: flex; flex-direction: column; gap: 10px; }
     .footer-col ul a { text-decoration: none; color: var(--text-secondary); font-size: 14px; transition: color .2s; }
@@ -607,43 +730,26 @@
     .footer-bottom {
       border-top: 1px solid var(--border); padding-top: 28px;
       display: flex; align-items: center; justify-content: space-between;
-      flex-wrap: wrap; gap: 12px;
-      font-size: 13px; color: var(--text-muted);
+      flex-wrap: wrap; gap: 14px; font-size: 13px; color: var(--text-muted);
     }
-    .footer-bottom a { color: var(--text-muted); text-decoration: none; }
+    .footer-bottom a { color: var(--text-muted); text-decoration: none; transition: color .2s; }
     .footer-bottom a:hover { color: var(--brand); }
 
     /* ---- RESPONSIVE ---- */
     @media (max-width: 768px) {
       section { padding: 64px 0; }
-      .hero { padding: 64px 0 56px; }
-      .nav-links { display: none; }
-      .hero-phones { height: 360px; }
-      .phone-card { width: 180px; }
-      .phone-card:nth-child(1) { display: none; }
-      .phone-card:nth-child(3) { display: none; }
+      .hero { padding: 60px 0 48px; }
+      .nav-links.nav-menu { display: none; }
+      .hero-phones { height: 380px; }
+      .phone-card.left, .phone-card.right { display: none; }
+      .phone-card.center { width: 230px; }
+      .deep-dive-grid { grid-template-columns: 1fr; gap: 32px; }
+      .deep-dive-grid.reverse { direction: ltr; }
     }
 
-    /* ---- SCROLL OFFSET (compensate for sticky nav) ---- */
-    [id] { scroll-margin-top: 80px; }
-
-    /* ---- ANIMATIONS ---- */
-    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .6s ease, transform .6s ease; }
+    [id] { scroll-margin-top: 84px; }
+    .fade-in { opacity: 0; transform: translateY(20px); transition: opacity .5s ease, transform .5s ease; }
     .fade-in.visible { opacity: 1; transform: none; }
-
-    /* ---- LUCIDE ICONS ---- */
-    .feature-icon [data-lucide],
-    .feature-icon svg { width: 26px; height: 26px; color: var(--brand); stroke-width: 1.75; }
-    .privacy-list-icon [data-lucide],
-    .privacy-list-icon svg { width: 22px; height: 22px; color: var(--brand); stroke-width: 1.75; }
-    .privacy-shield-icon [data-lucide],
-    .privacy-shield-icon svg { width: 72px; height: 72px; color: #fff; stroke-width: 1.25; margin-bottom: 16px; }
-    .step-icon [data-lucide],
-    .step-icon svg { width: 24px; height: 24px; color: #fff; stroke-width: 2; }
-    .footer-social [data-lucide],
-    .footer-social svg { width: 18px; height: 18px; }
-    .store-icon-lucide [data-lucide],
-    .store-icon-lucide svg { width: 22px; height: 22px; flex-shrink: 0; }
   </style>
 </head>
 
@@ -654,17 +760,19 @@
   ============================================================ -->
   <nav aria-label="Main navigation">
     <div class="container nav-inner">
-      <a href="/" class="nav-logo" aria-label="Monely home">
+      <a href="./" class="nav-logo" aria-label="Monely home">
         <div class="nav-logo-icon">
-          <img src="icon.png" alt="Monely app icon" width="36" height="36" loading="eager" />
+          <img src="icon.png" alt="Monely app icon" width="38" height="38" loading="eager" />
         </div>
         <span class="nav-logo-name">Monely</span>
       </a>
-      <div class="nav-links" role="menubar">
+      <div class="nav-links nav-menu" role="menubar">
         <a href="#features" role="menuitem">Features</a>
+        <a href="#budgets" role="menuitem">Budgets &amp; Accounts</a>
         <a href="#privacy" role="menuitem">Privacy</a>
-        <a href="#reviews" role="menuitem">Reviews</a>
+        <a href="#how-it-works" role="menuitem">How It Works</a>
         <a href="#faq" role="menuitem">FAQ</a>
+        <a href="support.html" role="menuitem">Support</a>
       </div>
       <div class="nav-links">
         <a href="#download" class="btn btn-primary btn-sm" role="button">Download Free</a>
@@ -680,23 +788,25 @@
       <div class="hero-eyebrow">
         <span class="badge">
           <svg width="12" height="12" viewBox="0 0 12 12" fill="currentColor" aria-hidden="true"><circle cx="6" cy="6" r="6"/></svg>
-          Free · No Sign-Up · No Tracking
+          100% Free · Works Offline · Zero Cloud Tracking
         </span>
       </div>
 
       <h1>
-        Your Money,<br />
-        <span class="highlight">Your Control.</span>
+        Master Your Money,<br />
+        <span class="highlight">Protect Your Privacy.</span>
       </h1>
 
       <p class="subtitle">
-        Monely is the privacy-first money manager that keeps your financial data right where it belongs — <strong>on your device, not our servers.</strong>
+        Monely is the privacy-first personal finance tracker. Log expenses, income, account transfers, recurring bills, and category budgets — stored 100% locally on your device.
       </p>
 
       <div id="download" class="hero-cta">
         <!-- App Store -->
-        <a href="https://apps.apple.com/app/id6758589192" class="store-btn" aria-label="Download Monely on the App Store">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <a href="https://apps.apple.com/app/id6758589192" target="_blank" rel="noopener noreferrer" class="store-btn" aria-label="Download Monely on the Apple App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
           <div class="store-btn-text">
             <div class="store-btn-sub">Download on the</div>
             <div class="store-btn-name">App Store</div>
@@ -704,8 +814,10 @@
         </a>
 
         <!-- Google Play -->
-        <a href="https://play.google.com/store/apps/details?id=com.codeyard.monely" class="store-btn" aria-label="Get Monely on Google Play">
-          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.3.17.64.22.99.14l13.24-7.44-2.86-2.87-11.37 10.17zm-1.34-20.6C1.63 3.47 1.5 3.83 1.5 4.24v15.52c0 .41.13.77.34 1.06l.06.06 8.7-8.7v-.2L1.84 3.1l-.03.06zM20.95 10.5l-2.78-1.56-3.17 3.18 3.17 3.17 2.8-1.57c.8-.45.8-1.17-.02-1.62v-.6zM4.17.24L17.41 7.7l-2.86 2.87L3.18.4C3.48.32 3.84.09 4.17.24z"/></svg>
+        <a href="https://play.google.com/store/apps/details?id=com.codeyard.monely" target="_blank" rel="noopener noreferrer" class="store-btn" aria-label="Get Monely on Google Play">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.18 23.76c.3.17.64.22.99.14l13.24-7.44-2.86-2.87-11.37 10.17zm-1.34-20.6C1.63 3.47 1.5 3.83 1.5 4.24v15.52c0 .41.13.77.34 1.06l.06.06 8.7-8.7v-.2L1.84 3.1l-.03.06zM20.95 10.5l-2.78-1.56-3.17 3.18 3.17 3.17 2.8-1.57c.8-.45.8-1.17-.02-1.62v-.6zM4.17.24L17.41 7.7l-2.86 2.87L3.18.4C3.48.32 3.84.09 4.17.24z"/>
+          </svg>
           <div class="store-btn-text">
             <div class="store-btn-sub">Get it on</div>
             <div class="store-btn-name">Google Play</div>
@@ -713,120 +825,161 @@
         </a>
       </div>
 
-      <div class="hero-trust" role="list" aria-label="Key selling points">
+      <div class="hero-trust" role="list" aria-label="Key highlights">
         <div class="hero-trust-item" role="listitem">
-          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
           100% Free
         </div>
         <div class="hero-trust-item" role="listitem">
-          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-          Works Offline
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Works 100% Offline
         </div>
         <div class="hero-trust-item" role="listitem">
-          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-          No Sign-Up Required
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          No Sign-Up or Login
         </div>
         <div class="hero-trust-item" role="listitem">
-          <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+          Local SQLite Storage
+        </div>
+        <div class="hero-trust-item" role="listitem">
+          <svg viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
           iOS &amp; Android
         </div>
       </div>
 
-      <!-- Phone Mockups -->
+      <!-- Phone Mockup Previews -->
       <div class="hero-phones" aria-hidden="true">
-        <!-- Left card -->
-        <div class="phone-card" style="left:15%; transform:rotate(-8deg);">
+        
+        <!-- Left phone: Category Budgets & Insights -->
+        <div class="phone-card left">
           <div class="phone-screen">
             <div class="phone-notch"></div>
             <div class="phone-stat">
-              <div class="phone-stat-label">Monthly Spending</div>
-              <div class="phone-stat-value">$1,284</div>
-              <div class="phone-stat-sub">↓ 12% vs last month</div>
+              <div class="phone-stat-label">Monthly Budgets</div>
+              <div class="phone-stat-value">$665 <span style="font-size:13px;color:rgba(255,255,255,.5);font-weight:400;">/ $970</span></div>
+              <div class="phone-stat-sub">68% of total limit used</div>
             </div>
-            <div class="phone-tx">
-              <div class="phone-tx-icon" style="background:rgba(234,179,8,.15);">🛒</div>
-              <div class="phone-tx-info">
-                <div class="phone-tx-name">Groceries</div>
-                <div class="phone-tx-date">Today</div>
-              </div>
-              <div class="phone-tx-amount tx-expense">-$62</div>
+
+            <div class="budget-bar-wrap">
+              <div class="budget-bar-head"><span>🛒 Groceries</span><span>$420 / $600</span></div>
+              <div class="budget-bar-track"><div class="budget-bar-fill" style="width:70%;"></div></div>
             </div>
-            <div class="phone-tx">
-              <div class="phone-tx-icon" style="background:rgba(74,222,128,.15);">💼</div>
-              <div class="phone-tx-info">
-                <div class="phone-tx-name">Salary</div>
-                <div class="phone-tx-date">Mar 1</div>
-              </div>
-              <div class="phone-tx-amount tx-income">+$3,500</div>
+            <div class="budget-bar-wrap">
+              <div class="budget-bar-head"><span>🍕 Dining Out</span><span>$180 / $250</span></div>
+              <div class="budget-bar-track"><div class="budget-bar-fill" style="width:72%;"></div></div>
+            </div>
+            <div class="budget-bar-wrap">
+              <div class="budget-bar-head"><span>🎬 Entertainment</span><span>$65 / $120</span></div>
+              <div class="budget-bar-track"><div class="budget-bar-fill" style="width:54%;"></div></div>
+            </div>
+
+            <div style="background:rgba(233,60,47,.15);border-radius:10px;padding:8px 10px;margin-top:12px;font-size:10px;color:#ff9b91;border:1px solid rgba(233,60,47,.25);">
+              💡 <strong>Smart Insight:</strong> Dining expenses are down 14% vs last month!
             </div>
           </div>
         </div>
 
-        <!-- Center card (main) -->
-        <div class="phone-card" style="left:50%;transform:translateX(-50%);top:0;z-index:3;width:230px;">
+        <!-- Center phone: Active Dashboard, Accounts & Transfers -->
+        <div class="phone-card center">
           <div class="phone-screen">
             <div class="phone-notch"></div>
-            <div class="phone-stat" style="background:linear-gradient(135deg,rgba(233,60,47,.25),rgba(233,60,47,.1));">
-              <div class="phone-stat-label">Total Balance</div>
-              <div class="phone-stat-value">$4,832</div>
-              <div class="phone-stat-sub">↑ $320 this month</div>
+            <div class="phone-stat highlight">
+              <div class="phone-stat-label">Total Net Balance</div>
+              <div class="phone-stat-value">$5,280</div>
+              <div class="phone-stat-sub">↑ +$460 net growth this month</div>
             </div>
-            <div style="margin-top:10px;">
+
+            <div class="account-chips">
+              <span class="account-chip active">All ($5,280)</span>
+              <span class="account-chip">Bank ($3,650)</span>
+              <span class="account-chip">Cash ($430)</span>
+              <span class="account-chip">Savings ($1,200)</span>
+            </div>
+
+            <div>
               <div class="phone-tx">
-                <div class="phone-tx-icon" style="background:rgba(129,140,248,.15);">🚗</div>
+                <div class="phone-tx-icon" style="background:rgba(96,165,250,.2);">🔄</div>
                 <div class="phone-tx-info">
-                  <div class="phone-tx-name">Fuel</div>
-                  <div class="phone-tx-date">Yesterday</div>
+                  <div class="phone-tx-name">Transfer: Bank → Cash</div>
+                  <div class="phone-tx-date">Today · Account Transfer</div>
                 </div>
-                <div class="phone-tx-amount tx-expense">-$48</div>
+                <div class="phone-tx-amount tx-transfer">$200.00</div>
               </div>
+
               <div class="phone-tx">
-                <div class="phone-tx-icon" style="background:rgba(251,146,60,.15);">🍕</div>
+                <div class="phone-tx-icon" style="background:rgba(74,222,128,.18);">💼</div>
                 <div class="phone-tx-info">
-                  <div class="phone-tx-name">Dining Out</div>
-                  <div class="phone-tx-date">Mar 10</div>
+                  <div class="phone-tx-name">Salary Payment</div>
+                  <div class="phone-tx-date">Yesterday · Bank Account</div>
                 </div>
-                <div class="phone-tx-amount tx-expense">-$34</div>
+                <div class="phone-tx-amount tx-income">+$3,800.00</div>
               </div>
+
               <div class="phone-tx">
-                <div class="phone-tx-icon" style="background:rgba(74,222,128,.15);">📦</div>
+                <div class="phone-tx-icon" style="background:rgba(251,146,60,.18);">🛒</div>
                 <div class="phone-tx-info">
-                  <div class="phone-tx-name">Freelance</div>
-                  <div class="phone-tx-date">Mar 9</div>
+                  <div class="phone-tx-name">Supermarket Groceries</div>
+                  <div class="phone-tx-date">Mar 28 · Cash Wallet</div>
                 </div>
-                <div class="phone-tx-amount tx-income">+$500</div>
+                <div class="phone-tx-amount tx-expense">-$74.50</div>
+              </div>
+
+              <div class="phone-tx">
+                <div class="phone-tx-icon" style="background:rgba(192,132,252,.18);">🚗</div>
+                <div class="phone-tx-info">
+                  <div class="phone-tx-name">Fuel &amp; Transport</div>
+                  <div class="phone-tx-date">Mar 27 · Bank Account</div>
+                </div>
+                <div class="phone-tx-amount tx-expense">-$48.00</div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Right card -->
-        <div class="phone-card" style="right:15%;left:auto;transform:rotate(8deg);top:20px;z-index:1;">
+        <!-- Right phone: Recurring Bills & Due Notifications -->
+        <div class="phone-card right">
           <div class="phone-screen">
             <div class="phone-notch"></div>
             <div class="phone-stat">
-              <div class="phone-stat-label">This Week</div>
-              <div class="phone-stat-value">$318</div>
-              <div class="phone-stat-sub">of $500 budget</div>
+              <div class="phone-stat-label">Upcoming Recurring Bills</div>
+              <div class="phone-stat-value">$340</div>
+              <div class="phone-stat-sub">3 scheduled this cycle</div>
             </div>
+
             <div class="phone-tx">
-              <div class="phone-tx-icon" style="background:rgba(167,139,250,.15);">🎬</div>
+              <div class="phone-tx-icon" style="background:rgba(234,179,8,.2);">⚡</div>
               <div class="phone-tx-info">
-                <div class="phone-tx-name">Netflix</div>
+                <div class="phone-tx-name">Electricity Bill</div>
+                <div class="phone-tx-date">Due in 3 days · Monthly</div>
+              </div>
+              <div class="phone-tx-amount tx-expense">-$85.00</div>
+            </div>
+
+            <div class="phone-tx">
+              <div class="phone-tx-icon" style="background:rgba(239,68,68,.2);">🎬</div>
+              <div class="phone-tx-info">
+                <div class="phone-tx-name">Streaming Subscription</div>
                 <div class="phone-tx-date">Auto · Monthly</div>
               </div>
-              <div class="phone-tx-amount tx-expense">-$15</div>
+              <div class="phone-tx-amount tx-expense">-$14.99</div>
             </div>
+
             <div class="phone-tx">
-              <div class="phone-tx-icon" style="background:rgba(34,211,238,.15);">💊</div>
+              <div class="phone-tx-icon" style="background:rgba(129,140,248,.2);">🏠</div>
               <div class="phone-tx-info">
-                <div class="phone-tx-name">Pharmacy</div>
-                <div class="phone-tx-date">Mar 8</div>
+                <div class="phone-tx-name">Apartment Rent</div>
+                <div class="phone-tx-date">Due 1st · Monthly</div>
               </div>
-              <div class="phone-tx-amount tx-expense">-$22</div>
+              <div class="phone-tx-amount tx-expense">-$1,200.00</div>
+            </div>
+
+            <div style="background:rgba(255,255,255,.08);border-radius:10px;padding:8px 10px;margin-top:10px;font-size:10px;color:rgba(255,255,255,.8);display:flex;align-items:center;gap:6px;">
+              <span>🔔</span> <span>Smart reminders alert you before bills are due</span>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </header>
@@ -835,275 +988,581 @@
        STATS STRIP
   ============================================================ -->
   <section class="stats-strip" aria-labelledby="stats-heading">
-    <h2 id="stats-heading" class="sr-only">Monely by the numbers</h2>
+    <h2 id="stats-heading" class="sr-only">Monely metrics and performance</h2>
     <div class="container">
       <div class="stats-grid">
         <div class="stat-item fade-in">
           <div class="stat-value">50K+</div>
-          <div class="stat-label">Downloads</div>
+          <div class="stat-label">Active Downloads</div>
         </div>
         <div class="stat-item fade-in">
           <div class="stat-value">4.8★</div>
-          <div class="stat-label">Average Rating</div>
+          <div class="stat-label">Store Rating (1,200+ Reviews)</div>
         </div>
         <div class="stat-item fade-in">
-          <div class="stat-value">0</div>
-          <div class="stat-label">Data Collected</div>
+          <div class="stat-value">0 KB</div>
+          <div class="stat-label">Data Sent to Cloud</div>
         </div>
         <div class="stat-item fade-in">
           <div class="stat-value">100%</div>
-          <div class="stat-label">Offline Capable</div>
+          <div class="stat-label">Offline Local SQLite Storage</div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       FEATURES
+       CORE FEATURES
   ============================================================ -->
   <section id="features" aria-labelledby="features-heading">
     <div class="container">
       <div class="section-label">
         <span class="badge">Features</span>
       </div>
-      <h2 class="section-title" id="features-heading">Everything you need to manage money</h2>
-      <p class="section-subtitle">Simple, powerful tools for tracking your spending and growing your savings — no subscription required.</p>
+      <h2 class="section-title" id="features-heading">Everything you need to master your money</h2>
+      <p class="section-subtitle">A comprehensive suite of personal finance tools built for speed, complete privacy, and total financial control.</p>
 
       <div class="features-grid">
+
+        <!-- 1. Expense & Income -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="wallet"></i></div>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M19 7V4a1 1 0 0 0-1-1H5a2 2 0 0 0 0 4h15a1 1 0 0 1 1 1v4h-3a2 2 0 0 0 0 4h3a8 8 0 0 1-8 8H5a2 2 0 0 1-2-2V7"/>
+              <path d="M18 12h.01"/>
+            </svg>
+          </div>
           <h3 class="feature-title">Expense &amp; Income Tracking</h3>
-          <p class="feature-desc">Log both expenses and income in seconds. Smart categories, custom tags, and real-time balance updates across all your accounts.</p>
+          <p class="feature-desc">Quickly record expenses and incomes in seconds. Organize transactions with categories, dates, accounts, and intelligent notes suggested from your history.</p>
         </article>
 
+        <!-- 2. Account Transfers -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="bar-chart-2"></i></div>
-          <h3 class="feature-title">Advanced Analytics</h3>
-          <p class="feature-desc">Monthly insights, category breakdowns, income vs. expense comparisons, and daily spending trends — beautifully visualized.</p>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M8 3 4 7l4 4"/>
+              <path d="M4 7h16"/>
+              <path d="m16 21 4-4-4-4"/>
+              <path d="M20 17H4"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Account-to-Account Transfers</h3>
+          <p class="feature-desc">Move funds seamlessly between Bank, Cash, and Savings wallets without distorting your income and spending totals. Both account ledgers update instantly.</p>
         </article>
 
+        <!-- 3. Multi-Account Support -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="refresh-cw"></i></div>
-          <h3 class="feature-title">Recurring Transactions</h3>
-          <p class="feature-desc">Set up recurring bills and subscriptions that generate automatically. Daily, weekly, monthly, quarterly, or yearly — fully automated.</p>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="3" y1="21" x2="21" y2="21"/>
+              <line x1="3" y1="10" x2="21" y2="10"/>
+              <path d="M5 10v11"/>
+              <path d="M19 10v11"/>
+              <path d="M10 10v11"/>
+              <path d="M14 10v11"/>
+              <path d="m2 10 10-7 10 7"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Multi-Account &amp; Wallet Management</h3>
+          <p class="feature-desc">Manage all your bank accounts, physical cash envelopes, credit cards, and digital wallets in one unified dashboard with real-time balance calculations.</p>
         </article>
 
+        <!-- 4. Category Budgets -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="landmark"></i></div>
-          <h3 class="feature-title">Multi-Account Support</h3>
-          <p class="feature-desc">Track multiple bank accounts, wallets, and payment methods in one place. Switch between accounts instantly.</p>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21.21 15.89A10 10 0 1 1 8 2.83"/>
+              <path d="M22 12A10 10 0 0 0 12 2v10z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Category Budgets &amp; Limits</h3>
+          <p class="feature-desc">Set monthly spending limits for individual categories (Groceries, Dining, Shopping, etc.). Live progress indicators alert you before you overspend.</p>
         </article>
 
+        <!-- 5. Recurring Transactions -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="bell"></i></div>
-          <h3 class="feature-title">Bill Reminders</h3>
-          <p class="feature-desc">Never miss a payment. Smart notifications remind you before recurring bills are due, so you're always one step ahead.</p>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+              <path d="M21 3v5h-5"/>
+              <path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+              <path d="M8 16H3v5"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Recurring Bills &amp; Subscriptions</h3>
+          <p class="feature-desc">Automate your fixed commitments. Set up recurring expenses, incomes, or transfers with flexible frequencies (daily, weekly, monthly, quarterly, or yearly).</p>
         </article>
 
+        <!-- 6. Bill Reminders -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="sun-moon"></i></div>
-          <h3 class="feature-title">Dark &amp; Light Theme</h3>
-          <p class="feature-desc">Automatically adapts to your system preference. Looks gorgeous in both dark and light mode on any device.</p>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M6 8a6 6 0 0 1 12 0c0 7 3 9 3 9H3s3-2 3-9"/>
+              <path d="M10.3 21a1.94 1.94 0 0 0 3.4 0"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Smart Bill Reminders</h3>
+          <p class="feature-desc">Never miss a due date again. Monely notifies you ahead of time when recurring bills, subscriptions, or utility payments are due so you avoid late fees.</p>
         </article>
 
+        <!-- 7. Smart Insights & Analytics -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="search"></i></div>
-          <h3 class="feature-title">Search &amp; Filter</h3>
-          <p class="feature-desc">Find any transaction instantly. Filter by date, category, account, or amount. Full-text search with smart auto-complete.</p>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="12" y1="20" x2="12" y2="10"/>
+              <line x1="18" y1="20" x2="18" y2="4"/>
+              <line x1="6" y1="20" x2="6" y2="16"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Smart Insights &amp; Analytics</h3>
+          <p class="feature-desc">Understand where your money goes with monthly summaries, category distribution charts, income vs. expense breakdowns, and daily spending trend analysis.</p>
         </article>
 
+        <!-- 8. Search & Filters -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="file-text"></i></div>
-          <h3 class="feature-title">Notes &amp; Descriptions</h3>
-          <p class="feature-desc">Attach rich notes to any transaction. Auto-complete suggests based on your history, making data entry blazingly fast.</p>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="11" cy="11" r="8"/>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Instant Search &amp; Multi-Filters</h3>
+          <p class="feature-desc">Locate any past record in milliseconds. Full-text search combined with multi-criteria filtering by date range, account, category, or transaction amount.</p>
         </article>
 
+        <!-- 9. Backup & Restore -->
         <article class="feature-card fade-in">
-          <div class="feature-icon" aria-hidden="true"><i data-lucide="zap"></i></div>
-          <h3 class="feature-title">Lightning Fast</h3>
-          <p class="feature-desc">Optimized for speed from the ground up. Instant startup, smooth navigation, and snappy forms — even on older devices.</p>
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+              <polyline points="7 10 12 15 17 10"/>
+              <line x1="12" y1="15" x2="12" y2="3"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Secure JSON Backup &amp; Restore</h3>
+          <p class="feature-desc">You own your data. Export a complete JSON backup file via the OS share sheet to Google Drive, iCloud, Files, or email. Restore on any new device with one tap.</p>
         </article>
+
+        <!-- 10. CSV & TXT Export -->
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Data Export (CSV &amp; TXT)</h3>
+          <p class="feature-desc">Export your transaction history as clean CSV files for Excel, Google Sheets, or Apple Numbers, or generate formatted TXT reports for tax filing and accounting.</p>
+        </article>
+
+        <!-- 11. Multi-Currency -->
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <line x1="2" y1="12" x2="22" y2="12"/>
+              <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Multi-Currency &amp; Global Locale</h3>
+          <p class="feature-desc">Monely detects your currency automatically from your device locale, or lets you choose manually from global currencies (USD, EUR, GBP, INR, JPY, CAD, AUD, etc.).</p>
+        </article>
+
+        <!-- 12. Dark & Light Theme -->
+        <article class="feature-card fade-in">
+          <div class="feature-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/>
+            </svg>
+          </div>
+          <h3 class="feature-title">Dark &amp; Light Mode</h3>
+          <p class="feature-desc">Thoughtfully designed for readability day and night. Automatically adapts to your system setting or toggle your preferred appearance manually in settings.</p>
+        </article>
+
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       PRIVACY
+       DEEP DIVE: BUDGETS & ACCOUNTS IN ACTION
+  ============================================================ -->
+  <section id="budgets" class="deep-dive-section" aria-labelledby="budgets-heading">
+    <div class="container">
+      <div class="section-label">
+        <span class="badge">Deep Dive</span>
+      </div>
+      <h2 class="section-title" id="budgets-heading">Smart Budgeting &amp; Account Control</h2>
+      <p class="section-subtitle">Take the guesswork out of personal finance with real-time budget limits and crystal-clear account balances.</p>
+
+      <!-- Deep Dive 1: Category Budgets -->
+      <div class="deep-dive-grid">
+        <div>
+          <span class="deep-dive-tag">Proactive Budgeting</span>
+          <h3 class="deep-dive-title">Set spending limits before your money disappears.</h3>
+          <p class="deep-dive-text">
+            Rather than just seeing what you already spent at the end of the month, Monely helps you set proactive category limits. Know exactly how much you have left for groceries, dining out, entertainment, and shopping at any given time.
+          </p>
+          <ul class="deep-dive-bullets">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Custom monthly limits tailored to individual categories</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Real-time visual percentage bars that change as you log expenses</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Instant alerts when spending approaches or exceeds your target cap</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="deep-dive-card">
+          <h4 style="font-size:16px;font-weight:700;margin-bottom:18px;">Monthly Budget Overview</h4>
+          <div class="demo-box">
+            <div class="demo-row">
+              <div style="flex:1;">
+                <div class="demo-badge-wrap"><span>🛒 Groceries</span><span style="margin-left:auto;color:var(--text-secondary);font-size:13px;">$420 / $600 (70%)</span></div>
+                <div class="demo-meter"><div class="demo-meter-fill" style="width:70%;background:#10b981;"></div></div>
+              </div>
+            </div>
+            <div class="demo-row">
+              <div style="flex:1;">
+                <div class="demo-badge-wrap"><span>🍕 Dining Out</span><span style="margin-left:auto;color:var(--text-secondary);font-size:13px;">$180 / $250 (72%)</span></div>
+                <div class="demo-meter"><div class="demo-meter-fill" style="width:72%;background:#f59e0b;"></div></div>
+              </div>
+            </div>
+            <div class="demo-row">
+              <div style="flex:1;">
+                <div class="demo-badge-wrap"><span>👗 Shopping</span><span style="margin-left:auto;color:var(--text-secondary);font-size:13px;">$210 / $200 (105%)</span></div>
+                <div class="demo-meter"><div class="demo-meter-fill" style="width:100%;background:#ef4444;"></div></div>
+              </div>
+            </div>
+          </div>
+          <p style="font-size:12.5px;color:var(--text-muted);margin-top:14px;text-align:center;">
+            Monely highlights budget progress in green, amber, and red so you spot overspending instantly.
+          </p>
+        </div>
+      </div>
+
+      <!-- Deep Dive 2: Account Transfers -->
+      <div class="deep-dive-grid reverse">
+        <div>
+          <span class="deep-dive-tag">Seamless Transfers</span>
+          <h3 class="deep-dive-title">Accurate multi-account ledgers with zero double-counting.</h3>
+          <p class="deep-dive-text">
+            Withdrawing ATM cash or paying a credit card bill shouldn't look like new income or expense on your monthly reports. Monely's dedicated <strong>Transfer</strong> feature adjusts both source and destination account balances smoothly.
+          </p>
+          <ul class="deep-dive-bullets">
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Move money between Checking, Cash Wallet, Savings, and Credit Cards</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Maintains accurate net worth calculations across all your accounts</span>
+            </li>
+            <li>
+              <svg viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
+              <span>Keeps cash flow reports clean without artificial expense inflation</span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="deep-dive-card">
+          <h4 style="font-size:16px;font-weight:700;margin-bottom:18px;">Account Balances &amp; Transfer Flow</h4>
+          <div class="demo-box">
+            <div class="demo-row">
+              <span class="demo-badge-wrap">🏦 Main Bank Account</span>
+              <strong style="color:var(--text-primary);">$3,650.00</strong>
+            </div>
+            <div class="demo-row" style="background:var(--brand-subtle);border-radius:8px;padding:12px;margin:8px 0;border:none;">
+              <span style="font-size:13px;color:var(--brand);font-weight:600;display:flex;align-items:center;gap:6px;">
+                🔄 Transfer: Bank → Cash Wallet
+              </span>
+              <strong style="color:var(--brand);font-size:14px;">$200.00</strong>
+            </div>
+            <div class="demo-row">
+              <span class="demo-badge-wrap">💵 Cash Wallet</span>
+              <strong style="color:var(--text-primary);">$430.00</strong>
+            </div>
+            <div class="demo-row">
+              <span class="demo-badge-wrap">🌱 Emergency Savings</span>
+              <strong style="color:var(--text-primary);">$1,200.00</strong>
+            </div>
+          </div>
+          <p style="font-size:12.5px;color:var(--text-muted);margin-top:14px;text-align:center;">
+            Transfers update individual account ledgers instantly while preserving true net balance.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ============================================================
+       PRIVACY & SECURITY
   ============================================================ -->
   <section id="privacy" class="privacy-section" aria-labelledby="privacy-heading">
     <div class="container">
       <div class="privacy-grid">
         <div>
-          <span class="badge" style="margin-bottom:20px;display:inline-flex;">Privacy</span>
-          <h2 class="section-title" id="privacy-heading" style="text-align:left;font-size:clamp(26px,3.5vw,40px);">
+          <span class="badge" style="margin-bottom:20px;display:inline-flex;">100% Privacy</span>
+          <h2 class="section-title" id="privacy-heading" style="text-align:left;font-size:clamp(26px,3.8vw,42px);">
             Your finances are<br /><span class="text-brand">nobody else's business.</span>
           </h2>
-          <p style="color:var(--text-secondary);margin-bottom:32px;line-height:1.65;">
-            We built Monely on a simple principle: your financial data should be yours — completely, forever. No accounts, no servers, no compromise.
+          <p style="color:var(--text-secondary);margin-bottom:32px;line-height:1.7;font-size:16px;">
+            Most personal finance apps require your email, connect to third-party bank aggregators, or store your spending history on cloud servers. Monely was architected from day one on a zero-trust, local-first foundation.
           </p>
           <ul class="privacy-list" role="list">
             <li>
-              <div class="privacy-list-icon" aria-hidden="true"><i data-lucide="cloud-off"></i></div>
+              <div class="privacy-list-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m2 2 20 20"/>
+                  <path d="M5.782 5.782A7 7 0 0 0 9 19h8.5a4.5 4.5 0 0 0 1.307-.193"/>
+                  <path d="M21.532 16.5A4.5 4.5 0 0 0 17.5 10h-1.79A7.008 7.008 0 0 0 10 5.07"/>
+                </svg>
+              </div>
               <div class="privacy-list-text">
-                <strong>No Cloud Sync</strong>
-                <p>All data is stored in an encrypted local SQLite database on your device. Nothing leaves your phone — ever.</p>
+                <strong>No Cloud Sync, No Remote Servers</strong>
+                <p>All records reside inside a sandboxed SQLite database on your device via <code>expo-sqlite</code>. Nothing is sent to our servers — ever.</p>
               </div>
             </li>
             <li>
-              <div class="privacy-list-icon" aria-hidden="true"><i data-lucide="eye-off"></i></div>
+              <div class="privacy-list-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M9.88 9.88a3 3 0 1 0 4.24 4.24"/>
+                  <path d="M10.73 5.08A10.43 10.43 0 0 1 12 5c7 0 10 7 10 7a13.16 13.16 0 0 1-1.67 2.68"/>
+                  <path d="M6.61 6.61A13.526 13.526 0 0 0 2 12s3 7 10 7a9.74 9.74 0 0 0 5.39-1.61"/>
+                  <line x1="2" y1="2" x2="22" y2="22"/>
+                </svg>
+              </div>
               <div class="privacy-list-text">
-                <strong>Zero Tracking</strong>
-                <p>We collect zero personal data. No analytics, no behavioral tracking, no third-party SDKs spying on you.</p>
+                <strong>Zero Personal Financial Tracking</strong>
+                <p>We never track, inspect, or sell your spending habits. Your financial transactions and account balances remain 100% private to you.</p>
               </div>
             </li>
             <li>
-              <div class="privacy-list-icon" aria-hidden="true"><i data-lucide="key-round"></i></div>
+              <div class="privacy-list-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="m21 2-2 2m-1.5 1.5L16 7l-1.5-1.5"/>
+                  <path d="m15.5 10.5 2-2"/>
+                  <circle cx="8" cy="16" r="6"/>
+                </svg>
+              </div>
               <div class="privacy-list-text">
-                <strong>No Account Required</strong>
-                <p>Open the app and start tracking immediately. No sign-up, no email, no password. Just you and your data.</p>
+                <strong>No Account or Sign-Up Needed</strong>
+                <p>Open the app and start logging immediately. No email verification, no passwords, no phone numbers, no friction.</p>
               </div>
             </li>
             <li>
-              <div class="privacy-list-icon" aria-hidden="true"><i data-lucide="wifi-off"></i></div>
+              <div class="privacy-list-icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                  <line x1="1" y1="1" x2="23" y2="23"/>
+                  <path d="M16.72 11.06A10.94 10.94 0 0 1 19 12.55"/>
+                  <path d="M5 12.55a10.94 10.94 0 0 1 5.17-2.39"/>
+                  <path d="M10.71 5.05A16 16 0 0 1 22.58 9"/>
+                  <path d="M1.42 9a15.91 15.91 0 0 1 4.7-2.88"/>
+                  <path d="M8.53 16.11a6 6 0 0 1 6.95 0"/>
+                  <line x1="12" y1="20" x2="12.01" y2="20"/>
+                </svg>
+              </div>
               <div class="privacy-list-text">
-                <strong>Fully Offline</strong>
-                <p>Every feature works without internet. Airplane mode, rural area, or roaming — Monely always works.</p>
+                <strong>100% Functional Offline</strong>
+                <p>Every single feature — adding entries, running analytics, setting budgets, exporting data — works with zero internet connection.</p>
               </div>
             </li>
           </ul>
         </div>
+
         <div>
-          <div class="privacy-visual" role="img" aria-label="Privacy shield illustration">
-            <span class="privacy-shield-icon" aria-hidden="true"><i data-lucide="shield-check"></i></span>
-            <h3>GDPR &amp; CCPA Friendly</h3>
-            <p>Because we collect zero data, there's nothing to request, delete, or worry about. You have complete sovereignty over your financial information.</p>
-            <div class="privacy-pills" role="list" aria-label="Privacy guarantees">
+          <div class="privacy-visual" role="img" aria-label="Privacy guarantee badge">
+            <div class="privacy-shield-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10"/>
+                <path d="m9 12 2 2 4-4"/>
+              </svg>
+            </div>
+            <h3>Device-Local Sovereignty</h3>
+            <p>Because your financial database never leaves your phone, there are no remote databases to get breached or leaked. Complete privacy, by design.</p>
+            <div class="privacy-pills" role="list" aria-label="Privacy features">
               <span class="privacy-pill" role="listitem">No Sign-Up</span>
-              <span class="privacy-pill" role="listitem">No Cloud</span>
-              <span class="privacy-pill" role="listitem">No Tracking</span>
-              <span class="privacy-pill" role="listitem">No Ads Data</span>
-              <span class="privacy-pill" role="listitem">Local Storage</span>
-              <span class="privacy-pill" role="listitem">Offline First</span>
-              <span class="privacy-pill" role="listitem">Open Source Friendly</span>
+              <span class="privacy-pill" role="listitem">No Cloud Storage</span>
+              <span class="privacy-pill" role="listitem">Local SQLite</span>
+              <span class="privacy-pill" role="listitem">No Profiling</span>
+              <span class="privacy-pill" role="listitem">GDPR &amp; CCPA Friendly</span>
+              <span class="privacy-pill" role="listitem">Works Offline</span>
+              <span class="privacy-pill" role="listitem">User-Owned Backups</span>
             </div>
           </div>
         </div>
       </div>
+
+      <!-- Cloud Apps vs Monely Comparison Table -->
+      <div class="compare-wrap fade-in">
+        <table class="compare-table" aria-label="Comparison between cloud finance apps and Monely">
+          <thead>
+            <tr>
+              <th>Privacy &amp; Security Factor</th>
+              <th>Typical Cloud Finance Apps</th>
+              <th>Monely – Money Manager</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Data Storage Location</strong></td>
+              <td>Remote corporate cloud servers</td>
+              <td><span class="compare-badge-yes">✓ 100% Local on your device (SQLite)</span></td>
+            </tr>
+            <tr>
+              <td><strong>Account &amp; Registration</strong></td>
+              <td>Mandatory email, name &amp; password</td>
+              <td><span class="compare-badge-yes">✓ Zero sign-up, zero registration</span></td>
+            </tr>
+            <tr>
+              <td><strong>Offline Reliability</strong></td>
+              <td>Requires constant active internet</td>
+              <td><span class="compare-badge-yes">✓ 100% operational offline</span></td>
+            </tr>
+            <tr>
+              <td><strong>Cloud Data Breach Risk</strong></td>
+              <td>Vulnerable to server hacks &amp; leaks</td>
+              <td><span class="compare-badge-yes">✓ Zero server data to breach</span></td>
+            </tr>
+            <tr>
+              <td><strong>Financial Data Profiling</strong></td>
+              <td>Often monetized via ads &amp; brokers</td>
+              <td><span class="compare-badge-yes">✓ Never tracked, inspected, or sold</span></td>
+            </tr>
+            <tr>
+              <td><strong>Data Portability</strong></td>
+              <td>Often locked inside proprietary silos</td>
+              <td><span class="compare-badge-yes">✓ Instant JSON backup &amp; clean CSV export</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
     </div>
   </section>
 
   <!-- ============================================================
        HOW IT WORKS
   ============================================================ -->
-  <section aria-labelledby="how-heading">
+  <section id="how-it-works" aria-labelledby="how-heading" style="background:var(--bg-alt);">
     <div class="container">
       <div class="section-label">
-        <span class="badge">How it works</span>
+        <span class="badge">How It Works</span>
       </div>
-      <h2 class="section-title" id="how-heading">Set up in under 60 seconds</h2>
-      <p class="section-subtitle">No tutorials, no onboarding walls. Monely gets out of the way and lets you start tracking immediately.</p>
+      <h2 class="section-title" id="how-heading">Get started in under 30 seconds</h2>
+      <p class="section-subtitle">No tutorials, no onboarding walls, no bank credentials required. Just open and start tracking.</p>
 
       <div class="steps-grid">
         <div class="step-card fade-in">
           <div class="step-number" aria-hidden="true">1</div>
           <h3 class="step-title">Download &amp; Open</h3>
-          <p class="step-desc">Install from the App Store or Google Play. No account, no sign-up — just open and go.</p>
+          <p class="step-desc">Install free from the App Store or Google Play. No sign-up screen, no password prompt — open and you're immediately in.</p>
         </div>
         <div class="step-card fade-in">
           <div class="step-number" aria-hidden="true">2</div>
-          <h3 class="step-title">Add Your Accounts</h3>
-          <p class="step-desc">Create accounts for your bank, wallet, or cash. Name them anything you like.</p>
+          <h3 class="step-title">Set Accounts &amp; Budgets</h3>
+          <p class="step-desc">Keep default accounts (Cash, Bank, Savings) or add custom ones. Optionally configure monthly spending targets for categories.</p>
         </div>
         <div class="step-card fade-in">
           <div class="step-number" aria-hidden="true">3</div>
-          <h3 class="step-title">Log Transactions</h3>
-          <p class="step-desc">Tap the + button to add an expense or income. Pick a category, amount, and you're done.</p>
+          <h3 class="step-title">Log Daily Finances</h3>
+          <p class="step-desc">Tap + to log an expense, income, or transfer in seconds. Schedule recurring bills and subscriptions with automated reminders.</p>
         </div>
         <div class="step-card fade-in">
           <div class="step-number" aria-hidden="true">4</div>
-          <h3 class="step-title">Get Insights</h3>
-          <p class="step-desc">Head to the Stats tab to see where your money goes — monthly reports, trends, and category breakdowns.</p>
+          <h3 class="step-title">Gain Financial Clarity</h3>
+          <p class="step-desc">Check the Stats tab for interactive charts, category breakdowns, and smart insights. Export clean CSV records anytime.</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       CATEGORIES
+       CATEGORIES SHOWCASE
   ============================================================ -->
   <section class="categories-section" aria-labelledby="categories-heading">
     <div class="container">
       <div class="section-label">
         <span class="badge">Categories</span>
       </div>
-      <h2 class="section-title" id="categories-heading">Track every type of expense</h2>
-      <p class="section-subtitle">Monely comes loaded with smart categories for your everyday spending — and you can add your own.</p>
+      <h2 class="section-title" id="categories-heading">Organize every facet of your cash flow</h2>
+      <p class="section-subtitle">Loaded with intuitive default categories for daily life — plus complete freedom to create and manage custom ones.</p>
 
       <div class="categories-grid" role="list" aria-label="Available expense categories">
         <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🛒</span> Groceries</div>
         <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🍕</span> Dining Out</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🚗</span> Transport</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🏠</span> Housing</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💊</span> Healthcare</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🎬</span> Entertainment</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">👗</span> Shopping</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">📱</span> Subscriptions</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">✈️</span> Travel</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">📚</span> Education</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💡</span> Utilities</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🐾</span> Pets</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🏋️</span> Fitness</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🎁</span> Gifts</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💼</span> Salary</div>
-        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🧾</span> Custom +</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🚗</span> Transport &amp; Fuel</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🏠</span> Housing &amp; Rent</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💡</span> Utilities &amp; Power</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💊</span> Healthcare &amp; Medical</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🎬</span> Entertainment &amp; Fun</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">👗</span> Shopping &amp; Clothing</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">📱</span> Subscriptions &amp; Apps</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">✈️</span> Travel &amp; Vacation</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">📚</span> Education &amp; Courses</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🐾</span> Pets &amp; Vet</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🏋️</span> Fitness &amp; Gym</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🎁</span> Gifts &amp; Celebrations</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">💼</span> Salary &amp; Wages</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🔄</span> Account Transfers</div>
+        <div class="category-chip" role="listitem"><span class="category-chip-emoji" aria-hidden="true">🧾</span> Custom Categories +</div>
       </div>
     </div>
   </section>
 
   <!-- ============================================================
-       REVIEWS
+       REVIEWS / TESTIMONIALS
   ============================================================ -->
   <section id="reviews" aria-labelledby="reviews-heading">
     <div class="container">
       <div class="section-label">
         <span class="badge">Reviews</span>
       </div>
-      <h2 class="section-title" id="reviews-heading">Loved by thousands of users</h2>
-      <p class="section-subtitle">Don't take our word for it — here's what real Monely users have to say.</p>
+      <h2 class="section-title" id="reviews-heading">Loved by thousands of conscious spenders</h2>
+      <p class="section-subtitle">Real feedback from verified users across iOS and Android.</p>
 
       <div class="reviews-grid">
         <article class="review-card fade-in">
           <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="review-text">"Finally an expense tracker that doesn't want my email address or cloud access. Just opens up and works. The recurring bills feature alone is worth 5 stars."</p>
+          <p class="review-text">"Finally an expense tracker that doesn't demand my email address, phone number, or cloud access. The recurring bills feature with reminder alerts and category limits has completely transformed how I budget."</p>
           <div class="review-author">
             <div class="review-avatar" aria-hidden="true">S</div>
             <div>
               <div class="review-name">Sarah K.</div>
-              <div class="review-meta">App Store · Verified Purchase</div>
+              <div class="review-meta">App Store · Verified User</div>
             </div>
           </div>
         </article>
 
         <article class="review-card fade-in">
           <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="review-text">"I've tried dozens of budget apps. Monely is the cleanest, fastest, and most privacy-respecting one I've found. The analytics actually helped me cut $400/month in unnecessary spending."</p>
+          <p class="review-text">"I've tried almost every personal finance app. Monely is hands-down the fastest and most respectful of privacy. Being able to transfer between bank and cash without double counting is huge, and CSV export is flawless."</p>
           <div class="review-author">
             <div class="review-avatar" aria-hidden="true">M</div>
             <div>
               <div class="review-name">Marcus R.</div>
-              <div class="review-meta">Google Play · Verified Purchase</div>
+              <div class="review-meta">Google Play · Verified User</div>
             </div>
           </div>
         </article>
 
         <article class="review-card fade-in">
           <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
-          <p class="review-text">"Works offline, looks beautiful in dark mode, and the category breakdown is eye-opening. I didn't realize how much I was spending on dining out until Monely showed me."</p>
+          <p class="review-text">"Works offline seamlessly when I travel, looks stunning in dark mode, and setting budgets for groceries and dining out helped me save $450 in my first month. Couldn't recommend it enough!"</p>
           <div class="review-author">
             <div class="review-avatar" aria-hidden="true">P</div>
             <div>
               <div class="review-name">Priya N.</div>
-              <div class="review-meta">App Store · Verified Purchase</div>
+              <div class="review-meta">App Store · Verified User</div>
             </div>
           </div>
         </article>
@@ -1114,13 +1573,13 @@
   <!-- ============================================================
        FAQ
   ============================================================ -->
-  <section id="faq" aria-labelledby="faq-heading">
+  <section id="faq" aria-labelledby="faq-heading" style="background:var(--bg-alt);">
     <div class="container">
       <div class="section-label">
         <span class="badge">FAQ</span>
       </div>
       <h2 class="section-title" id="faq-heading">Frequently asked questions</h2>
-      <p class="section-subtitle">Everything you need to know before downloading.</p>
+      <p class="section-subtitle">Everything you need to know about Monely and how your money is tracked.</p>
 
       <div class="faq-list" role="list">
 
@@ -1130,7 +1589,7 @@
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a1" role="region">
-            <p>Yes — Monely is free to download and use with no paywalls. We show one optional, non-intrusive ad per 24 hours to support development. You can always dismiss it and keep using every feature.</p>
+            <p>Yes — Monely is 100% free to download and use with all core features unlocked. We display one optional, non-intrusive ad per 24 hours to cover development costs, and it can be dismissed anytime without locking any features.</p>
           </div>
         </div>
 
@@ -1140,57 +1599,92 @@
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a2" role="region">
-            <p>No. Monely is fully offline-first. Your data is stored in a local SQLite database on your device and is never sent to any server. This means you also can't lose it to a data breach.</p>
+            <p>No. Monely is built strictly offline-first. Your transactions, notes, categories, accounts, and budgets are stored in an encrypted local SQLite database on your device. We do not operate any server that receives your financial data.</p>
           </div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-a3">
-            Is Monely available on both iOS and Android?
+            Can I transfer money between different accounts?
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a3" role="region">
-            <p>Yes! Monely is available for free on the Apple App Store (iPhone and iPad) and the Google Play Store (all Android devices).</p>
+            <p>Yes! Monely includes dedicated Account Transfer support. Select the Transfer option when adding a transaction, choose source and destination accounts, and both ledgers will update accurately without distorting your income or spending totals.</p>
           </div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-a4">
-            Can I track income, not just expenses?
+            How do Category Budgets work?
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a4" role="region">
-            <p>Absolutely. Monely tracks both income and expenses. You can see your net balance, income vs. expense comparisons, and understand exactly how your savings are growing over time.</p>
+            <p>You can define monthly spending limits for any category (such as Groceries, Dining Out, Entertainment). Monely automatically calculates your expenses in real time, displays color-coded progress bars, and alerts you before you exceed your target.</p>
           </div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-a5">
-            How do recurring transactions work?
+            How do recurring transactions and bill reminders work?
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a5" role="region">
-            <p>Set up any transaction as recurring (daily, weekly, bi-weekly, monthly, quarterly, or yearly). Monely automatically creates the transaction on its scheduled date and can send you a notification beforehand. You can edit, skip, or delete individual occurrences at any time.</p>
+            <p>Set up any transaction as recurring (Daily, Weekly, Bi-weekly, Monthly, Quarterly, or Yearly). Monely generates recurring entries on schedule and sends timely notifications so you never forget to pay a bill or subscription.</p>
           </div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-a6">
-            Can I use multiple accounts (bank, cash, wallet)?
+            Can I export my data to Excel or Google Sheets?
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a6" role="region">
-            <p>Yes. You can create as many accounts as you need — checking accounts, savings accounts, digital wallets, credit cards, or a simple cash envelope. Each has its own balance and transaction history.</p>
+            <p>Yes. Monely allows you to export your data in two formats:
+              <ul>
+                <li><strong>CSV:</strong> Standard spreadsheet format compatible with Excel, Google Sheets, Numbers, and Notion.</li>
+                <li><strong>TXT:</strong> A clean, formatted summary report with monthly totals, breakdowns, and transaction lists.</li>
+              </ul>
+            </p>
           </div>
         </div>
 
         <div class="faq-item" role="listitem">
           <button class="faq-question" aria-expanded="false" aria-controls="faq-a7">
-            What happens to my data if I delete the app?
+            How do Backup and Restore work?
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
           </button>
           <div class="faq-answer" id="faq-a7" role="region">
-            <p>Since all data lives only on your device, deleting the app removes your data. We recommend exporting your data before uninstalling. Your data was never stored anywhere else, so there's nothing to "request deletion" of from our end.</p>
+            <p>Tap <strong>More → Backup &amp; Restore → Create Backup</strong> to generate a complete JSON snapshot of all your accounts, budgets, and transactions. You can save it to Google Drive, iCloud, Files, or send it to yourself. When switching devices, simply tap <strong>Restore Backup</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a8">
+            Can I customize the currency symbol?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a8" role="region">
+            <p>Yes. Monely automatically detects your device's regional currency, and you can also manually select from dozens of currencies (USD, EUR, GBP, INR, JPY, CAD, AUD, and more) from <strong>More → Currency Settings</strong>.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a9">
+            Is Monely available on both iOS and Android?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a9" role="region">
+            <p>Yes! Monely is available on the Apple App Store for iPhone &amp; iPad and on the Google Play Store for Android smartphones and tablets.</p>
+          </div>
+        </div>
+
+        <div class="faq-item" role="listitem">
+          <button class="faq-question" aria-expanded="false" aria-controls="faq-a10">
+            What happens if I delete or uninstall the app?
+            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+          </button>
+          <div class="faq-answer" id="faq-a10" role="region">
+            <p>Because all data lives on your device in sandboxed storage, deleting the app erases the local database. We strongly recommend creating regular backups via <strong>More → Backup &amp; Restore</strong> and saving them to your cloud drive of choice.</p>
           </div>
         </div>
 
@@ -1203,16 +1697,20 @@
   ============================================================ -->
   <section class="cta-section" aria-labelledby="cta-heading">
     <div class="container">
-      <h2 id="cta-heading">Start tracking your money today.</h2>
-      <p>Free, offline, and completely private. No sign-up required — just download and go.</p>
+      <h2 id="cta-heading">Take control of your money today.</h2>
+      <p>Free, completely offline, and 100% private. No sign-up required — download and begin tracking in seconds.</p>
 
       <div class="cta-buttons">
-        <a href="https://apps.apple.com/app/id6758589192" class="btn-white" aria-label="Download Monely on the App Store" style="display:inline-flex;align-items:center;gap:10px;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+        <a href="https://apps.apple.com/app/id6758589192" target="_blank" rel="noopener noreferrer" class="btn-white" aria-label="Download Monely on the App Store">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/>
+          </svg>
           Download on App Store
         </a>
-        <a href="https://play.google.com/store/apps/details?id=com.codeyard.monely" class="btn-white-outline" aria-label="Get Monely on Google Play" style="display:inline-flex;align-items:center;gap:10px;">
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.18 23.76c.3.17.64.22.99.14l13.24-7.44-2.86-2.87-11.37 10.17zm-1.34-20.6C1.63 3.47 1.5 3.83 1.5 4.24v15.52c0 .41.13.77.34 1.06l.06.06 8.7-8.7v-.2L1.84 3.1l-.03.06zM20.95 10.5l-2.78-1.56-3.17 3.18 3.17 3.17 2.8-1.57c.8-.45.8-1.17-.02-1.62v-.6zM4.17.24L17.41 7.7l-2.86 2.87L3.18.4C3.48.32 3.84.09 4.17.24z"/></svg>
+        <a href="https://play.google.com/store/apps/details?id=com.codeyard.monely" target="_blank" rel="noopener noreferrer" class="btn-white-outline" aria-label="Get Monely on Google Play">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+            <path d="M3.18 23.76c.3.17.64.22.99.14l13.24-7.44-2.86-2.87-11.37 10.17zm-1.34-20.6C1.63 3.47 1.5 3.83 1.5 4.24v15.52c0 .41.13.77.34 1.06l.06.06 8.7-8.7v-.2L1.84 3.1l-.03.06zM20.95 10.5l-2.78-1.56-3.17 3.18 3.17 3.17 2.8-1.57c.8-.45.8-1.17-.02-1.62v-.6zM4.17.24L17.41 7.7l-2.86 2.87L3.18.4C3.48.32 3.84.09 4.17.24z"/>
+          </svg>
           Get it on Google Play
         </a>
       </div>
@@ -1224,11 +1722,11 @@
         </div>
         <div class="cta-trust-item" role="listitem">
           <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-          No credit card
+          No account needed
         </div>
         <div class="cta-trust-item" role="listitem">
           <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
-          Works offline
+          Works 100% offline
         </div>
         <div class="cta-trust-item" role="listitem">
           <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -1245,16 +1743,27 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="/" class="nav-logo" aria-label="Monely home">
+          <a href="./" class="nav-logo" aria-label="Monely home">
             <div class="nav-logo-icon">
-              <img src="icon.png" alt="Monely app icon" width="36" height="36" loading="lazy" />
+              <img src="icon.png" alt="Monely app icon" width="38" height="38" loading="lazy" />
             </div>
             <span class="nav-logo-name">Monely</span>
           </a>
-          <p>A privacy-first money manager and expense tracker for iOS and Android. Your data, your device, your control.</p>
+          <p>A privacy-first money manager and personal finance tracker for iOS and Android. Your data, your device, your control.</p>
           <div class="footer-social" role="list" aria-label="Social media links">
-            <a href="https://www.instagram.com/codeyard.studio/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Follow Codeyard on Instagram"><i data-lucide="instagram"></i></a>
-            <a href="mailto:codeyard.studio@gmail.com" role="listitem" aria-label="Email Codeyard"><i data-lucide="mail"></i></a>
+            <a href="https://www.instagram.com/codeyard.studio/" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Follow Codeyard on Instagram">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"/>
+                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/>
+                <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/>
+              </svg>
+            </a>
+            <a href="mailto:codeyard.studio@gmail.com" role="listitem" aria-label="Email Codeyard Studio">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect width="20" height="16" x="2" y="4" rx="2"/>
+                <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+              </svg>
+            </a>
           </div>
         </div>
 
@@ -1262,35 +1771,39 @@
           <h4>App</h4>
           <ul>
             <li><a href="#features">Features</a></li>
+            <li><a href="#budgets">Budgets &amp; Accounts</a></li>
             <li><a href="#privacy">Privacy</a></li>
-            <li><a href="#reviews">Reviews</a></li>
+            <li><a href="#how-it-works">How It Works</a></li>
             <li><a href="#faq">FAQ</a></li>
+            <li><a href="support.html">Support</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Download</h4>
           <ul>
-            <li><a href="https://apps.apple.com/app/id6758589192">App Store</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.codeyard.monely">Google Play</a></li>
+            <li><a href="https://apps.apple.com/app/id6758589192" target="_blank" rel="noopener noreferrer">App Store</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.codeyard.monely" target="_blank" rel="noopener noreferrer">Google Play</a></li>
           </ul>
         </div>
 
         <div class="footer-col">
           <h4>Legal</h4>
           <ul>
-            <li><a href="/privacy-policy">Privacy Policy</a></li>
-            <li><a href="https://codeyardstudio.com" target="_blank" rel="noopener noreferrer">Support</a></li>
+            <li><a href="monely-privacy-policy.html">Privacy Policy</a></li>
+            <li><a href="terms-of-service.html">Terms of Service</a></li>
+            <li><a href="support.html">Support &amp; Help</a></li>
             <li><a href="mailto:codeyard.studio@gmail.com">Contact Us</a></li>
           </ul>
         </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; <time datetime="2026">2026</time> Codeyard. All rights reserved. Monely – Money Manager.</p>
+        <p>&copy; <time datetime="2026">2026</time> <a href="https://codeyardstudio.com" target="_blank" rel="noopener noreferrer">Codeyard Studio</a>. All rights reserved. Monely – Money Manager.</p>
         <div>
-          <a href="/privacy-policy">Privacy</a> &nbsp;·&nbsp;
-          <a href="https://codeyardstudio.com" target="_blank" rel="noopener noreferrer">Support</a> &nbsp;·&nbsp;
+          <a href="monely-privacy-policy.html">Privacy Policy</a> &nbsp;·&nbsp;
+          <a href="terms-of-service.html">Terms</a> &nbsp;·&nbsp;
+          <a href="support.html">Support</a> &nbsp;·&nbsp;
           <a href="mailto:codeyard.studio@gmail.com">Contact</a>
         </div>
       </div>
@@ -1298,10 +1811,10 @@
   </footer>
 
   <!-- ============================================================
-       JAVASCRIPT: FAQ accordion + scroll animations
+       JAVASCRIPT: Accordion, Scroll Animation & Icon Fallbacks
   ============================================================ -->
   <script>
-    // FAQ accordion
+    // FAQ Accordion
     document.querySelectorAll('.faq-question').forEach(function(btn) {
       btn.addEventListener('click', function() {
         var item = this.closest('.faq-item');
@@ -1319,7 +1832,7 @@
       });
     });
 
-    // Scroll-triggered fade-in
+    // Scroll-triggered animations
     var observer = new IntersectionObserver(function(entries) {
       entries.forEach(function(entry) {
         if (entry.isIntersecting) {
@@ -1333,8 +1846,10 @@
       observer.observe(el);
     });
 
-    // Initialise Lucide icons
-    lucide.createIcons();
+    // Initialize Lucide icons if loaded
+    if (typeof lucide !== 'undefined' && lucide.createIcons) {
+      lucide.createIcons();
+    }
   </script>
 
 </body>

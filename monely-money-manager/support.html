@@ -3,42 +3,300 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Monely Support</title>
+  <title>Monely Support – Help &amp; FAQs | Codeyard Studio</title>
+  <link rel="icon" type="image/png" href="icon.png" />
+  <meta name="description" content="Get help with Monely – Money Manager. Browse frequently asked questions about offline tracking, backups, budgets, and contact our support team." />
+  <link rel="canonical" href="https://codeyardstudio.com/monely-money-manager/support.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <style>
+    :root {
+      --brand: #E93C2F;
+      --brand-dark: #c42d21;
+      --brand-subtle: #fff1f0;
+      --text: #1a1a2e;
+      --text-secondary: #4b5563;
+      --text-muted: #9ca3af;
+      --surface: #ffffff;
+      --bg: #f8f9fb;
+      --border: #e5e7eb;
+      --radius: 16px;
+      --radius-sm: 8px;
+      --font: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --brand-subtle: #2a0f0c;
+        --text: #f9fafb;
+        --text-secondary: #9ca3af;
+        --text-muted: #6b7280;
+        --surface: #1a1a1a;
+        --bg: #0a0a0a;
+        --border: #2a2a2a;
+      }
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
     body {
-      font-family: -apple-system, BlinkMacSystemFont, sans-serif;
-      background: #f5f7fa;
-      padding: 40px;
+      font-family: var(--font);
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, var(--brand) 0%, var(--brand-dark) 100%);
+      color: #fff;
+      padding: 64px 24px 48px;
       text-align: center;
-      color: #333;
     }
-    .card {
-      max-width: 600px;
-      margin: auto;
-      background: white;
-      padding: 40px;
-      border-radius: 12px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    .hero-badge {
+      display: inline-block;
+      background: rgba(255,255,255,0.18);
+      border: 1px solid rgba(255,255,255,0.35);
+      border-radius: 100px;
+      padding: 4px 14px;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.6px;
+      text-transform: uppercase;
+      margin-bottom: 16px;
     }
-    h1 { color: #E93C2F; }
-    a { color: #E93C2F; text-decoration: none; font-weight: 600; }
+    .hero h1 { font-size: clamp(28px, 5vw, 42px); font-weight: 800; margin-bottom: 12px; }
+    .hero p { font-size: 16px; opacity: 0.9; max-width: 520px; margin: 0 auto; line-height: 1.6; }
+    .hero a { color: #fff; text-decoration: underline; font-weight: 600; }
+    .hero a:hover { opacity: 0.9; }
+
+    .page { max-width: 760px; margin: 0 auto; padding: 0 24px 80px; }
+
+    .contact-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 36px 32px;
+      margin-top: 40px;
+      text-align: center;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+    }
+    .contact-card h2 { font-size: 22px; font-weight: 700; margin-bottom: 8px; }
+    .contact-card p { color: var(--text-secondary); font-size: 15px; margin-bottom: 24px; line-height: 1.6; }
+    .contact-email {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--brand); color: #fff;
+      padding: 14px 28px; border-radius: 100px;
+      text-decoration: none; font-weight: 600; font-size: 15px;
+      transition: all .2s;
+    }
+    .contact-email:hover { background: var(--brand-dark); transform: translateY(-1px); box-shadow: 0 6px 20px rgba(233,60,47,.3); }
+    .contact-email svg { width: 18px; height: 18px; flex-shrink: 0; }
+    .response-time { font-size: 13px; color: var(--text-muted); margin-top: 16px; }
+
+    .faq-section { margin-top: 56px; }
+    .faq-section h2 {
+      font-size: 24px; font-weight: 800; text-align: center; margin-bottom: 8px;
+    }
+    .faq-section .subtitle {
+      text-align: center; color: var(--text-secondary); font-size: 15px; margin-bottom: 28px;
+    }
+
+    .faq-list { display: flex; flex-direction: column; gap: 12px; }
+    .faq-item {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      overflow: hidden;
+    }
+    .faq-question {
+      width: 100%; padding: 18px 22px; text-align: left;
+      font-size: 15px; font-weight: 600; color: var(--text);
+      background: none; border: none; cursor: pointer;
+      display: flex; align-items: center; justify-content: space-between; gap: 12px;
+      transition: background .2s;
+    }
+    .faq-question:hover { background: var(--bg); }
+    .faq-question svg { flex-shrink: 0; transition: transform .25s; color: var(--text-muted); }
+    .faq-item.open .faq-question svg { transform: rotate(180deg); }
+    .faq-answer { padding: 0 22px; max-height: 0; overflow: hidden; transition: max-height .3s ease, padding .3s ease; }
+    .faq-item.open .faq-answer { padding: 0 22px 18px; max-height: 400px; }
+    .faq-answer p { font-size: 14px; color: var(--text-secondary); line-height: 1.7; }
+    .faq-answer ul { padding-left: 20px; margin-top: 8px; font-size: 14px; color: var(--text-secondary); }
+    .faq-answer li { margin-bottom: 4px; }
+
+    .links-row {
+      display: flex; justify-content: center; gap: 20px; flex-wrap: wrap;
+      margin-top: 48px; font-size: 14px;
+    }
+    .links-row a { color: var(--brand); text-decoration: none; font-weight: 500; }
+    .links-row a:hover { text-decoration: underline; }
+
+    footer {
+      text-align: center; color: var(--text-muted); font-size: 13px;
+      margin-top: 48px; padding-top: 24px; border-top: 1px solid var(--border);
+    }
+    footer a { color: var(--text-muted); text-decoration: none; }
+    footer a:hover { color: var(--brand); }
   </style>
 </head>
 <body>
-  <div class="card">
-    <h1>Monely Support</h1>
-    <p>If you need help or have feedback, feel free to contact us.</p>
 
-    <p><strong>Email:</strong><br/>
-    <a href="mailto:codeyard.studio@gmail.com">codeyard.studio@gmail.com</a></p>
+<div class="hero">
+  <div class="hero-badge">Help &amp; Support</div>
+  <h1>Monely Support</h1>
+  <p>Need help with your money manager? Check the FAQs below or reach out directly. <br /><a href="./">← Back to Monely Home</a></p>
+</div>
 
-    <p>We usually reply within 24–48 hours.</p>
+<div class="page">
 
-    <hr style="margin:30px 0"/>
-
-    <p style="font-size:14px;color:#777;">
-      Codeyard Studio © 2026
-    </p>
+  <div class="contact-card">
+    <h2>Contact Support</h2>
+    <p>Have a question, feedback, or found an issue? Send us an email and we'll be glad to help.</p>
+    <a href="mailto:codeyard.studio@gmail.com" class="contact-email">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <rect width="20" height="16" x="2" y="4" rx="2"/>
+        <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/>
+      </svg>
+      codeyard.studio@gmail.com
+    </a>
+    <p class="response-time">We typically respond within 24–48 hours.</p>
   </div>
+
+  <div class="faq-section">
+    <h2>Frequently Asked Questions</h2>
+    <p class="subtitle">Quick answers to common questions about Monely.</p>
+
+    <div class="faq-list">
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Is my financial data uploaded to any server or cloud?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>No. Monely is strictly offline-first. All your expenses, incomes, transfers, budgets, accounts, and notes are stored locally in a sandboxed SQLite database on your device. We do not operate any server that stores your personal or financial data.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I back up my data?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>In Monely, tap <strong>More → Backup &amp; Restore → Create Backup</strong>. The app generates an encrypted, complete JSON file of all your records and opens your device's system share sheet. You can save it to Google Drive, iCloud Files, send it via email, or keep it on your local device.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do I restore my data on a new phone?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Install Monely on your new phone, transfer your backup file (<code>.json</code>) to the new device, then open Monely and go to <strong>More → Backup &amp; Restore → Restore Backup</strong>. Select the file, and your transactions, accounts, and budgets will be restored immediately.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do Account-to-Account Transfers work?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>When adding a transaction, select the <strong>Transfer</strong> tab. Pick the source account (e.g., Bank) and destination account (e.g., Cash) and enter the amount. Monely adjusts both account balances accurately without counting the transfer as an expense or income in your monthly analytics.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do category budgets and limits work?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>You can set monthly spending limits for individual categories (like Groceries, Dining Out, or Shopping). Monely calculates your spent amount in real-time, displays intuitive progress bars, and alerts you when you approach or exceed your limits.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I export my data to Excel or Google Sheets?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Yes. Go to <strong>More → Export Data</strong>. You can choose between:
+            <ul>
+              <li><strong>CSV:</strong> Clean, structured spreadsheet data compatible with Microsoft Excel, Google Sheets, Apple Numbers, and Notion.</li>
+              <li><strong>TXT:</strong> A formatted report containing monthly totals, summaries, and categorized listings.</li>
+            </ul>
+          </p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          How do recurring transactions and bill reminders work?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>You can mark any expense, income, or transfer as recurring with frequencies such as Daily, Weekly, Bi-weekly, Monthly, Quarterly, or Yearly. Monely automatically generates occurrences on schedule and sends notifications so you never miss a due date.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          Can I change the currency symbol?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Yes! Go to <strong>More → Currency Settings</strong> to choose from global currencies (USD $, EUR €, GBP £, INR ₹, JPY ¥, CAD $, AUD $, etc.) or use automatic detection based on your device locale.</p>
+        </div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-question" aria-expanded="false">
+          What happens if I delete or uninstall the app?
+          <svg width="20" height="20" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M5 8l5 5 5-5"/></svg>
+        </button>
+        <div class="faq-answer">
+          <p>Because all data lives on your device, uninstalling the app permanently erases the local database. Always create a backup file via <strong>More → Backup &amp; Restore</strong> before deleting or changing devices.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="links-row">
+    <a href="./">Monely Home</a>
+    <a href="monely-privacy-policy.html">Privacy Policy</a>
+    <a href="terms-of-service.html">Terms of Service</a>
+    <a href="https://codeyardstudio.com">Codeyard Studio</a>
+  </div>
+
+  <footer>
+    <p>&copy; 2026 Codeyard Studio. All rights reserved. Monely – Money Manager.</p>
+  </footer>
+
+</div>
+
+<script>
+  document.querySelectorAll('.faq-question').forEach(function(btn) {
+    btn.addEventListener('click', function() {
+      var item = this.closest('.faq-item');
+      var isOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item.open').forEach(function(el) {
+        el.classList.remove('open');
+        el.querySelector('.faq-question').setAttribute('aria-expanded', 'false');
+      });
+      if (!isOpen) {
+        item.classList.add('open');
+        this.setAttribute('aria-expanded', 'true');
+      }
+    });
+  });
+</script>
+
 </body>
 </html>
