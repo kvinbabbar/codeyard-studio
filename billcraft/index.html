@@ -29,6 +29,7 @@
   <meta name="apple-mobile-web-app-status-bar-style" content="default" />
   <meta name="apple-mobile-web-app-title" content="Billcraft" />
   <meta name="application-name" content="Billcraft" />
+  <meta name="apple-itunes-app" content="app-id=6811194966" />
 
   <link rel="icon" type="image/png" href="favicon.png" />
   <link rel="apple-touch-icon" href="billcraft-icon.png" />
@@ -64,6 +65,8 @@
         "url": "https://codeyardstudio.com/billcraft/",
         "applicationCategory": "BusinessApplication",
         "operatingSystem": ["iOS", "Android"],
+        "downloadUrl": "https://apps.apple.com/in/app/billcraft-invoice-maker/id6811194966",
+        "installUrl": "https://apps.apple.com/in/app/billcraft-invoice-maker/id6811194966",
         "offers": {
           "@type": "Offer",
           "price": "0",
@@ -234,7 +237,12 @@
       display: inline-flex; align-items: center; gap: 10px;
       background: var(--text-primary); color: var(--bg);
       padding: 12px 22px; border-radius: 14px; text-decoration: none; transition: all .2s;
-      opacity: .85; cursor: default;
+      cursor: pointer;
+    }
+    .store-btn:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0,0,0,.18);
+      opacity: 1;
     }
     .store-btn-text { text-align: left; }
     .store-btn-sub { font-size: 11px; opacity: .7; line-height: 1; margin-bottom: 3px; }
@@ -428,7 +436,7 @@
         <a href="support.html" role="menuitem">Support</a>
       </div>
       <div class="nav-links">
-        <a href="#download" class="btn btn-primary btn-sm" role="button">Coming Soon</a>
+        <a href="#download" class="btn btn-primary btn-sm" role="button">Download</a>
       </div>
     </div>
   </nav>
@@ -453,22 +461,22 @@
       </p>
 
       <div id="download" class="hero-cta">
-        <div class="store-btn" aria-label="App Store — coming soon">
+        <a href="https://apps.apple.com/in/app/billcraft-invoice-maker/id6811194966" class="store-btn" target="_blank" rel="noopener noreferrer" aria-label="Download Billcraft on the App Store">
           <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
           <div class="store-btn-text">
             <div class="store-btn-sub">Download on the</div>
             <div class="store-btn-name">App Store</div>
           </div>
-        </div>
-        <div class="store-btn" aria-label="Google Play — coming soon">
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.codeyard.invoice" class="store-btn" target="_blank" rel="noopener noreferrer" aria-label="Get Billcraft on Google Play">
           <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M3.18 23.76c.3.17.64.22.99.14l13.24-7.44-2.86-2.87-11.37 10.17zm-1.34-20.6C1.63 3.47 1.5 3.83 1.5 4.24v15.52c0 .41.13.77.34 1.06l.06.06 8.7-8.7v-.2L1.84 3.1l-.03.06zM20.95 10.5l-2.78-1.56-3.17 3.18 3.17 3.17 2.8-1.57c.8-.45.8-1.17-.02-1.62v-.6zM4.17.24L17.41 7.7l-2.86 2.87L3.18.4C3.48.32 3.84.09 4.17.24z"/></svg>
           <div class="store-btn-text">
             <div class="store-btn-sub">Get it on</div>
             <div class="store-btn-name">Google Play</div>
           </div>
-        </div>
+        </a>
       </div>
-      <p class="coming-soon-label">App Store links will be available at launch.</p>
+      <p class="coming-soon-label">Available now on iOS and Android</p>
 
       <div class="hero-trust" role="list" aria-label="Key selling points">
         <div class="hero-trust-item" role="listitem">
@@ -812,6 +820,22 @@
     <div class="container">
       <h2 id="cta-heading">Start invoicing on your terms.</h2>
       <p>100% local, fully offline, and completely private. Your business data stays on your device.</p>
+      <div style="display: flex; justify-content: center; gap: 14px; flex-wrap: wrap; margin-bottom: 32px;">
+        <a href="https://apps.apple.com/in/app/billcraft-invoice-maker/id6811194966" class="store-btn" target="_blank" rel="noopener noreferrer" style="background:#fff; color:#0f0f0f;" aria-label="Download Billcraft on the App Store">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+          <div class="store-btn-text">
+            <div class="store-btn-sub">Download on the</div>
+            <div class="store-btn-name">App Store</div>
+          </div>
+        </a>
+        <a href="https://play.google.com/store/apps/details?id=com.codeyard.invoice" class="store-btn" target="_blank" rel="noopener noreferrer" style="background:#fff; color:#0f0f0f;" aria-label="Get Billcraft on Google Play">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="22" height="22" aria-hidden="true"><path d="M3.18 23.76c.3.17.64.22.99.14l13.24-7.44-2.86-2.87-11.37 10.17zm-1.34-20.6C1.63 3.47 1.5 3.83 1.5 4.24v15.52c0 .41.13.77.34 1.06l.06.06 8.7-8.7v-.2L1.84 3.1l-.03.06zM20.95 10.5l-2.78-1.56-3.17 3.18 3.17 3.17 2.8-1.57c.8-.45.8-1.17-.02-1.62v-.6zM4.17.24L17.41 7.7l-2.86 2.87L3.18.4C3.48.32 3.84.09 4.17.24z"/></svg>
+          <div class="store-btn-text">
+            <div class="store-btn-sub">Get it on</div>
+            <div class="store-btn-name">Google Play</div>
+          </div>
+        </a>
+      </div>
       <div class="cta-trust" role="list" aria-label="App benefits">
         <div class="cta-trust-item" role="listitem">
           <svg width="16" height="16" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/></svg>
@@ -872,8 +896,8 @@
         <div class="footer-col">
           <h4>Download</h4>
           <ul>
-            <li><a href="#download">App Store (soon)</a></li>
-            <li><a href="#download">Google Play (soon)</a></li>
+            <li><a href="https://apps.apple.com/in/app/billcraft-invoice-maker/id6811194966" target="_blank" rel="noopener noreferrer">App Store</a></li>
+            <li><a href="https://play.google.com/store/apps/details?id=com.codeyard.invoice" target="_blank" rel="noopener noreferrer">Google Play</a></li>
           </ul>
         </div>
 
