@@ -1,0 +1,1817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Primary SEO -->
+  <title>Hydrivo – Water Tracker &amp; Reminder | Stay Hydrated &amp; Healthy</title>
+  <meta name="description" content="Hydrivo is a beautiful, privacy-first water tracker and reminder app for iOS and Android. Track daily hydration, sync with Apple Health and Google Health Connect, customize beverage types, and build healthy habits with intelligent reminders." />
+  <meta name="keywords" content="water tracker, hydration app, water reminder, drink water app, Apple Health water tracker, Health Connect water log, daily water intake, hydration reminder, Hydrivo, Codeyard Studio" />
+  <meta name="author" content="Codeyard Studio" />
+  <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
+  <link rel="canonical" href="https://codeyardstudio.com/hydrivo/" />
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://codeyardstudio.com/hydrivo/" />
+  <meta property="og:title" content="Hydrivo – Water Tracker &amp; Reminder" />
+  <meta property="og:description" content="Track your daily water intake, set personalized goals, sync with Apple Health &amp; Google Health Connect, and never forget a sip with gentle smart reminders." />
+  <meta property="og:image" content="https://codeyardstudio.com/hydrivo/icon.png" />
+  <meta property="og:image:width" content="512" />
+  <meta property="og:image:height" content="512" />
+  <meta property="og:image:alt" content="Hydrivo Water Tracker App Icon" />
+  <meta property="og:site_name" content="Hydrivo" />
+  <meta property="og:locale" content="en_US" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Hydrivo – Water Tracker &amp; Reminder" />
+  <meta name="twitter:description" content="Smart daily hydration goals, 1-tap logging, Apple Health sync, and interactive home screen widgets. Free on iOS and Android." />
+  <meta name="twitter:image" content="https://codeyardstudio.com/hydrivo/icon.png" />
+
+  <!-- Theme & Mobile -->
+  <meta name="theme-color" content="#00D2FF" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Hydrivo" />
+  <meta name="application-name" content="Hydrivo" />
+
+  <!-- Favicon & Icons -->
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="apple-touch-icon" href="icon.png" />
+
+  <!-- Fonts & Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <!-- Schema.org JSON-LD -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "@id": "https://codeyardstudio.com/hydrivo/#website",
+        "url": "https://codeyardstudio.com/hydrivo/",
+        "name": "Hydrivo",
+        "description": "Water tracker and reminder app for iOS and Android",
+        "publisher": { "@id": "https://codeyardstudio.com/hydrivo/#organization" }
+      },
+      {
+        "@type": "Organization",
+        "@id": "https://codeyardstudio.com/hydrivo/#organization",
+        "name": "Codeyard Studio",
+        "url": "https://codeyardstudio.com/",
+        "email": "codeyard.studio@gmail.com"
+      },
+      {
+        "@type": "SoftwareApplication",
+        "@id": "https://codeyardstudio.com/hydrivo/#app",
+        "name": "Hydrivo",
+        "operatingSystem": ["iOS", "Android"],
+        "applicationCategory": "HealthApplication",
+        "genre": "Health & Fitness",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+        "description": "Smart, privacy-first water tracker and reminder app featuring personalized hydration goals, Apple Health & Google Health Connect sync, home screen widgets, and detailed analytics.",
+        "image": "https://codeyardstudio.com/hydrivo/icon.png",
+        "author": { "@id": "https://codeyardstudio.com/hydrivo/#organization" },
+        "featureList": [
+          "Smart Personalized Daily Goals",
+          "Apple HealthKit & Google Health Connect Integration",
+          "Interactive Home Screen Widgets",
+          "Smart Gentle Reminders During Waking Hours",
+          "10+ Beverage Types with Hydration Ratios",
+          "Streak Counter & Achievement Badges",
+          "100% Offline & Privacy First"
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "@id": "https://codeyardstudio.com/hydrivo/#faq",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Is Hydrivo free to use?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Hydrivo is completely free to download and use with full hydration tracking, custom drink sizes, reminders, history, and Apple Health / Health Connect sync. An optional Pro upgrade is available to remove ads and unlock advanced customizations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does Apple Health and Google Health Connect sync work?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hydrivo seamlessly integrates with Apple Health on iOS and Google Health Connect on Android. When you log any beverage in Hydrivo, it automatically writes your water consumption to HealthKit/Health Connect, ensuring your total wellness metrics stay synchronized."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I log drinks other than plain water?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes! Hydrivo supports a comprehensive range of beverages including Coffee, Tea, Milk, Juice, Soda, Sports Drinks, Beer, and Wine. Each beverage has a science-backed hydration factor that calculates its net hydration contribution towards your daily goal."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does Hydrivo track or sell my personal health data?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Never. Hydrivo is built with a strict privacy-first philosophy. No account or login is required. All your hydration logs, daily goals, and streaks are stored strictly on your local device."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Will reminders wake me up while I sleep?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "No. Hydrivo features smart quiet hours. You set your wake-up and bed times, and Hydrivo only delivers gentle reminders throughout your active daytime hours."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    /* ============================================================
+       RESET & BASE DESIGN SYSTEM
+    ============================================================ */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    :root {
+      --bg: #070B14;
+      --bg-card: #0D1527;
+      --bg-card-hover: #121D36;
+      --bg-elevated: #162444;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(0, 210, 255, 0.3);
+      --primary: #00D2FF;
+      --primary-dark: #0072FF;
+      --primary-glow: rgba(0, 210, 255, 0.25);
+      --teal: #00F5D4;
+      --text: #F0F4FC;
+      --text-muted: #8E9BAE;
+      --text-faint: #5A667A;
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-full: 9999px;
+      --transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      --container-width: 1160px;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      color-scheme: dark;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.6;
+      font-size: 16px;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    /* Ambient background water glows */
+    .ambient-glow {
+      position: absolute;
+      width: 600px;
+      height: 600px;
+      border-radius: 50%;
+      filter: blur(120px);
+      pointer-events: none;
+      z-index: 0;
+      opacity: 0.18;
+    }
+    .ambient-glow-1 {
+      top: -100px;
+      right: -100px;
+      background: radial-gradient(circle, var(--primary) 0%, transparent 70%);
+    }
+    .ambient-glow-2 {
+      top: 600px;
+      left: -200px;
+      background: radial-gradient(circle, var(--primary-dark) 0%, transparent 70%);
+    }
+    .ambient-glow-3 {
+      bottom: 200px;
+      right: -150px;
+      background: radial-gradient(circle, var(--teal) 0%, transparent 70%);
+    }
+
+    .container {
+      max-width: var(--container-width);
+      margin: 0 auto;
+      padding: 0 24px;
+      position: relative;
+      z-index: 1;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    /* ============================================================
+       NAVIGATION
+    ============================================================ */
+    .navbar {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: rgba(7, 11, 20, 0.85);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border);
+      padding: 16px 0;
+      transition: var(--transition);
+    }
+    .nav-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      font-family: var(--font-heading);
+      font-weight: 700;
+      font-size: 20px;
+      letter-spacing: -0.3px;
+    }
+    .brand-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 16px var(--primary-glow);
+      display: block;
+    }
+    .brand-name {
+      background: linear-gradient(135deg, #FFFFFF 0%, #BFEFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 28px;
+      list-style: none;
+    }
+    .nav-links a {
+      font-size: 14px;
+      font-weight: 500;
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+    .nav-links a:hover {
+      color: var(--text);
+    }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 9px 18px;
+      border-radius: var(--radius-full);
+      font-size: 14px;
+      font-weight: 600;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #030814;
+      box-shadow: 0 4px 14px var(--primary-glow);
+      transition: var(--transition);
+    }
+    .nav-cta:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 6px 20px rgba(0, 210, 255, 0.4);
+    }
+
+    /* Mobile menu button */
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: var(--text);
+      cursor: pointer;
+    }
+
+    /* ============================================================
+       HERO SECTION
+    ============================================================ */
+    .hero {
+      padding: 80px 0 60px;
+      position: relative;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 60px;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: rgba(0, 210, 255, 0.1);
+      border: 1px solid rgba(0, 210, 255, 0.25);
+      border-radius: var(--radius-full);
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--primary);
+      margin-bottom: 24px;
+    }
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(38px, 5.2vw, 58px);
+      font-weight: 800;
+      line-height: 1.15;
+      letter-spacing: -1.2px;
+      margin-bottom: 20px;
+    }
+    .hero-gradient-text {
+      background: linear-gradient(135deg, #00D2FF 0%, #00F5D4 60%, #FFFFFF 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 18px;
+      color: var(--text-muted);
+      line-height: 1.65;
+      margin-bottom: 32px;
+      max-width: 560px;
+    }
+    .hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      gap: 16px;
+      margin-bottom: 36px;
+    }
+    .store-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      padding: 12px 22px;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+      cursor: pointer;
+    }
+    .store-btn:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-accent);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(0, 210, 255, 0.15);
+    }
+    .store-btn-icon {
+      font-size: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+    }
+    .store-btn-text {
+      display: flex;
+      flex-direction: column;
+      text-align: left;
+    }
+    .store-btn-subtitle {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+      color: var(--text-muted);
+      font-weight: 600;
+    }
+    .store-btn-title {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 700;
+      color: var(--text);
+    }
+    .hero-trust {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+    .trust-item {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .trust-item i {
+      color: var(--teal);
+    }
+
+    /* Interactive Phone Mockup */
+    .mockup-wrapper {
+      position: relative;
+      display: flex;
+      justify-content: center;
+    }
+    .mockup-phone {
+      width: 320px;
+      height: 640px;
+      background: #0A0F1E;
+      border: 8px solid #1E293B;
+      border-radius: 46px;
+      box-shadow: 0 25px 60px -15px rgba(0, 0, 0, 0.8), 0 0 50px rgba(0, 210, 255, 0.18);
+      position: relative;
+      padding: 24px 20px;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+    }
+    .phone-notch {
+      width: 110px;
+      height: 22px;
+      background: #1E293B;
+      border-radius: 12px;
+      margin: -10px auto 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .phone-notch-camera {
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #0F172A;
+      margin-left: 40px;
+    }
+    .phone-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .phone-date {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+    .phone-title {
+      font-size: 16px;
+      font-weight: 700;
+      font-family: var(--font-heading);
+    }
+    .phone-streak-badge {
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      background: rgba(255, 184, 107, 0.15);
+      color: #FFB86B;
+      padding: 4px 8px;
+      border-radius: 100px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+
+    /* Phone Hydration Gauge */
+    .gauge-card {
+      background: linear-gradient(180deg, #10192D 0%, #0A1120 100%);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 24px 16px;
+      text-align: center;
+      position: relative;
+      margin-bottom: 16px;
+    }
+    .gauge-circle {
+      width: 170px;
+      height: 170px;
+      margin: 0 auto 12px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    .gauge-svg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transform: rotate(-90deg);
+    }
+    .gauge-bg {
+      fill: none;
+      stroke: rgba(255, 255, 255, 0.08);
+      stroke-width: 12;
+    }
+    .gauge-progress {
+      fill: none;
+      stroke: url(#cyanGradient);
+      stroke-width: 12;
+      stroke-linecap: round;
+      stroke-dasharray: 440;
+      stroke-dashoffset: 114; /* 74% */
+      transition: stroke-dashoffset 1s ease;
+    }
+    .gauge-amount {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1.1;
+    }
+    .gauge-unit {
+      font-size: 13px;
+      color: var(--primary);
+      font-weight: 600;
+    }
+    .gauge-target {
+      font-size: 11px;
+      color: var(--text-muted);
+      margin-top: 4px;
+    }
+    .gauge-percent {
+      display: inline-block;
+      margin-top: 8px;
+      padding: 2px 10px;
+      background: rgba(0, 210, 255, 0.15);
+      border-radius: 100px;
+      color: var(--primary);
+      font-size: 12px;
+      font-weight: 700;
+    }
+
+    /* Quick log drinks inside mockup */
+    .quick-drinks {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 8px;
+      margin-bottom: 12px;
+    }
+    .quick-drink-btn {
+      background: #131E35;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      border-radius: 14px;
+      padding: 10px 6px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 4px;
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .quick-drink-btn:hover {
+      background: #1B2B4C;
+      border-color: var(--primary);
+      transform: scale(1.04);
+    }
+    .quick-drink-icon {
+      font-size: 18px;
+    }
+    .quick-drink-label {
+      font-size: 10px;
+      font-weight: 600;
+      color: var(--text-muted);
+    }
+    .quick-drink-ml {
+      font-size: 9px;
+      color: var(--primary);
+      font-weight: 700;
+    }
+
+    /* Floating card widgets beside mockup */
+    .floating-card {
+      position: absolute;
+      background: rgba(13, 21, 39, 0.92);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid var(--border-accent);
+      border-radius: var(--radius-md);
+      padding: 12px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.5);
+      animation: floatSlow 5s ease-in-out infinite alternate;
+    }
+    .floating-card-1 {
+      top: 90px;
+      left: -40px;
+    }
+    .floating-card-2 {
+      bottom: 80px;
+      right: -30px;
+      animation-delay: -2.5s;
+    }
+    .floating-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: rgba(0, 210, 255, 0.15);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 18px;
+    }
+    .floating-content h4 {
+      font-size: 13px;
+      font-weight: 700;
+    }
+    .floating-content p {
+      font-size: 11px;
+      color: var(--text-muted);
+    }
+
+    @keyframes floatSlow {
+      0% { transform: translateY(0); }
+      100% { transform: translateY(-12px); }
+    }
+
+    /* ============================================================
+       STATS HIGHLIGHT ROW
+    ============================================================ */
+    .stats-bar {
+      padding: 30px 0;
+      border-top: 1px solid var(--border);
+      border-bottom: 1px solid var(--border);
+      background: rgba(13, 21, 39, 0.4);
+      margin: 40px 0 80px;
+    }
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      text-align: center;
+    }
+    .stat-item h3 {
+      font-family: var(--font-heading);
+      font-size: 32px;
+      font-weight: 800;
+      color: var(--primary);
+      margin-bottom: 4px;
+    }
+    .stat-item p {
+      font-size: 13px;
+      color: var(--text-muted);
+      font-weight: 500;
+    }
+
+    /* ============================================================
+       FEATURES SECTION
+    ============================================================ */
+    .section-header {
+      text-align: center;
+      max-width: 640px;
+      margin: 0 auto 50px;
+    }
+    .section-tag {
+      display: inline-block;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      color: var(--primary);
+      margin-bottom: 12px;
+    }
+    .section-title {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: -0.8px;
+      margin-bottom: 14px;
+    }
+    .section-desc {
+      font-size: 16px;
+      color: var(--text-muted);
+    }
+
+    .features-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+      margin-bottom: 90px;
+    }
+    .feature-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-lg);
+      padding: 32px 26px;
+      transition: var(--transition);
+      position: relative;
+      overflow: hidden;
+    }
+    .feature-card:hover {
+      background: var(--bg-card-hover);
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+      box-shadow: 0 16px 36px rgba(0, 0, 0, 0.4), 0 0 24px rgba(0, 210, 255, 0.08);
+    }
+    .feature-icon-box {
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      background: rgba(0, 210, 255, 0.1);
+      border: 1px solid rgba(0, 210, 255, 0.2);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 20px;
+      font-size: 22px;
+      transition: var(--transition);
+    }
+    .feature-card:hover .feature-icon-box {
+      background: var(--primary);
+      color: #030814;
+      box-shadow: 0 4px 16px var(--primary-glow);
+    }
+    .feature-card h3 {
+      font-family: var(--font-heading);
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    .feature-card p {
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    /* ============================================================
+       HEALTH & ECOSYSTEM SHOWCASE
+    ============================================================ */
+    .ecosystem-section {
+      background: linear-gradient(180deg, #090F1C 0%, #070B14 100%);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 56px 40px;
+      margin-bottom: 100px;
+      position: relative;
+      overflow: hidden;
+    }
+    .ecosystem-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: center;
+    }
+    .ecosystem-content h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(26px, 3.5vw, 36px);
+      font-weight: 800;
+      line-height: 1.25;
+      margin-bottom: 18px;
+    }
+    .ecosystem-bullets {
+      list-style: none;
+      margin-top: 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .ecosystem-bullets li {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      font-size: 15px;
+      color: var(--text-muted);
+    }
+    .eco-bullet-icon {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(0, 245, 212, 0.15);
+      color: var(--teal);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    .ecosystem-visual {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .eco-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 24px;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      transition: var(--transition);
+    }
+    .eco-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-3px);
+    }
+    .eco-card-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 14px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+    .eco-apple {
+      background: rgba(255, 45, 85, 0.12);
+      color: #FF2D55;
+    }
+    .eco-google {
+      background: rgba(52, 168, 83, 0.12);
+      color: #34A853;
+    }
+    .eco-widgets {
+      background: rgba(0, 210, 255, 0.12);
+      color: var(--primary);
+    }
+    .eco-privacy {
+      background: rgba(255, 184, 107, 0.12);
+      color: #FFB86B;
+    }
+    .eco-card h4 {
+      font-family: var(--font-heading);
+      font-size: 15px;
+      font-weight: 700;
+    }
+    .eco-card p {
+      font-size: 12px;
+      color: var(--text-muted);
+    }
+
+    /* ============================================================
+       INTERACTIVE HYDRATION CALCULATOR
+    ============================================================ */
+    .calc-section {
+      margin-bottom: 100px;
+    }
+    .calc-box {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 28px;
+      padding: 44px;
+      display: grid;
+      grid-template-columns: 1.1fr 0.9fr;
+      gap: 40px;
+      align-items: center;
+    }
+    .calc-inputs {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+    .input-group label {
+      display: flex;
+      justify-content: space-between;
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .input-val {
+      color: var(--primary);
+      font-weight: 700;
+    }
+    input[type=range] {
+      width: 100%;
+      height: 8px;
+      border-radius: 4px;
+      background: var(--bg-elevated);
+      outline: none;
+      -webkit-appearance: none;
+    }
+    input[type=range]::-webkit-slider-thumb {
+      -webkit-appearance: none;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--primary);
+      cursor: pointer;
+      box-shadow: 0 0 12px var(--primary-glow);
+    }
+    .select-pills {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+    .pill-btn {
+      background: var(--bg-elevated);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-full);
+      padding: 8px 16px;
+      font-size: 13px;
+      font-weight: 600;
+      color: var(--text-muted);
+      cursor: pointer;
+      transition: var(--transition);
+    }
+    .pill-btn.active, .pill-btn:hover {
+      background: var(--primary);
+      color: #030814;
+      border-color: var(--primary);
+    }
+
+    .calc-result-card {
+      background: linear-gradient(135deg, #101B33 0%, #081020 100%);
+      border: 1px solid var(--border-accent);
+      border-radius: 22px;
+      padding: 36px 28px;
+      text-align: center;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.4);
+    }
+    .calc-result-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      color: var(--text-muted);
+      margin-bottom: 12px;
+      font-weight: 600;
+    }
+    .calc-result-number {
+      font-family: var(--font-heading);
+      font-size: 54px;
+      font-weight: 800;
+      color: #FFFFFF;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .calc-result-unit {
+      color: var(--primary);
+      font-size: 20px;
+      font-weight: 700;
+      margin-bottom: 16px;
+    }
+    .calc-result-glasses {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-bottom: 24px;
+    }
+    .calc-result-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      background: rgba(0, 245, 212, 0.15);
+      color: var(--teal);
+      padding: 6px 14px;
+      border-radius: var(--radius-full);
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    /* ============================================================
+       BEVERAGES CAROUSEL / GRID
+    ============================================================ */
+    .beverages-section {
+      margin-bottom: 100px;
+    }
+    .bev-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 14px;
+    }
+    .bev-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      padding: 20px 12px;
+      text-align: center;
+      transition: var(--transition);
+    }
+    .bev-card:hover {
+      border-color: var(--border-accent);
+      transform: translateY(-4px);
+      background: var(--bg-card-hover);
+    }
+    .bev-emoji {
+      font-size: 32px;
+      margin-bottom: 8px;
+      display: block;
+    }
+    .bev-name {
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+    .bev-factor {
+      font-size: 11px;
+      color: var(--teal);
+      font-weight: 600;
+    }
+
+    /* ============================================================
+       FAQ ACCORDIONS
+    ============================================================ */
+    .faq-section {
+      max-width: 820px;
+      margin: 0 auto 100px;
+    }
+    .faq-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-md);
+      margin-bottom: 14px;
+      overflow: hidden;
+      transition: var(--transition);
+    }
+    .faq-item[open] {
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+    }
+    .faq-item summary {
+      padding: 20px 24px;
+      font-family: var(--font-heading);
+      font-size: 17px;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .faq-icon {
+      color: var(--primary);
+      transition: transform 0.25s ease;
+    }
+    .faq-item[open] .faq-icon {
+      transform: rotate(180deg);
+    }
+    .faq-answer {
+      padding: 0 24px 22px;
+      font-size: 15px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* ============================================================
+       CTA BANNER
+    ============================================================ */
+    .cta-banner {
+      background: radial-gradient(circle at top right, rgba(0, 210, 255, 0.2), transparent 60%),
+                  linear-gradient(135deg, #0F192E 0%, #070B14 100%);
+      border: 1px solid var(--border-accent);
+      border-radius: 32px;
+      padding: 60px 32px;
+      text-align: center;
+      margin-bottom: 90px;
+      position: relative;
+      overflow: hidden;
+    }
+    .cta-banner h2 {
+      font-family: var(--font-heading);
+      font-size: clamp(30px, 4.5vw, 44px);
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 16px;
+    }
+    .cta-banner p {
+      font-size: 17px;
+      color: var(--text-muted);
+      max-width: 580px;
+      margin: 0 auto 32px;
+    }
+    .cta-buttons {
+      display: flex;
+      justify-content: center;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+
+    /* ============================================================
+       FOOTER
+    ============================================================ */
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 48px 0 36px;
+      background: #04070D;
+      font-size: 14px;
+      color: var(--text-muted);
+    }
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+    .footer-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 600;
+      color: var(--text);
+    }
+    .footer-brand img {
+      width: 28px;
+      height: 28px;
+      border-radius: 6px;
+    }
+    .footer-links {
+      display: flex;
+      gap: 24px;
+      flex-wrap: wrap;
+    }
+    .footer-links a {
+      color: var(--text-muted);
+      transition: var(--transition);
+    }
+    .footer-links a:hover {
+      color: var(--primary);
+    }
+    .footer-bottom {
+      margin-top: 28px;
+      padding-top: 20px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 13px;
+      color: var(--text-faint);
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    /* ============================================================
+       RESPONSIVENESS
+    ============================================================ */
+    @media (max-width: 992px) {
+      .hero-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 40px;
+      }
+      .hero-desc {
+        margin: 0 auto 32px;
+      }
+      .hero-actions {
+        justify-content: center;
+      }
+      .hero-trust {
+        justify-content: center;
+      }
+      .features-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .ecosystem-grid {
+        grid-template-columns: 1fr;
+      }
+      .calc-box {
+        grid-template-columns: 1fr;
+      }
+      .bev-grid {
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+      .features-grid {
+        grid-template-columns: 1fr;
+      }
+      .ecosystem-section {
+        padding: 36px 20px;
+      }
+      .ecosystem-visual {
+        grid-template-columns: 1fr;
+      }
+      .calc-box {
+        padding: 24px 18px;
+      }
+      .bev-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .floating-card-1 {
+        left: -10px;
+      }
+      .floating-card-2 {
+        right: -10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Ambient Light Effects -->
+  <div class="ambient-glow ambient-glow-1"></div>
+  <div class="ambient-glow ambient-glow-2"></div>
+  <div class="ambient-glow ambient-glow-3"></div>
+
+  <!-- ============================================================
+       HEADER / NAVBAR
+  ============================================================ -->
+  <nav class="navbar" aria-label="Main Navigation">
+    <div class="container nav-inner">
+      <a href="./" class="brand" aria-label="Hydrivo Home">
+        <img src="icon.png" alt="Hydrivo Water Tracker icon" class="brand-icon" width="40" height="40" fetchpriority="high" />
+        <span class="brand-name">Hydrivo</span>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#calculator">Daily Goal Calculator</a></li>
+        <li><a href="#ecosystem">Apple Health &amp; Sync</a></li>
+        <li><a href="#beverages">Beverages</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+
+      <div style="display: flex; align-items: center; gap: 14px;">
+        <a href="#download" class="nav-cta">
+          <i data-lucide="download" style="width: 16px; height: 16px;"></i>
+          <span>Get Hydrivo</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <header class="hero">
+    <div class="container hero-grid">
+      <div class="hero-text">
+        <div class="hero-badge">
+          <i data-lucide="droplet" style="width: 14px; height: 14px;"></i>
+          <span>Hydration Tracker &amp; Reminder · iOS &amp; Android</span>
+        </div>
+
+        <h1>
+          Drink More Water.<br />
+          <span class="hero-gradient-text">Feel Energized Every Day.</span>
+        </h1>
+
+        <p class="hero-desc">
+          Hydrivo makes healthy hydration effortless. Calculate your ideal daily water intake, log drinks in one tap, sync with Apple Health &amp; Health Connect, and build lasting habits with smart, gentle reminders.
+        </p>
+
+        <div class="hero-actions" id="download">
+          <a href="https://apps.apple.com/app/id6758589192" class="store-btn" aria-label="Download on App Store">
+            <span class="store-btn-icon"><i data-lucide="apple"></i></span>
+            <div class="store-btn-text">
+              <span class="store-btn-subtitle">Download on the</span>
+              <span class="store-btn-title">App Store</span>
+            </div>
+          </a>
+
+          <a href="https://play.google.com/store/apps/details?id=com.codeyard.watertracker" class="store-btn" aria-label="Get it on Google Play">
+            <span class="store-btn-icon"><i data-lucide="play"></i></span>
+            <div class="store-btn-text">
+              <span class="store-btn-subtitle">GET IT ON</span>
+              <span class="store-btn-title">Google Play</span>
+            </div>
+          </a>
+        </div>
+
+        <div class="hero-trust">
+          <div class="trust-item">
+            <i data-lucide="shield-check" style="width: 16px; height: 16px;"></i>
+            <span>100% Privacy-First</span>
+          </div>
+          <div class="trust-item">
+            <i data-lucide="activity" style="width: 16px; height: 16px;"></i>
+            <span>Apple Health &amp; Connect Sync</span>
+          </div>
+          <div class="trust-item">
+            <i data-lucide="wifi-off" style="width: 16px; height: 16px;"></i>
+            <span>Works 100% Offline</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Live Mockup Representation -->
+      <div class="mockup-wrapper">
+        <div class="mockup-phone">
+          <div class="phone-notch">
+            <div class="phone-notch-camera"></div>
+          </div>
+
+          <div class="phone-header">
+            <div>
+              <div class="phone-date">Today's Progress</div>
+              <div class="phone-title">Hydrivo</div>
+            </div>
+            <div class="phone-streak-badge">
+              <i data-lucide="flame" style="width: 12px; height: 12px;"></i>
+              <span>7 Days</span>
+            </div>
+          </div>
+
+          <!-- Circular hydration gauge inside app -->
+          <div class="gauge-card">
+            <div class="gauge-circle">
+              <svg class="gauge-svg" viewBox="0 0 160 160">
+                <defs>
+                  <linearGradient id="cyanGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                    <stop offset="0%" stop-color="#00D2FF" />
+                    <stop offset="100%" stop-color="#00F5D4" />
+                  </linearGradient>
+                </defs>
+                <circle class="gauge-bg" cx="80" cy="80" r="70"></circle>
+                <circle class="gauge-progress" cx="80" cy="80" r="70" id="mockupProgressCircle"></circle>
+              </svg>
+              <div class="gauge-amount" id="mockupAmount">1,850</div>
+              <div class="gauge-unit">ml logged</div>
+              <div class="gauge-target">Daily Goal: 2,500 ml</div>
+            </div>
+            <span class="gauge-percent" id="mockupPercent">74% of daily goal</span>
+          </div>
+
+          <!-- Quick log buttons -->
+          <div style="font-size: 11px; font-weight: 700; color: var(--text-muted); margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.5px;">Quick Log Drink</div>
+          <div class="quick-drinks">
+            <button class="quick-drink-btn" onclick="addMockDrink(250, 'Water')">
+              <span class="quick-drink-icon">💧</span>
+              <span class="quick-drink-label">Water</span>
+              <span class="quick-drink-ml">+250ml</span>
+            </button>
+            <button class="quick-drink-btn" onclick="addMockDrink(200, 'Coffee')">
+              <span class="quick-drink-icon">☕</span>
+              <span class="quick-drink-label">Coffee</span>
+              <span class="quick-drink-ml">+200ml</span>
+            </button>
+            <button class="quick-drink-btn" onclick="addMockDrink(350, 'Tea')">
+              <span class="quick-drink-icon">🍵</span>
+              <span class="quick-drink-label">Tea</span>
+              <span class="quick-drink-ml">+350ml</span>
+            </button>
+          </div>
+        </div>
+
+        <!-- Floating highlights -->
+        <div class="floating-card floating-card-1">
+          <div class="floating-icon"><i data-lucide="bell-ring"></i></div>
+          <div class="floating-content">
+            <h4>Smart Gentle Reminder</h4>
+            <p>Time for a refreshing glass!</p>
+          </div>
+        </div>
+
+        <div class="floating-card floating-card-2">
+          <div class="floating-icon" style="color: var(--teal); background: rgba(0, 245, 212, 0.15);"><i data-lucide="check-circle-2"></i></div>
+          <div class="floating-content">
+            <h4>Synced with Apple Health</h4>
+            <p>Hydration recorded instantly</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============================================================
+       STATS BAR
+  ============================================================ -->
+  <section class="stats-bar" aria-label="Key app metrics">
+    <div class="container stats-grid">
+      <div class="stat-item">
+        <h3>10+</h3>
+        <p>Beverages &amp; Hydration Ratios</p>
+      </div>
+      <div class="stat-item">
+        <h3>1-Tap</h3>
+        <p>Instant Quick Drink Logging</p>
+      </div>
+      <div class="stat-item">
+        <h3>2-Way</h3>
+        <p>Apple Health &amp; Health Connect Sync</p>
+      </div>
+      <div class="stat-item">
+        <h3>100%</h3>
+        <p>Offline &amp; Privacy-First Architecture</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       FEATURES SECTION
+  ============================================================ -->
+  <main>
+    <section class="container" id="features">
+      <div class="section-header">
+        <span class="section-tag">Designed For Your Wellness</span>
+        <h2 class="section-title">Everything You Need To Build Healthy Hydration Habits</h2>
+        <p class="section-desc">Hydrivo combines powerful science-backed hydration calculations with clean, frictionless tracking that fits seamlessly into your day.</p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="sliders"></i></div>
+          <h3>Personalized Daily Goal</h3>
+          <p>Calculates your optimal daily water intake based on your body weight, activity level, climate, and personal lifestyle.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="clock"></i></div>
+          <h3>Intelligent Reminders</h3>
+          <p>Gentle reminders tailored to your active daytime hours. Never annoying, and quiet hours guarantee uninterrupted sleep.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="coffee"></i></div>
+          <h3>10+ Beverages Tracked</h3>
+          <p>Log coffee, tea, milk, juices, electrolytes, soda, and more. Each drink accounts for its true hydration coefficient.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="layout-grid"></i></div>
+          <h3>Interactive Widgets</h3>
+          <p>Add beautiful iOS and Android home screen widgets to check your daily progress and log water in one tap without opening the app.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="heart-pulse"></i></div>
+          <h3>Apple Health &amp; Health Connect</h3>
+          <p>Automated two-way synchronization with Apple Health (HealthKit) and Google Health Connect to complete your wellness dashboard.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="bar-chart-2"></i></div>
+          <h3>Trends &amp; Insights</h3>
+          <p>Explore daily, weekly, and monthly intake breakdowns, monitor streaks, and track how your hydration consistency improves over time.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="award"></i></div>
+          <h3>Gamified Achievements</h3>
+          <p>Unlock motivating milestones like Hydration Hero, First Drop, Week Wonder, and Streak Master as you stay consistent.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="shield"></i></div>
+          <h3>Strict Privacy</h3>
+          <p>No account required, no passwords to remember, and zero tracking. Your private health data never leaves your device.</p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon-box"><i data-lucide="sparkles"></i></div>
+          <h3>Hydrivo Pro Upgrade</h3>
+          <p>One-time purchase or flexible subscription to remove ads, unlock custom drink creation, and access advanced widget themes.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         INTERACTIVE CALCULATOR SECTION
+    ============================================================ -->
+    <section class="container calc-section" id="calculator">
+      <div class="section-header">
+        <span class="section-tag">Interactive Tool</span>
+        <h2 class="section-title">Calculate Your Daily Hydration Needs</h2>
+        <p class="section-desc">Slide your weight and select your activity level to see how much water your body needs each day.</p>
+      </div>
+
+      <div class="calc-box">
+        <div class="calc-inputs">
+          <div class="input-group">
+            <label for="weightRange">
+              <span>Your Body Weight</span>
+              <span class="input-val" id="weightDisplay">70 kg (154 lbs)</span>
+            </label>
+            <input type="range" id="weightRange" min="40" max="140" value="70" oninput="updateCalculator()" />
+          </div>
+
+          <div class="input-group">
+            <label><span>Activity Level</span></label>
+            <div class="select-pills" id="activityPills">
+              <button class="pill-btn" onclick="setActivity(1.0, this)">Sedentary</button>
+              <button class="pill-btn active" onclick="setActivity(1.15, this)">Moderate (30m)</button>
+              <button class="pill-btn" onclick="setActivity(1.3, this)">Very Active (60m+)</button>
+            </div>
+          </div>
+
+          <div class="input-group">
+            <label><span>Climate / Weather</span></label>
+            <div class="select-pills" id="climatePills">
+              <button class="pill-btn active" onclick="setClimate(1.0, this)">Temperate</button>
+              <button class="pill-btn" onclick="setClimate(1.12, this)">Hot / Humid</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="calc-result-card">
+          <div class="calc-result-title">Recommended Daily Target</div>
+          <div class="calc-result-number" id="calcTargetNumber">2,450</div>
+          <div class="calc-result-unit">milliliters / day</div>
+          <div class="calc-result-glasses" id="calcGlassesText">≈ 10 standard 250ml glasses of water</div>
+          <div class="calc-result-badge">
+            <i data-lucide="check" style="width: 14px; height: 14px;"></i>
+            <span>Scientifically Tailored in Hydrivo</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         APPLE HEALTH & ECOSYSTEM SECTION
+    ============================================================ -->
+    <section class="container" id="ecosystem">
+      <div class="ecosystem-section">
+        <div class="ecosystem-grid">
+          <div class="ecosystem-content">
+            <span class="section-tag">Seamless Health Ecosystem</span>
+            <h2>Integrated With Your Daily Routine &amp; Devices</h2>
+            <p style="color: var(--text-muted); line-height: 1.7;">
+              Hydrivo isn't an isolated silo. It acts as the dedicated hydration bridge for Apple Health, Google Health Connect, and your device's home screen.
+            </p>
+
+            <ul class="ecosystem-bullets">
+              <li>
+                <div class="eco-bullet-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></div>
+                <div>
+                  <strong style="color: var(--text); display: block;">Native Apple HealthKit Integration</strong>
+                  Every logged drink is instantly written to Apple Health as Dietary Water, helping you track hydration alongside workouts and calories.
+                </div>
+              </li>
+              <li>
+                <div class="eco-bullet-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></div>
+                <div>
+                  <strong style="color: var(--text); display: block;">Google Health Connect Support</strong>
+                  Synchronizes water intake on Android devices across Google Fit and third-party wellness ecosystems.
+                </div>
+              </li>
+              <li>
+                <div class="eco-bullet-icon"><i data-lucide="check" style="width: 14px; height: 14px;"></i></div>
+                <div>
+                  <strong style="color: var(--text); display: block;">Glanceable Home Screen Widgets</strong>
+                  Quickly check how much water you've logged today directly from your lock screen and home screen.
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <div class="ecosystem-visual">
+            <div class="eco-card">
+              <div class="eco-card-icon eco-apple"><i data-lucide="heart"></i></div>
+              <h4>Apple Health</h4>
+              <p>Automatic Dietary Water sync for iPhone &amp; Apple Watch.</p>
+            </div>
+            <div class="eco-card">
+              <div class="eco-card-icon eco-google"><i data-lucide="activity"></i></div>
+              <h4>Google Health Connect</h4>
+              <p>Unified Android health ecosystem synchronization.</p>
+            </div>
+            <div class="eco-card">
+              <div class="eco-card-icon eco-widgets"><i data-lucide="smartphone"></i></div>
+              <h4>Home Widgets</h4>
+              <p>Live progress circle and 1-tap quick log on your desktop.</p>
+            </div>
+            <div class="eco-card">
+              <div class="eco-card-icon eco-privacy"><i data-lucide="lock"></i></div>
+              <h4>Device-Only Storage</h4>
+              <p>Zero cloud accounts. Your metrics belong exclusively to you.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         BEVERAGES SECTION
+    ============================================================ -->
+    <section class="container beverages-section" id="beverages">
+      <div class="section-header">
+        <span class="section-tag">Beverage Intelligence</span>
+        <h2 class="section-title">Track More Than Just Plain Water</h2>
+        <p class="section-desc">Not all fluids hydrate identically. Hydrivo automatically applies calibrated hydration factors so your daily target reflects reality.</p>
+      </div>
+
+      <div class="bev-grid">
+        <div class="bev-card">
+          <span class="bev-emoji">💧</span>
+          <div class="bev-name">Water</div>
+          <div class="bev-factor">100% Hydration</div>
+        </div>
+        <div class="bev-card">
+          <span class="bev-emoji">🍵</span>
+          <div class="bev-name">Green / Herbal Tea</div>
+          <div class="bev-factor">95% Hydration</div>
+        </div>
+        <div class="bev-card">
+          <span class="bev-emoji">☕</span>
+          <div class="bev-name">Coffee / Espresso</div>
+          <div class="bev-factor">80% Hydration</div>
+        </div>
+        <div class="bev-card">
+          <span class="bev-emoji">⚡</span>
+          <div class="bev-name">Electrolytes / Sports</div>
+          <div class="bev-factor">100% Hydration</div>
+        </div>
+        <div class="bev-card">
+          <span class="bev-emoji">🥛</span>
+          <div class="bev-name">Milk / Dairy</div>
+          <div class="bev-factor">90% Hydration</div>
+        </div>
+        <div class="bev-card">
+          <span class="bev-emoji">🍊</span>
+          <div class="bev-name">Fruit Juices</div>
+          <div class="bev-factor">85% Hydration</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============================================================
+         FAQ SECTION
+    ============================================================ -->
+    <section class="container faq-section" id="faq">
+      <div class="section-header">
+        <span class="section-tag">Got Questions?</span>
+        <h2 class="section-title">Frequently Asked Questions</h2>
+        <p class="section-desc">Everything you need to know about Hydrivo's features, sync, and privacy.</p>
+      </div>
+
+      <details class="faq-item" open>
+        <summary>
+          <span>Is Hydrivo free to use?</span>
+          <i data-lucide="chevron-down" class="faq-icon"></i>
+        </summary>
+        <div class="faq-answer">
+          Yes! Hydrivo is 100% free to download. Core tracking, daily goal calculations, reminders, beverage logging, statistics, and Apple Health / Health Connect sync are completely free. An optional Pro upgrade is available for users who want an ad-free experience, custom drink definitions, and advanced widget themes.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span>How does Apple Health &amp; Google Health Connect sync work?</span>
+          <i data-lucide="chevron-down" class="faq-icon"></i>
+        </summary>
+        <div class="faq-answer">
+          Hydrivo requests read/write access to Dietary Water in Apple Health (iOS) and Google Health Connect (Android). Whenever you record a drink in Hydrivo, it automatically logs the calculated water volume into your health dashboard so your fitness and nutrition metrics remain in sync.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span>Can I log drinks besides plain water?</span>
+          <i data-lucide="chevron-down" class="faq-icon"></i>
+        </summary>
+        <div class="faq-answer">
+          Yes. Hydrivo includes presets for coffee, tea, fruit juice, milk, sports drinks, soda, beer, wine, and liquor. Each beverage includes a hydration coefficient (e.g. coffee counts for ~80% net hydration, sports drinks count for 100%) to give you an accurate picture of your true hydration status.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span>Is my personal data private and secure?</span>
+          <i data-lucide="chevron-down" class="faq-icon"></i>
+        </summary>
+        <div class="faq-answer">
+          Yes, absolutely. Hydrivo does not require any account, email, or login. All your hydration logs, daily targets, and streak histories are saved strictly in your phone's local storage. We do not sell or collect your health information.
+        </div>
+      </details>
+
+      <details class="faq-item">
+        <summary>
+          <span>Will reminders wake me up during the night?</span>
+          <i data-lucide="chevron-down" class="faq-icon"></i>
+        </summary>
+        <div class="faq-answer">
+          No. In Hydrivo Settings, you configure your typical wake-up and bed times. Notifications are intelligently scheduled only during your active awake hours so your rest is never disturbed.
+        </div>
+      </details>
+    </section>
+
+    <!-- ============================================================
+         CTA BANNER
+    ============================================================ -->
+    <section class="container">
+      <div class="cta-banner">
+        <h2>Start Your Hydration Journey Today</h2>
+        <p>Join thousands building a healthier lifestyle one sip at a time with Hydrivo. Available now on iOS and Android.</p>
+        <div class="cta-buttons">
+          <a href="https://apps.apple.com/app/id6758589192" class="store-btn" aria-label="Download on App Store">
+            <span class="store-btn-icon"><i data-lucide="apple"></i></span>
+            <div class="store-btn-text">
+              <span class="store-btn-subtitle">Download on the</span>
+              <span class="store-btn-title">App Store</span>
+            </div>
+          </a>
+          <a href="https://play.google.com/store/apps/details?id=com.codeyard.watertracker" class="store-btn" aria-label="Get it on Google Play">
+            <span class="store-btn-icon"><i data-lucide="play"></i></span>
+            <div class="store-btn-text">
+              <span class="store-btn-subtitle">GET IT ON</span>
+              <span class="store-btn-title">Google Play</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <div class="footer-brand">
+          <img src="icon.png" alt="Hydrivo icon" width="28" height="28" />
+          <span>Hydrivo · Water Tracker &amp; Reminder</span>
+        </div>
+
+        <div class="footer-links">
+          <a href="./privacy-policy.html">Privacy Policy</a>
+          <a href="./terms-of-service.html">Terms of Service</a>
+          <a href="./support.html">Support</a>
+          <a href="../">Codeyard Studio Home</a>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>&copy; 2026 Codeyard Studio. All rights reserved.</div>
+        <div>Designed with care for your health and hydration.</div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Initialize Lucide Icons
+    lucide.createIcons();
+
+    // Mock Phone Interaction
+    let currentLogged = 1850;
+    const goal = 2500;
+
+    function addMockDrink(amount, name) {
+      currentLogged += amount;
+      const pct = Math.min(Math.round((currentLogged / goal) * 100), 100);
+      document.getElementById('mockupAmount').innerText = currentLogged.toLocaleString();
+      document.getElementById('mockupPercent').innerText = pct + '% of daily goal';
+
+      // Update stroke dashoffset (circumference 440)
+      const offset = 440 - (440 * (pct / 100));
+      document.getElementById('mockupProgressCircle').style.strokeDashoffset = offset;
+    }
+
+    // Interactive Hydration Calculator
+    let currentActivity = 1.15;
+    let currentClimate = 1.0;
+
+    function setActivity(mult, btn) {
+      currentActivity = mult;
+      document.querySelectorAll('#activityPills .pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      updateCalculator();
+    }
+
+    function setClimate(mult, btn) {
+      currentClimate = mult;
+      document.querySelectorAll('#climatePills .pill-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      updateCalculator();
+    }
+
+    function updateCalculator() {
+      const weight = parseInt(document.getElementById('weightRange').value);
+      const lbs = Math.round(weight * 2.20462);
+      document.getElementById('weightDisplay').innerText = `${weight} kg (${lbs} lbs)`;
+
+      // Formula: ~35ml per kg base, modified by activity and climate
+      let recommended = Math.round(weight * 35 * currentActivity * currentClimate);
+      // Round to nearest 50ml
+      recommended = Math.round(recommended / 50) * 50;
+
+      document.getElementById('calcTargetNumber').innerText = recommended.toLocaleString();
+      const glasses = Math.round(recommended / 250);
+      document.getElementById('calcGlassesText').innerText = `≈ ${glasses} standard 250ml glasses of water`;
+    }
+
+    // Initial run
+    updateCalculator();
+  </script>
+</body>
+</html>

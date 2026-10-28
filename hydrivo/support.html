@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Support – Hydrivo | Water Tracker &amp; Reminder</title>
+  <meta name="description" content="Support and Help Center for Hydrivo (Water Tracker &amp; Reminder) by Codeyard Studio. Troubleshoot sync, notifications, widgets, and get in touch with our team." />
+  <link rel="canonical" href="https://codeyardstudio.com/hydrivo/support.html" />
+  <link rel="icon" type="image/png" href="icon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Outfit:wght@600;700&display=swap" rel="stylesheet" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+
+  <style>
+    :root {
+      --primary: #00D2FF;
+      --primary-dark: #0072FF;
+      --teal: #00F5D4;
+      --bg: #070B14;
+      --bg-card: #0D1527;
+      --bg-card-hover: #121D36;
+      --text: #F0F4FC;
+      --text-muted: #8E9BAE;
+      --border: rgba(255, 255, 255, 0.08);
+      --border-accent: rgba(0, 210, 255, 0.25);
+      --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+      --font-heading: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: var(--font-body);
+      line-height: 1.7;
+      font-size: 15px;
+      padding-bottom: 80px;
+    }
+
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .hero {
+      background: linear-gradient(180deg, #0E1830 0%, #070B14 100%);
+      border-bottom: 1px solid var(--border);
+      padding: 60px 24px 44px;
+      text-align: center;
+    }
+    .hero-badge {
+      display: inline-block;
+      padding: 5px 14px;
+      background: rgba(0, 210, 255, 0.12);
+      border: 1px solid rgba(0, 210, 255, 0.25);
+      border-radius: 9999px;
+      font-size: 12px;
+      font-weight: 700;
+      color: var(--primary);
+      text-transform: uppercase;
+      letter-spacing: 0.8px;
+      margin-bottom: 16px;
+    }
+    .hero h1 {
+      font-family: var(--font-heading);
+      font-size: clamp(28px, 5vw, 42px);
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .hero p {
+      color: var(--text-muted);
+      font-size: 15px;
+      max-width: 540px;
+      margin: 0 auto;
+    }
+
+    .container {
+      max-width: 840px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .nav-back {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 28px;
+      color: var(--text-muted);
+      font-size: 14px;
+      font-weight: 600;
+    }
+    .nav-back:hover {
+      color: var(--primary);
+    }
+
+    /* Contact Card */
+    .contact-card {
+      background: linear-gradient(135deg, #101B33 0%, #0D1527 100%);
+      border: 1px solid var(--border-accent);
+      border-radius: 20px;
+      padding: 36px 32px;
+      margin: 32px 0 40px;
+      text-align: center;
+    }
+    .contact-card h2 {
+      font-family: var(--font-heading);
+      font-size: 24px;
+      margin-bottom: 10px;
+      color: var(--text);
+    }
+    .contact-card p {
+      color: var(--text-muted);
+      margin-bottom: 24px;
+      font-size: 15px;
+    }
+    .btn-contact {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+      color: #030814;
+      font-weight: 700;
+      font-size: 15px;
+      padding: 12px 28px;
+      border-radius: 9999px;
+      box-shadow: 0 4px 16px rgba(0, 210, 255, 0.3);
+      transition: all 0.2s ease;
+    }
+    .btn-contact:hover {
+      text-decoration: none;
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(0, 210, 255, 0.45);
+    }
+
+    /* FAQ Help Items */
+    .help-section-title {
+      font-family: var(--font-heading);
+      font-size: 22px;
+      font-weight: 700;
+      margin-bottom: 18px;
+      color: var(--text);
+    }
+    .help-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      margin-bottom: 12px;
+      overflow: hidden;
+      transition: all 0.2s ease;
+    }
+    .help-item[open] {
+      border-color: var(--border-accent);
+      background: var(--bg-card-hover);
+    }
+    .help-item summary {
+      padding: 18px 22px;
+      font-family: var(--font-heading);
+      font-size: 16px;
+      font-weight: 600;
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .help-item summary::-webkit-details-marker {
+      display: none;
+    }
+    .help-icon {
+      color: var(--primary);
+      transition: transform 0.25s ease;
+    }
+    .help-item[open] .help-icon {
+      transform: rotate(180deg);
+    }
+    .help-answer {
+      padding: 0 22px 20px;
+      font-size: 14px;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Quick Links */
+    .quick-links {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 36px;
+      justify-content: center;
+    }
+    .quick-link-pill {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      padding: 8px 18px;
+      border-radius: 9999px;
+      font-size: 13px;
+      font-weight: 500;
+      color: var(--text-muted);
+    }
+    .quick-link-pill:hover {
+      color: var(--text);
+      border-color: var(--primary);
+      text-decoration: none;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 48px;
+      font-size: 13px;
+      color: #5A667A;
+    }
+  </style>
+</head>
+<body>
+
+  <header class="hero">
+    <div class="container">
+      <span class="hero-badge">Help &amp; Support</span>
+      <h1>How Can We Help You?</h1>
+      <p>Find quick solutions for Apple Health sync, widgets, reminders, and purchases, or contact our support team directly.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <a href="./" class="nav-back">&larr; Back to Hydrivo Overview</a>
+
+    <div class="contact-card">
+      <h2>Contact Codeyard Studio Support</h2>
+      <p>Have an issue, bug report, or feature request? We typically reply within 24–48 hours.</p>
+      <a href="mailto:codeyard.studio@gmail.com?subject=Hydrivo%20Support%20Inquiry" class="btn-contact">
+        <i data-lucide="mail" style="width: 18px; height: 18px;"></i>
+        <span>Email codeyard.studio@gmail.com</span>
+      </a>
+    </div>
+
+    <h2 class="help-section-title">Common Help Topics</h2>
+
+    <details class="help-item" open>
+      <summary>
+        <span>How do I enable Apple Health or Google Health Connect?</span>
+        <i data-lucide="chevron-down" class="help-icon"></i>
+      </summary>
+      <div class="help-answer">
+        Inside Hydrivo, open <strong>Settings</strong> and locate the <strong>Health Sync</strong> section. Toggle on Apple Health (iOS) or Health Connect (Android). Your device will present a system authorization prompt. Ensure that "Dietary Water" (both Read and Write) is enabled.
+      </div>
+    </details>
+
+    <details class="help-item">
+      <summary>
+        <span>Why aren't my hydration reminders appearing?</span>
+        <i data-lucide="chevron-down" class="help-icon"></i>
+      </summary>
+      <div class="help-answer">
+        Please verify the following:
+        <ul style="padding-left: 20px; margin-top: 8px;">
+          <li>Go to your phone's system <strong>Settings &gt; Notifications &gt; Hydrivo</strong> and ensure Allow Notifications is enabled.</li>
+          <li>In Hydrivo <strong>Settings &gt; Reminders</strong>, verify that your "Wake Time" and "Bed Time" accurately reflect your waking hours. Hydrivo automatically silences notifications during sleep hours.</li>
+          <li>Check that your device is not in Do Not Disturb / Focus mode.</li>
+        </ul>
+      </div>
+    </details>
+
+    <details class="help-item">
+      <summary>
+        <span>How do I add the Hydrivo Home Screen Widget?</span>
+        <i data-lucide="chevron-down" class="help-icon"></i>
+      </summary>
+      <div class="help-answer">
+        <strong>On iOS:</strong> Long-press any empty space on your Home Screen until apps jiggle. Tap the <strong>+</strong> button in the top left, search for <strong>Hydrivo</strong>, choose your preferred widget size (Small or Medium), and tap <strong>Add Widget</strong>.<br /><br />
+        <strong>On Android:</strong> Touch and hold an empty space on your Home Screen, tap <strong>Widgets</strong>, find <strong>Hydrivo</strong>, and drag the widget to your desired position.
+      </div>
+    </details>
+
+    <details class="help-item">
+      <summary>
+        <span>How do I restore my Hydrivo Pro purchase?</span>
+        <i data-lucide="chevron-down" class="help-icon"></i>
+      </summary>
+      <div class="help-answer">
+        If you switched devices or reinstalled the app, navigate to <strong>Settings &gt; Hydrivo Pro</strong> and tap <strong>Restore Purchases</strong>. Your purchase will automatically be verified with your Apple ID or Google account at no charge.
+      </div>
+    </details>
+
+    <details class="help-item">
+      <summary>
+        <span>How do I clear or reset my hydration history?</span>
+        <i data-lucide="chevron-down" class="help-icon"></i>
+      </summary>
+      <div class="help-answer">
+        In Hydrivo, tap <strong>Settings &gt; Reset Data</strong>. You will be prompted to confirm. Doing so deletes all logged drinks, streaks, and custom settings from your device.
+      </div>
+    </details>
+
+    <div class="quick-links">
+      <a href="./" class="quick-link-pill">Hydrivo Home</a>
+      <a href="./privacy-policy.html" class="quick-link-pill">Privacy Policy</a>
+      <a href="./terms-of-service.html" class="quick-link-pill">Terms of Service</a>
+      <a href="../" class="quick-link-pill">Codeyard Studio</a>
+    </div>
+
+    <footer>
+      &copy; 2026 Codeyard Studio. All rights reserved.
+    </footer>
+  </main>
+
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>
